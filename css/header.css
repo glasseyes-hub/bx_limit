@@ -1,0 +1,122 @@
+.header {
+}
+.header ul {
+    list-style-type: none;
+}
+.header-wrapper {
+    width: 1326px;
+    margin: 0 auto;
+}
+
+.header-top {
+    background-color: #f5f5f5;
+}
+
+
+
+.topMenu {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+}
+.topMenu > * {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 0 20px;
+}
+.topMenu a {
+    text-decoration: none;
+    color: #828282;
+}
+.topMenu a:hover {
+    color: #000
+}
+
+.topMenu-item_director a:before,
+.topMenu-item_designer a:before,
+.topMenu-item_projects a:before,
+.topMenu-item_shops a:before {
+    content: "";
+}
+
+.header-main {
+    background-color: #282828;
+    padding: 20px 0;
+}
+.header-main .header-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.header-info {
+    display: grid;
+    grid-auto-flow: column;
+    grid-column-gap: 60px;
+}
+.header-logo {
+    display: flex;
+}
+.header-logo-info {
+    width: 150px;
+    margin-left: 20px;
+    color: #828282;
+}
+.header-info-item {
+    display: grid;
+    align-content: start;
+    grid-gap: 2px 10px;
+    grid-template-areas: 'logo title' 'text text';
+}
+.header-info-item-logo {
+    grid-area: logo;
+    width: 10px;
+    height: 10px;
+}
+.header-info-item-title {
+    grid-area: title;
+    color: #ffffff;
+    font-size: 15px;
+}
+.header-info-item-title.header-info-item-title_phone {
+    font-weight: bold;
+}
+.header-info-item-text {
+    grid-area: text;
+    color: #828282;
+}
+.header-cart {
+    display: flex;
+}
+.header-cart-text {
+    color: #ffffff;
+    font-size: 15px;
+    margin-right: 10px
+
+}
+.header-cart-logo {
+    width: 10px;
+    height: 10px;
+}
+
+
+.header-bottom {
+    background-color: #282828;
+    padding: 20px 0
+
+}
+.header-bottom .header-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.header-menu ul {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 0 20px;
+}
+.header-menu a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+.header-menu a:hover {
+    color: #05ac9d
+}
