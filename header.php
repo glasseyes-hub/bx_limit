@@ -52,7 +52,7 @@
                 </p>
                 <p class="header-info-item">
                     <img class="header-info-item-logo" src="icons/001-phone-call.svg">
-                    <span class="header-info-item-title header-info-item-title_phone">+7 (812) 209-04-25</span>
+                    <span class="header-info-item-title">+7 (812) 209-04-25</span>
                     <span class="header-info-item-text">Единый контактный центр</span>
                 </p>
                 <p class="header-info-item">

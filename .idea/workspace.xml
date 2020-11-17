@@ -20,36 +20,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b613b4e7-12ab-4d92-829b-6c53941895f5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/css/footer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/footer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icons/001-phone-call.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icons/002-shopping-cart-empty-side-view.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icons/003-avatar.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icons/004-clock.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icons/005-search-interface-symbol.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icons/006-pen.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icons/007-placeholder.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icons/008-checked.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icons/009-scale.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icons/010-email.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icons/011-whatsapp.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icons/012-viber.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icons/013-telegram.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icons/014-instagram.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icons/015-vk.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icons/016-facebook.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icons/017-up-arrow.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icons/sprite-payment.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/map.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/rating_4_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/vybor-polzovatelej.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/limit/backup.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/limit/license/license.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/footer.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/footer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/010-email.svg" beforeDir="false" afterPath="$PROJECT_DIR$/icons/010-email.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/011-whatsapp.svg" beforeDir="false" afterPath="$PROJECT_DIR$/icons/011-whatsapp.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/012-viber.svg" beforeDir="false" afterPath="$PROJECT_DIR$/icons/012-viber.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/013-telegram.svg" beforeDir="false" afterPath="$PROJECT_DIR$/icons/013-telegram.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/014-instagram.svg" beforeDir="false" afterPath="$PROJECT_DIR$/icons/014-instagram.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/015-vk.svg" beforeDir="false" afterPath="$PROJECT_DIR$/icons/015-vk.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/016-facebook.svg" beforeDir="false" afterPath="$PROJECT_DIR$/icons/016-facebook.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/limit/backup.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/limit/license/license.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +84,8 @@
       <option name="presentableId" value="Default" />
       <updated>1605523770708</updated>
       <workItem from="1605523771879" duration="11426000" />
-      <workItem from="1605589673300" duration="12350000" />
+      <workItem from="1605589673300" duration="16009000" />
+      <workItem from="1605613968323" duration="5963000" />
     </task>
     <servers />
   </component>
@@ -117,6 +102,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
