@@ -1,7 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="b613b4e7-12ab-4d92-829b-6c53941895f5" name="Default Changelist" comment="" />
+    <list default="true" id="b613b4e7-12ab-4d92-829b-6c53941895f5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/css/footer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/footer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icons/001-phone-call.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icons/002-shopping-cart-empty-side-view.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icons/003-avatar.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icons/004-clock.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icons/005-search-interface-symbol.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icons/006-pen.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icons/007-placeholder.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icons/008-checked.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icons/009-scale.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icons/010-email.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icons/011-whatsapp.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icons/012-viber.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icons/013-telegram.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icons/014-instagram.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icons/015-vk.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icons/016-facebook.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icons/017-up-arrow.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icons/sprite-payment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/map.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/rating_4_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/vybor-polzovatelej.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/limit/backup.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/limit/license/license.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,12 +66,19 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1kMwSgKYONiuZjNPy7YX4c7Xmmh" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -43,11 +99,32 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1605523770708</updated>
-      <workItem from="1605523771879" duration="10753000" />
+      <workItem from="1605523771879" duration="11426000" />
+      <workItem from="1605589673300" duration="12350000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1605590178420">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605590178420" />
   </component>
 </project>
