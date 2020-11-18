@@ -93,7 +93,16 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p class="footer-payments"></p>
+                <p class="footer-payments">
+                    <ul>
+                        <li><img class="footer-payments-system footer-payments-system_mastercard" src="" alt=""></li>
+                        <li><img class="footer-payments-system footer-payments-system_visa" src="" alt=""></li>
+                        <li><img class="footer-payments-system footer-payments-system_yandex" src="" alt=""></li>
+                        <li><img class="footer-payments-system footer-payments-system_sberbank" src="" alt=""></li>
+                        <li><img class="footer-payments-system footer-payments-system_robocassa" src="" alt=""></li>
+                        <li><img class="footer-payments-system footer-payments-system_maestro" src="" alt=""></li>
+                    </ul>
+                </p>
                 <div class="footer-additional">
                     <p class="footer-additional-copyright">
                         © Межкомнатные и входные двери от производителя ПрофильДорс СПб
