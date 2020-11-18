@@ -66,7 +66,6 @@
                 <img class="header-cart-logo" src="icons/002-shopping-cart-empty-side-view.svg">
             </div>
         </div>
-
     </div>
     <div class="header-bottom">
         <div class="header-wrapper">
@@ -86,6 +85,32 @@
             <div class="header-search">
                 <img class="header-search-icon" src="icons/005-search-interface-symbol.svg">
             </div>
+        </div>
+    </div>
+    <div class="header-banner">
+        <img class="header-banner-img" src="img/banner1.png" alt="">
+    </div>
+    <div class="header-series">
+        <div class="header-wrapper">
+            <ul>
+                <li><a href="limit:8080" class="header-series-link">L</a></li>
+                <li><a href="limit:8080" class="header-series-link">U</a></li>
+                <li><a href="limit:8080" class="header-series-link">X</a></li>
+                <li><a href="limit:8080" class="header-series-link">XN</a></li>
+                <li><a href="limit:8080" class="header-series-link">N</a></li>
+                <li><a href="limit:8080" class="header-series-link">STP</a></li>
+                <li><a href="limit:8080" class="header-series-link">SMK</a></li>
+                <li><a href="limit:8080" class="header-series-link">LK</a></li>
+                <li><a href="limit:8080" class="header-series-link">E</a></li>
+                <li><a href="limit:8080" class="header-series-link">Z</a></li>
+                <li><a href="limit:8080" class="header-series-link">ZN</a></li>
+                <li><a href="limit:8080" class="header-series-link">NK</a></li>
+                <li><a href="limit:8080" class="header-series-link">STK</a></li>
+                <li><a href="limit:8080" class="header-series-link">VG</a></li>
+                <li><a href="limit:8080" class="header-series-link">AL</a></li>
+                <li><a href="limit:8080" class="header-series-link">AG</a></li>
+                <li><a href="limit:8080" class="header-series-link">AGK</a></li>
+            </ul>
         </div>
     </div>
 </header>

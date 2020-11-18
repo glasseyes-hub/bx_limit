@@ -151,3 +151,33 @@
     width: 25px;
     height: 25px;
 }
+
+.header-banner {
+    display: flex;
+}
+
+.header-series {
+    padding: 10px 0;
+    background-color: #fff;
+}
+.header-series ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+
+}
+.header-series-link {
+    display: inline-block;
+    color: #828282;
+    width: 40px;
+    line-height: 40px;
+    border: 1px solid #fff;
+    text-decoration: none;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.header-series-link:hover {
+    border: 1px solid #828282;
+    transition: .2s;
+}
