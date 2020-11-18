@@ -21,6 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b613b4e7-12ab-4d92-829b-6c53941895f5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/footer.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/footer.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -75,8 +76,16 @@
       <workItem from="1605523771879" duration="11426000" />
       <workItem from="1605589673300" duration="16009000" />
       <workItem from="1605613968323" duration="6659000" />
-      <workItem from="1605687943256" duration="2761000" />
+      <workItem from="1605687943256" duration="7032000" />
     </task>
+    <task id="LOCAL-00001" summary="Updated footer html">
+      <created>1605694101187</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1605694101187</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -97,7 +106,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Updated footer html" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated footer html" />
+    <MESSAGE value="Updated styles and html for the footer" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated styles and html for the footer" />
   </component>
   <component name="WindowStateProjectService">
     <state x="794" y="443" key="NewPhpFileDialog" timestamp="1605590178420">
