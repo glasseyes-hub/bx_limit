@@ -58,6 +58,9 @@
 .header-logo {
     display: flex;
 }
+.header-logo-img {
+    width: 150px;
+}
 .header-logo-info {
     width: 150px;
     margin-left: 20px;

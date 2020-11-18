@@ -47,7 +47,7 @@
         <div class="header-wrapper">
             <div class="header-info">
                 <p class="header-logo">
-                    <img class="header-logo-img" src="./img/logo.png">
+                    <img class="header-logo-img" src="icons/logo.svg">
                     <span class="header-logo-info">Официальный сайт фирменной сети Профиль Дорс</span>
                 </p>
                 <p class="header-info-item">
