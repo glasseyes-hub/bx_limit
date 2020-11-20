@@ -108,7 +108,7 @@
 }
 
 .footer-payments-system {
-    background-image: url(/icons/sprite-payment.png);
+    background-image: url(/src/icons/sprite-payment.png);
     width: 53px;
     height: 33px;
     background-color: red;
