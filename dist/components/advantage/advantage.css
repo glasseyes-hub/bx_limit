@@ -1,0 +1,15 @@
+.advantage {
+  display: grid;
+  grid-template-areas: 'title image' 'text image';
+  grid-template-columns: 1fr 200px;
+  grid-template-rows: 20px 1fr;
+  width: 400px;
+  height: 200px;
+  grid-gap: 20px; }
+  .advantage .advantage-title {
+    grid-area: title; }
+  .advantage .advantage-text {
+    grid-area: text; }
+  .advantage .advantage-image {
+    grid-area: image;
+    background-color: #676767; }

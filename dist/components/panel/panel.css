@@ -1,0 +1,7 @@
+.panel {
+  padding: 40px 0; }
+  .panel .panel-wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 1326px;
+    margin: 0 auto; }
