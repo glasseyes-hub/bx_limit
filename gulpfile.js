@@ -8,13 +8,11 @@ const pug = require("gulp-pug");
 
 function serve() {
   browserSync.init({
-    server: {
-      baseDir: "./dist",
-    },
+    server: "./dist",
   });
 
-  watch("src/**/*.html", html);
-  watch("src/css/**/*.sass", css);
+  watch("src/**/*.pug", html);
+  watch("src/**/*.sass", css);
 }
 
 function clear() {
@@ -29,10 +27,10 @@ function html() {
 }
 
 function css() {
-  return src("src/css/**/*.sass")
+  return src("src/**/*.sass")
     .pipe(sass())
     .pipe(autoprefixer())
-    .pipe(dest("dist/css"))
+    .pipe(dest("dist"))
     .pipe(browserSync.stream());
 }
 

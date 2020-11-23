@@ -1,0 +1,115 @@
+@import "../../css/variables"
+
+$stock_color: $color_main
+$hit_color: #ff2e2e
+$sale_color: #4cbf42
+
+.product
+  position: relative
+  display: grid
+  grid-auto-flow: row
+  grid-gap: 10px
+  justify-content: center
+  width: 260px
+  background-color: #fff
+  border: 1px solid #efefef
+  transition: .2s
+
+  &:hover
+    box-shadow: 0 0 15px rgba(0,0,0,0.1)
+    border-color: #ffffff
+    .product-info
+      .product-series
+        color: $color_main
+
+  .product-info
+    display: grid
+    grid-auto-flow: row
+    grid-gap: 10px
+    padding: 20px 20px 0
+    color: #000
+    text-decoration: none
+  
+    .product-labels
+      position: absolute
+      left: -5px
+      top: 10px
+      display: grid
+      grid-auto-flow: row
+      grid-gap: 5px
+
+      .product-label
+        padding: 5px 10px
+        text-align: center
+        opacity: .8
+        background-color: #282828
+        font-weight: bold
+        text-transform: uppercase
+        font-size: 12px
+
+        &_stock
+          color: $stock_color
+        &_hit
+          color: $hit_color
+        &_sale
+          color: $sale_color
+
+        &:hover
+          opacity: .9
+
+
+    .product-series
+      position: absolute
+      background-color: #fff
+      color: $color_bg_main
+      right: -8px
+      top: -8px
+      width: 40px
+      height: 40px
+      line-height: 40px
+      text-align: center
+      vertical-align: middle
+      font-weight: bold
+      border: 2px solid $color_bg_main
+      transition: .2s
+
+    .product-images
+      width: 220px
+      overflow: hidden
+      display: flex
+      justify-content: center
+
+    .product-title
+      padding: 10px
+      font-weight: bold
+
+  .product-bottom
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 0 20px 20px
+
+
+    .product-button
+      padding: 10px 15px
+      background-color: $color_main
+      border: none
+      color: #fff
+      font-weight: bold
+      text-transform: uppercase
+      transition: .2s
+      cursor: pointer
+
+      &:hover
+        background-color: #176e67
+
+    .product-price
+      font-size: 18px
+      font-weight: bold
+
+
+
+
+
+
+    
