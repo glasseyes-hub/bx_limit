@@ -8,20 +8,17 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    include layouts/header/header.pug
-    include layouts/products/products
-        include components/product/product
-        include components/product/product
-        include components/product/product
-        include components/product/product
+
+    include layouts/header/header
+    include components/products/products
     include layouts/panel/panel
         include components/advantage/advantage
         include components/advantage/advantage
         include components/advantage/advantage
-    include layouts/products/products
+    include components/products/products
         include components/result/result
         include components/result/result
         include components/result/result
-    include layouts/footer/footer.pug
+    include layouts/footer/footer
 </body>
 </html>

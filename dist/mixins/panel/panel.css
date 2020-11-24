@@ -1,0 +1,7 @@
+.panel {
+  padding: 40px 0; }
+  .panel_white {
+    background-color: #fff; }
+  .panel .panel-wrap {
+    width: 1326px;
+    margin: 0 auto; }
