@@ -1,3 +1,5 @@
+include mixins/panel/panel
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -8,14 +10,12 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
     include layouts/header/header
-    include components/products/products
-    include layouts/panel/panel
-        include components/advantage/advantage
-        include components/advantage/advantage
-        include components/advantage/advantage
-    include components/products/products
+    +panel('white', 'Новинки', '#')
+        include components/products/products
+    +panel
+        include components/advantages/advantages
+    +panel('white', 'Наши работы', '#')
         include components/result/result
         include components/result/result
         include components/result/result

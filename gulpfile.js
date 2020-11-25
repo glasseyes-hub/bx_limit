@@ -11,7 +11,7 @@ function serve() {
     server: "./dist",
   });
 
-  watch("src/**/*.mixins", html);
+  watch("src/**/*.pug", html);
   watch("src/**/*.sass", css);
 }
 
@@ -20,7 +20,7 @@ function clear() {
 }
 
 function html() {
-  return src(["src/**/*.mixins", "!src/layouts/**/*.mixins"])
+  return src(["src/**/*.pug", "!src/layouts/**/*.pug"])
     .pipe(pug())
     .pipe(dest("dist"))
     .pipe(browserSync.stream());
