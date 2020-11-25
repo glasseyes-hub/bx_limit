@@ -1,8 +1,10 @@
-mixin panel(color, title, link)
-    section.panel(class="panel_" + color)
-        if title && link
-            .panel-header
-                h1.panel-title #{title}
-                a(href=link).panel-all Посмотреть все
+mixin panel(parentClass, title, link)
+    - className = parentClass ? parentClass + "__panel" : '';
+
+    section.panel(class = className)
         .panel-wrap
+            if title && link
+                .panel-header
+                    h1.panel-title #{title}
+                    a(href=link).panel-all Посмотреть все
             block

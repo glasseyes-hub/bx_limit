@@ -1,25 +1,26 @@
 @import "../../sass/variables"
 
-.panel
-  padding: 40px 0
-  
-  &_white
-    background-color: #fff
+@mixin panel
+    padding: 40px 0
 
-  .panel-header
-    display: flex
-    justify-content: space-between
-    align-items: center
+    &_white
+      background-color: #fff
 
-    .panel-title
-      font-size: 28px
+    .panel-wrap
+      width: $size_wrap
+      margin: 0 auto
 
-    .panel-all
-      color: $color_text_grey
-      text-decoration: none
-      &:hover
-        text-decoration: underline
+      .panel-header
+        display: flex
+        justify-content: space-between
+        align-items: center
 
-  .panel-wrap
-    width: $size_wrap
-    margin: 0 auto
+        .panel-title
+          font-size: 28px
+
+        .panel-all
+          color: $color_text_grey
+          text-decoration: none
+          &:hover
+            text-decoration: underline
+

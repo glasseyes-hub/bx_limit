@@ -17,11 +17,21 @@ body
   grid-gap: 50px
 
 @import "mixins/panel/panel"
+@import "mixins/container/container"
+
+.products__panel
+  +panel
+  background-color: #fff
+
+.products__container
+  +container
+  grid-template-columns: repeat(4, 1fr)
+  justify-items: center
+
 
 @import "layouts/header/header"
 @import "layouts/footer/footer"
 
-@import "components/products/products"
-@import "components/products/product/product"
-@import "components/advantages/advantage/advantage"
+@import "components/product/product"
+@import "components/advantage/advantage"
 @import "components/result/result"
