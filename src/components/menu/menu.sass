@@ -1,0 +1,31 @@
+.menu
+  display: grid
+  grid-auto-flow: column
+  grid-gap: 0 30px
+  align-items: center
+
+  .menu-link
+    display: inline-block
+    text-decoration: none
+    color: #fff
+    text-transform: uppercase
+    padding: 15px 0
+
+    &:hover
+      color: #05ac9d
+
+    &_special
+      background-color: #05ac9d
+      display: flex
+      align-items: center
+      padding: 15px
+
+      &:hover
+        background-color: #00867b
+        color: #fff
+        transition: .2s
+
+      .menu-link-logo
+        width: 20px
+        height: 20px
+        margin-right: 5px

@@ -1,0 +1,18 @@
+.topMenu
+    ul.topMenu-left
+        each title in ['Двери оптом', 'Доставка', 'Установка', 'Замер', 'Вакансии']
+            li
+                a(href='limit:8080').topMenu-link= title
+    ul.topMenu-right
+        li
+            img(src="icons/003-avatar.svg").topMenu-icon
+            a(href="limit:8080").topMenu-link Написать директору
+        li
+            img(src="icons/006-pen.svg").topMenu-icon
+            a(href="limit:8080").topMenu-link Консультация дизайнера
+        li
+            img(src="icons/008-checked.svg").topMenu-icon
+            a(href="limit:8080").topMenu-link Наши работы
+        li
+            img(src="icons/007-placeholder.svg").topMenu-icon
+            a(href="limit:8080").topMenu-link Где купить

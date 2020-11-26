@@ -1,0 +1,11 @@
+mixin panel(className, title, link)
+    - className = className ? 'panel__' + className : '';
+
+    section.panel(class = className)
+        .panel-wrap
+            if title && link
+                .panel-header
+                    h1.panel-title #{title}
+                    a(href=link).panel-all Посмотреть все
+            .panel-grid
+                block

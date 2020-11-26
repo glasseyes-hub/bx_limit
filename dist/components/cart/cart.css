@@ -1,0 +1,11 @@
+.cart {
+  display: flex;
+  grid-area: cart; }
+  .cart .cart-text {
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 27px;
+    margin-right: 10px; }
+  .cart .cart-logo {
+    width: 25px;
+    height: 25px; }

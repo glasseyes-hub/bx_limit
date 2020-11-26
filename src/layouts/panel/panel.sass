@@ -1,0 +1,29 @@
+@import "../../sass/variables"
+
+@mixin panel
+  .panel
+    .panel-wrap
+      width: $size_wrap
+      margin: 0 auto
+
+      .panel-header
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+        .panel-title
+          font-size: 28px
+
+        .panel-all
+          color: $color_text_grey
+          text-decoration: none
+
+          &:hover
+            text-decoration: underline
+
+      .panel-grid
+        display: grid
+        grid-gap: 40px
+
+    @content
+

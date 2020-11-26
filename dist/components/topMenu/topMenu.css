@@ -1,0 +1,26 @@
+.topMenu {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0; }
+  .topMenu a {
+    text-decoration: none; }
+  .topMenu ul {
+    list-style-type: none; }
+  .topMenu li {
+    display: flex;
+    vertical-align: center; }
+  .topMenu .topMenu-left,
+  .topMenu .topMenu-right {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 0 20px; }
+  .topMenu .topMenu-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px; }
+  .topMenu .topMenu-link {
+    color: #828282;
+    line-height: 20px; }
+    .topMenu .topMenu-link:hover {
+      color: #000;
+      transition: .2s; }

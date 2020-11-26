@@ -1,0 +1,26 @@
+.menu {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 0 30px;
+  align-items: center; }
+  .menu .menu-link {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 15px 0; }
+    .menu .menu-link:hover {
+      color: #05ac9d; }
+    .menu .menu-link_special {
+      background-color: #05ac9d;
+      display: flex;
+      align-items: center;
+      padding: 15px; }
+      .menu .menu-link_special:hover {
+        background-color: #00867b;
+        color: #fff;
+        transition: .2s; }
+      .menu .menu-link_special .menu-link-logo {
+        width: 20px;
+        height: 20px;
+        margin-right: 5px; }

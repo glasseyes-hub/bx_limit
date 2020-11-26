@@ -1,0 +1,19 @@
+.worktime {
+  display: grid;
+  grid-area: worktime;
+  align-content: start;
+  justify-content: start;
+  grid-gap: 5px 10px;
+  grid-template-areas: 'logo title' 'text text'; }
+  .worktime .worktime-logo {
+    grid-area: logo;
+    width: 25px;
+    height: 25px; }
+  .worktime .worktime-title {
+    grid-area: title;
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 27px; }
+  .worktime .worktime-text {
+    grid-area: text;
+    color: #828282; }

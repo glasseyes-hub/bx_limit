@@ -1,35 +1,61 @@
-*
-  margin: 0
-  padding: 0
-
+@import "layouts/page/page"
+@import "layouts/panel/panel"
 
 @font-face
   font-family: Roboto /* Гарнитура шрифта */
   src: url(fonts/Roboto/Roboto-Regular.ttf) /* Путь к файлу со шрифтом */
 
-
-body
-  font-family: Roboto
-  font-size: 14px
-  background-color: #f5f5f5
-  display: grid
-  grid-auto-flow: row
-  grid-gap: 50px
-
-@import "mixins/panel/panel"
-@import "mixins/container/container"
-
-.products__panel
++page
   +panel
-  background-color: #fff
 
-.products__container
-  +container
-  grid-template-columns: repeat(4, 1fr)
-  justify-items: center
+    &__header-top
+      background-color: #f5f5f5
+
+    &__header-main
+      background-color: #282828
+      padding: 20px 0
+
+      .panel-grid
+        grid-column-gap: 60px
+        grid-template-areas: 'logo logo contacts worktime cart'
+
+        > *:last-child
+          justify-self: end
+
+    &__header-menu
+      background-color: #282828
+      .panel-grid
+        grid-auto-flow: column
+        justify-content: space-between
+
+    &__header-banner
+      .panel-wrap
+        width: 100%
+
+    &__header-series
+      background-color: #fff
+      padding: 10px 0
+
+    &__products
+      background-color: #fff
+
+      .panel-grid
+        grid-template-columns: repeat(4, 1fr)
+        justify-items: center
+
+  @import "components/topMenu/topMenu"
+  @import "components/logo/logo"
+  @import "components/contacts/contacts"
+  @import "components/worktime/worktime"
+  @import "components/cart/cart"
+  @import "components/menu/menu"
+  @import "components/search/search"
+  @import "components/banner/banner"
+  @import "components/seriesList/seriesList"
 
 
-@import "layouts/header/header"
+
+
 @import "layouts/footer/footer"
 
 @import "components/product/product"

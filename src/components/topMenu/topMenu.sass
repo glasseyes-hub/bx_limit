@@ -1,0 +1,33 @@
+.topMenu
+  display: flex
+  justify-content: space-between
+  padding: 12px 0
+
+  a
+    text-decoration: none
+
+  ul
+    list-style-type: none
+
+  li
+    display: flex
+    vertical-align: center
+
+  .topMenu-left,
+  .topMenu-right
+    display: grid
+    grid-auto-flow: column
+    grid-gap: 0 20px
+
+  .topMenu-icon
+    width: 20px
+    height: 20px
+    margin-right: 5px
+
+  .topMenu-link
+    color: #828282
+    line-height: 20px
+
+    &:hover
+      color: #000
+      transition: .2s
