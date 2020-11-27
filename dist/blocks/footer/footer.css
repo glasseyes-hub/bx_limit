@@ -1,0 +1,122 @@
+.footer {
+  display: grid;
+  grid-gap: 40px;
+  padding: 60px 0 20px;
+  background-color: #282828; }
+  .footer .panel .panel-wrap {
+    width: 1326px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 60px; }
+    .footer .panel .panel-wrap .panel-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .footer .panel .panel-wrap .panel-header .panel-title {
+        font-size: 28px; }
+      .footer .panel .panel-wrap .panel-header .panel-all {
+        color: #acacac;
+        text-decoration: none; }
+        .footer .panel .panel-wrap .panel-header .panel-all:hover {
+          text-decoration: underline; }
+    .footer .panel .panel-wrap .panel-grid {
+      display: grid;
+      grid-gap: 40px; }
+  .footer .panel .info {
+    display: grid;
+    grid-auto-flow: row;
+    grid-gap: 30px;
+    align-content: start;
+    color: #fff; }
+    .footer .panel .info .info-block .info-title {
+      text-transform: uppercase;
+      margin-bottom: 20px; }
+    .footer .panel .info .info-block .info-text_awards {
+      display: grid;
+      grid-auto-flow: column;
+      justify-content: start;
+      grid-gap: 20px; }
+    .footer .panel .info .info-block .info-text_payments {
+      display: grid;
+      grid-auto-flow: column;
+      justify-content: start;
+      grid-gap: 5px; }
+      .footer .panel .info .info-block .info-text_payments .info-payments-system {
+        background-image: url(/icons/sprite-payment.png);
+        width: 53px;
+        height: 33px;
+        background-color: red;
+        filter: grayscale(100%) brightness(40%); }
+      .footer .panel .info .info-block .info-text_payments .info-payments-system:hover {
+        filter: grayscale(0%) brightness(80%);
+        transition: .2s; }
+      .footer .panel .info .info-block .info-text_payments .info-payments-system_visa {
+        background-position: -0px 0; }
+      .footer .panel .info .info-block .info-text_payments .info-payments-system_mastercard {
+        background-position: -66px 0; }
+      .footer .panel .info .info-block .info-text_payments .info-payments-system_maestro {
+        background-position: -133px 0; }
+      .footer .panel .info .info-block .info-text_payments .info-payments-system_robocassa {
+        background-position: -199px 0; }
+      .footer .panel .info .info-block .info-text_payments .info-payments-system_yandex {
+        background-position: 0 -138px; }
+      .footer .panel .info .info-block .info-text_payments .info-payments-system_yandex {
+        background-position: 0 -185px; }
+  .footer .panel .contacts {
+    display: grid;
+    align-content: start;
+    grid-gap: 30px;
+    align-content: start; }
+    .footer .panel .contacts .contacts-block {
+      display: grid;
+      grid-gap: 20px; }
+      .footer .panel .contacts .contacts-block .contacts-title {
+        text-transform: uppercase;
+        color: #fff; }
+      .footer .panel .contacts .contacts-block .contacts-body {
+        display: grid;
+        grid-gap: 10px; }
+        .footer .panel .contacts .contacts-block .contacts-body .contacts-item {
+          display: grid;
+          grid-auto-flow: column;
+          grid-gap: 10px;
+          justify-content: start;
+          align-content: center;
+          color: #b5b5b5;
+          text-decoration: none; }
+          .footer .panel .contacts .contacts-block .contacts-body .contacts-item:hover {
+            color: #efefef; }
+          .footer .panel .contacts .contacts-block .contacts-body .contacts-item .contacts-logo {
+            width: 15px;
+            height: 15px; }
+        .footer .panel .contacts .contacts-block .contacts-body_social {
+          grid-auto-flow: column;
+          justify-content: start; }
+          .footer .panel .contacts .contacts-block .contacts-body_social .contacts-item {
+            justify-content: center;
+            background-color: #363636;
+            width: 35px;
+            height: 35px; }
+            .footer .panel .contacts .contacts-block .contacts-body_social .contacts-item:hover {
+              background-color: #404040;
+              transition: .2s; }
+            .footer .panel .contacts .contacts-block .contacts-body_social .contacts-item .contacts-logo {
+              width: 20px;
+              height: 20px; }
+      .footer .panel .contacts .contacts-block_social {
+        display: grid;
+        grid-auto-flow: column; }
+  .footer .panel section.copyright {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    grid-gap: 40px;
+    color: #727272; }
+    .footer .panel section.copyright .copyright-sitemap {
+      color: #727272;
+      text-decoration: none; }
+      .footer .panel section.copyright .copyright-sitemap:hover {
+        color: #efefef; }
+  .footer .panel__footer-top .panel-grid {
+    grid-auto-flow: column;
+    justify-content: space-between; }

@@ -1,0 +1,11 @@
+section.copyright {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-between;
+  grid-gap: 40px;
+  color: #727272; }
+  section.copyright .copyright-sitemap {
+    color: #727272;
+    text-decoration: none; }
+    section.copyright .copyright-sitemap:hover {
+      color: #efefef; }

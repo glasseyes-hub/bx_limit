@@ -2,32 +2,9 @@ include layouts/page/page
 include layouts/panel/panel
 
 +page('main page', ['styles.css'])
-    header.header
-        +panel('header-top')
-            include components/topMenu/topMenu
-        +panel('header-main')
-            include components/logo/logo
-            include components/contacts/contacts
-            include components/worktime/worktime
-            include components/cart/cart
-        +panel('header-menu')
-            include components/menu/menu
-            include components/search/seacrh
-        +panel('header-banner')
-            include components/banner/banner
-        +panel('header-series')
-            include components/seriesList/seriesList
+    include blocks/header/header
     main.content
-        +panel('products', 'Новинки', '#')
-            include components/product/product
-            include components/product/product
-            include components/product/product
-            include components/product/product
-            include components/product/product
-            include components/product/product
-        +panel('white', 'Наши работы', '#')
-            include components/result/result
-            include components/result/result
-            include components/result/result
-    footer.footer
-        include layouts/footer/footer
+        include blocks/products/products
+        include blocks/advantages/advantages
+        include blocks/works/works
+    include blocks/footer/footer

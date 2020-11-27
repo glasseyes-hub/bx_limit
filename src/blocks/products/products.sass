@@ -1,0 +1,12 @@
+@import "../../layouts/panel/panel"
+
+.products
+  +panel
+    &__products-panel
+    background-color: #fff
+    padding: 60px
+    @import "../../components/product/product"
+
+    .panel-grid
+      grid-template-columns: repeat(4, 1fr)
+      justify-items: center

@@ -1,0 +1,17 @@
+include ../../layouts/panel/panel
+
+header.header
+    +panel('header-top')
+        include ../../components/topMenu/topMenu
+    +panel('header-main')
+        include ../../components/logo/logo
+        include ../../components/phone/phone
+        include ../../components/worktime/worktime
+        include ../../components/cart/cart
+    +panel('header-menu')
+        include ../../components/menu/menu
+        include ../../components/search/seacrh
+    +panel('header-banner')
+        include ../../components/banner/banner
+    +panel('header-series')
+        include ../../components/seriesList/seriesList

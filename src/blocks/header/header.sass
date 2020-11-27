@@ -1,0 +1,41 @@
+@import "../../layouts/panel/panel"
+
+.header
+  +panel
+    &__header-top
+      background-color: #f5f5f5
+      @import "../../components/topMenu/topMenu"
+    &__header-main
+      background-color: #282828
+      padding: 20px 0
+      @import "../../components/logo/logo"
+      @import "../../components/phone/phone"
+      @import "../../components/worktime/worktime"
+      @import "../../components/cart/cart"
+
+      .panel-grid
+        grid-column-gap: 60px
+        grid-template-areas: 'logo logo contacts worktime cart'
+
+        > *:last-child
+          justify-self: end
+
+    &__header-menu
+      background-color: #282828
+      @import "../../components/menu/menu"
+      @import "../../components/search/search"
+
+      .panel-grid
+        grid-auto-flow: column
+        justify-content: space-between
+
+    &__header-banner
+      @import "../../components/banner/banner"
+
+      .panel-wrap
+        width: 100%
+
+    &__header-series
+      background-color: #fff
+      padding: 10px 0
+      @import "../../components/seriesList/seriesList"
