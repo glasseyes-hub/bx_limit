@@ -1,6 +1,5 @@
 .cart {
-  display: flex;
-  grid-area: cart; }
+  display: flex; }
   .cart .cart-text {
     color: #ffffff;
     font-size: 15px;

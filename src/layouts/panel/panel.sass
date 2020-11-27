@@ -1,16 +1,19 @@
 @import "../../sass/variables"
 
-@mixin panel
-  .panel
-    .panel-wrap
-      width: $size_wrap
-      margin: 0 auto
+@mixin panel($className: '', $bgc: transparent, $col: 1, $width: $size_wrap, $padding: 60px 0, $gap: 0)
+  .panel.panel__#{$className}
+    background-color: $bgc
 
+    .panel-wrap
+      width: $width
+      padding: $padding
+      margin: 0 auto
       display: grid
       grid-gap: 60px
 
       .panel-header
-        display: flex
+        display: grid
+        grid-auto-flow: column
         justify-content: space-between
         align-items: center
 
@@ -20,13 +23,18 @@
         .panel-all
           color: $color_text_grey
           text-decoration: none
-
           &:hover
             text-decoration: underline
 
       .panel-grid
         display: grid
-        grid-gap: 40px
+        grid-gap: $gap
+        @if $col == 'auto'
+          grid-auto-flow: column
+        @else
+          grid-template-columns: repeat($col, auto)
+        grid-row-gap: 40px
+        justify-content: space-between
 
     @content
 

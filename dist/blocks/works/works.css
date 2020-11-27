@@ -1,26 +1,32 @@
-.works .panel {
+.works .panel.panel__ {
+  background-color: transparent;
   background-color: #fff;
   padding: 60px 0; }
-  .works .panel .panel-wrap {
+  .works .panel.panel__ .panel-wrap {
     width: 1326px;
+    padding: 60px 0;
     margin: 0 auto;
     display: grid;
     grid-gap: 60px; }
-    .works .panel .panel-wrap .panel-header {
-      display: flex;
+    .works .panel.panel__ .panel-wrap .panel-header {
+      display: grid;
+      grid-auto-flow: column;
       justify-content: space-between;
       align-items: center; }
-      .works .panel .panel-wrap .panel-header .panel-title {
+      .works .panel.panel__ .panel-wrap .panel-header .panel-title {
         font-size: 28px; }
-      .works .panel .panel-wrap .panel-header .panel-all {
+      .works .panel.panel__ .panel-wrap .panel-header .panel-all {
         color: #acacac;
         text-decoration: none; }
-        .works .panel .panel-wrap .panel-header .panel-all:hover {
+        .works .panel.panel__ .panel-wrap .panel-header .panel-all:hover {
           text-decoration: underline; }
-    .works .panel .panel-wrap .panel-grid {
+    .works .panel.panel__ .panel-wrap .panel-grid {
       display: grid;
-      grid-gap: 40px; }
-  .works .panel .result {
+      grid-gap: 0;
+      grid-template-columns: repeat(1, auto);
+      grid-row-gap: 40px;
+      justify-content: space-between; }
+  .works .panel.panel__ .result {
     position: relative;
     display: grid;
     width: 400px;
@@ -30,7 +36,7 @@
     background-color: #fff;
     border: 1px solid #efefef;
     transition: .2s; }
-    .works .panel .result .result-series {
+    .works .panel.panel__ .result .result-series {
       position: absolute;
       background-color: #fff;
       color: #282828;
@@ -44,13 +50,13 @@
       font-weight: bold;
       border: 2px solid #282828;
       transition: .2s; }
-    .works .panel .result .result-image {
+    .works .panel.panel__ .result .result-image {
       grid-area: image; }
-    .works .panel .result .result-title {
+    .works .panel.panel__ .result .result-title {
       grid-area: title; }
-    .works .panel .result .result-text {
+    .works .panel.panel__ .result .result-text {
       grid-area: text;
       background-color: #676767; }
-  .works .panel .panel-grid {
+  .works .panel.panel__ .panel-grid {
     grid-auto-flow: column;
     justify-content: space-between; }

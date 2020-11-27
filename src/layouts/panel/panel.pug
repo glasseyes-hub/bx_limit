@@ -1,7 +1,5 @@
 mixin panel(className, title, link)
-    - className = className ? 'panel__' + className : '';
-
-    section.panel(class = className)
+    section.panel(class='panel__' + className)
         .panel-wrap
             if title && link
                 .panel-header

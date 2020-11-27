@@ -1,40 +1,46 @@
-.advantages .panel {
+.advantages .panel.panel__ {
+  background-color: transparent;
   padding: 60px 0; }
-  .advantages .panel .panel-wrap {
+  .advantages .panel.panel__ .panel-wrap {
     width: 1326px;
+    padding: 60px 0;
     margin: 0 auto;
     display: grid;
     grid-gap: 60px; }
-    .advantages .panel .panel-wrap .panel-header {
-      display: flex;
+    .advantages .panel.panel__ .panel-wrap .panel-header {
+      display: grid;
+      grid-auto-flow: column;
       justify-content: space-between;
       align-items: center; }
-      .advantages .panel .panel-wrap .panel-header .panel-title {
+      .advantages .panel.panel__ .panel-wrap .panel-header .panel-title {
         font-size: 28px; }
-      .advantages .panel .panel-wrap .panel-header .panel-all {
+      .advantages .panel.panel__ .panel-wrap .panel-header .panel-all {
         color: #acacac;
         text-decoration: none; }
-        .advantages .panel .panel-wrap .panel-header .panel-all:hover {
+        .advantages .panel.panel__ .panel-wrap .panel-header .panel-all:hover {
           text-decoration: underline; }
-    .advantages .panel .panel-wrap .panel-grid {
+    .advantages .panel.panel__ .panel-wrap .panel-grid {
       display: grid;
-      grid-gap: 40px; }
-  .advantages .panel .advantage {
+      grid-gap: 0;
+      grid-template-columns: repeat(1, auto);
+      grid-row-gap: 40px;
+      justify-content: space-between; }
+  .advantages .panel.panel__ .advantage {
     display: grid;
     grid-template-areas: 'title image' 'text image';
     grid-template-columns: auto 200px;
     grid-template-rows: 20px auto;
     grid-gap: 20px;
     width: 400px; }
-    .advantages .panel .advantage .advantage-title {
+    .advantages .panel.panel__ .advantage .advantage-title {
       grid-area: title; }
-    .advantages .panel .advantage .advantage-text {
+    .advantages .panel.panel__ .advantage .advantage-text {
       grid-area: text; }
-    .advantages .panel .advantage .advantage-image {
+    .advantages .panel.panel__ .advantage .advantage-image {
       grid-area: image;
       background-color: #676767;
       width: 200px;
       height: 200px; }
-  .advantages .panel .panel-grid {
+  .advantages .panel.panel__ .panel-grid {
     grid-auto-flow: column;
     justify-content: space-between; }

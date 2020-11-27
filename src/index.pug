@@ -1,10 +1,20 @@
-include layouts/page/page
+extends templates/page/page
+
 include layouts/panel/panel
 
-+page('main page', ['styles.css'])
-    include blocks/header/header
-    main.content
-        include blocks/products/products
-        include blocks/advantages/advantages
-        include blocks/works/works
-    include blocks/footer/footer
+block content
+    +panel('products', 'Новинки', '#')
+        include components/product/product
+        include components/product/product
+        include components/product/product
+        include components/product/product
+        include components/product/product
+        include components/product/product
+    +panel('advantages')
+        include components/advantage/advantage
+        include components/advantage/advantage
+        include components/advantage/advantage
+    +panel('works', 'Наши работы', '#')
+        include components/work/work
+        include components/work/work
+        include components/work/work

@@ -1,12 +1,14 @@
-@import "layouts/page/page"
+@import "templates/page/page"
+@import "layouts/panel/panel"
 
 @font-face
   font-family: Roboto /* Гарнитура шрифта */
   src: url(fonts/Roboto/Roboto-Regular.ttf) /* Путь к файлу со шрифтом */
 
 +page
-  @import "blocks/header/header"
-  @import "blocks/products/products"
-  @import "blocks/advantages/advantages"
-  @import "blocks/works/works"
-  @import "blocks/footer/footer"
+  +panel('products', #fff, 4)
+    @import "components/product/product"
+  +panel('advantages', $col: 3)
+    @import "components/advantage/advantage"
+  +panel('works', #fff, $col: 3)
+    @import "components/work/work"

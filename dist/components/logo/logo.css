@@ -1,6 +1,5 @@
 .logo {
-  display: flex;
-  grid-area: logo; }
+  display: flex; }
   .logo .logo-img {
     width: 150px; }
   .logo .logo-info {

@@ -1,17 +1,10 @@
 @import "../../layouts/panel/panel"
 
 .footer
-  display: grid
-  grid-gap: 40px
-  padding: 60px 0 20px
-  background-color: #282828
-  +panel
+  +panel('footer-top', #282828, 3, $gap: 40px, $padding: 60px 0 0)
     @import "../../components/info/info"
     @import "../../components/contacts/contacts"
     @import "../../components/map/map"
-    @import "../../components/copyright/copyright"
 
-    &__footer-top
-      .panel-grid
-        grid-auto-flow: column
-        justify-content: space-between
+  +panel('footer-bottom', #282828)
+    @import "../../components/copyright/copyright"
