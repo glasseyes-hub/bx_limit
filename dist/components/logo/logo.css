@@ -1,8 +1,7 @@
 .logo {
-  display: flex; }
+  display: grid;
+  grid-gap: 10px; }
   .logo .logo-img {
     width: 150px; }
-  .logo .logo-info {
-    width: 150px;
-    margin-left: 20px;
-    color: #828282; }
+  .logo .logo-text {
+    color: #757575; }

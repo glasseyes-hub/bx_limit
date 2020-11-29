@@ -1,19 +1,13 @@
 .advantage
   display: grid
-  grid-template-areas: 'title image' 'text image'
-  grid-template-columns: auto 200px
-  grid-template-rows: 20px auto
-  grid-gap: 20px
-  width: 400px
+  grid-auto-flow: column
+  grid-gap: 40px
 
-  .advantage-title
-    grid-area: title
-
-  .advantage-text
-    grid-area: text
+  .advantage-info
+    display: grid
+    align-content: start
+    grid-gap: 20px
 
   .advantage-image
-    grid-area: image
-    background-color: #676767
-    width: 200px
-    height: 200px
+    width: 100px
+    height: 100px

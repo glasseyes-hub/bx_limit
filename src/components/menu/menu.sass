@@ -1,31 +1,34 @@
+@import "../../sass/variables"
+
 .menu
   display: grid
   grid-auto-flow: column
-  grid-gap: 0 30px
   align-items: center
+  grid-gap: $gap
 
   .menu-link
     display: inline-block
     text-decoration: none
-    color: #fff
+    color: $font2_color_light_max
     text-transform: uppercase
-    padding: 15px 0
+    padding: $padding 0
 
     &:hover
-      color: #05ac9d
+      color: $font_color
 
     &_special
-      background-color: #05ac9d
-      display: flex
+      background-color: $font_color
+      display: grid
+      grid-auto-flow: column
+      grid-gap: $gap_small_max
       align-items: center
-      padding: 15px
+      padding: $padding_small
 
       &:hover
-        background-color: #00867b
-        color: #fff
-        transition: .2s
+        background-color: $font_color_dark
+        color: $font2_color_light_max
+        transition: $animation_transition
 
       .menu-link-logo
-        width: 20px
-        height: 20px
-        margin-right: 5px
+        width: $icon_size_small
+        height: $icon_size_small

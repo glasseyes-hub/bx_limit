@@ -1,8 +1,9 @@
 .phone {
   display: grid;
   align-content: start;
+  align-items: center;
   justify-content: start;
-  grid-gap: 5px 10px;
+  grid-gap: 10px;
   grid-template-areas: 'logo title' 'text text'; }
   .phone .phone-logo {
     grid-area: logo;
@@ -10,9 +11,8 @@
     height: 25px; }
   .phone .phone-title {
     grid-area: title;
-    color: #ffffff;
-    font-size: 15px;
-    line-height: 27px; }
+    color: white;
+    font-size: 16px; }
   .phone .phone-text {
     grid-area: text;
-    color: #828282; }
+    color: #757575; }

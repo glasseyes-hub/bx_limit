@@ -1,10 +1,11 @@
 .cart {
-  display: flex; }
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  grid-gap: 10px; }
   .cart .cart-text {
-    color: #ffffff;
-    font-size: 15px;
-    line-height: 27px;
-    margin-right: 10px; }
+    color: white;
+    font-size: 16px; }
   .cart .cart-logo {
     width: 25px;
     height: 25px; }

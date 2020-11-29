@@ -1,17 +1,19 @@
+@import "../../sass/variables"
 @import "../../layouts/panel/panel"
 
 header.header
-  +panel('header-top', #f5f5f5, $padding: 0px)
+  +panel('header-top', $background_color80, $col:2, $padding: 0)
     @import "../../components/topMenu/topMenu"
-  +panel('header-main', #282828, 4, $padding: 20px 0)
+    @import "../../components/additionalMenu/additionalMenu"
+  +panel('header-main', $background_color, 4, $padding: $padding 0)
     @import "../../components/logo/logo"
     @import "../../components/phone/phone"
     @import "../../components/worktime/worktime"
     @import "../../components/cart/cart"
-  +panel('header-menu', #282828, 2, $padding: 0)
+  +panel('header-menu', $background_color, 2, $padding: 0)
     @import "../../components/menu/menu"
     @import "../../components/search/search"
   +panel('header-banner', $width: 100%, $padding: 0)
     @import "../../components/banner/banner"
-  +panel('header-seriesList', #fff, $col: auto, $padding: 10px 0)
+  +panel('header-seriesList', $background_color100, $padding: $padding_small 0)
     @import "../../components/series/series"

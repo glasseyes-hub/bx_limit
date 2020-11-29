@@ -1,21 +1,23 @@
+@import "../../sass/variables"
+
 .phone
   display: grid
   align-content: start
+  align-items: center
   justify-content: start
-  grid-gap: 5px 10px
+  grid-gap: $gap_small_mid
   grid-template-areas: 'logo title' 'text text'
 
   .phone-logo
     grid-area: logo
-    width: 25px
-    height: 25px
+    width: $icon_size_small
+    height: $icon_size_small
 
   .phone-title
     grid-area: title
-    color: #ffffff
-    font-size: 15px
-    line-height: 27px
+    color: $font2_color_light_max
+    font-size: $font_size_large
 
   .phone-text
     grid-area: text
-    color: #828282
+    color: $font2_color_light

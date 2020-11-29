@@ -9,10 +9,8 @@
   border: 1px solid #efefef;
   transition: .2s; }
   .product:hover {
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
     border-color: #ffffff; }
-    .product:hover .product-info .product-series {
-      color: #05ac9d; }
   .product .product-info {
     display: grid;
     grid-auto-flow: row;
@@ -47,7 +45,7 @@
       position: absolute;
       background-color: #fff;
       color: #282828;
-      right: -8px;
+      left: -8px;
       top: -8px;
       width: 40px;
       height: 40px;

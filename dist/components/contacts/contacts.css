@@ -34,7 +34,7 @@
           width: 35px;
           height: 35px; }
           .contacts .contacts-block .contacts-body_social .contacts-item:hover {
-            background-color: #404040;
+            background-color: #4e4e4e;
             transition: .2s; }
           .contacts .contacts-block .contacts-body_social .contacts-item .contacts-logo {
             width: 20px;

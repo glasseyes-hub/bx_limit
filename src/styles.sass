@@ -1,3 +1,4 @@
+@import "sass/variables"
 @import "templates/page/page"
 @import "layouts/panel/panel"
 
@@ -5,10 +6,17 @@
   font-family: Roboto /* Гарнитура шрифта */
   src: url(fonts/Roboto/Roboto-Regular.ttf) /* Путь к файлу со шрифтом */
 
-+page
-  +panel('products', #fff, 4)
-    @import "components/product/product"
-  +panel('advantages', $col: 3)
-    @import "components/advantage/advantage"
-  +panel('works', #fff, $col: 3)
-    @import "components/work/work"
+
+*
+  margin: 0
+  padding: 0
+
+body
+  font-family: Roboto
+  +page
+    +panel('products', $background_color100, 4)
+      @import "components/product/product"
+    +panel('advantages', $col: 3)
+      @import "components/advantage/advantage"
+    +panel('works', $background_color100, 3)
+      @import "components/work/work"

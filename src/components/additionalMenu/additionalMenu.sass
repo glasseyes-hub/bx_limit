@@ -1,6 +1,6 @@
 @import "../../sass/variables"
 
-.topMenu
+.additionalMenu
   display: grid
   grid-auto-flow: column
   grid-gap: $gap_small
@@ -9,17 +9,19 @@
   a
     text-decoration: none
 
-  .topMenu-link
+  .additionalMenu-link
     display: grid
     grid-auto-flow: column
-    grid-gap: $gap_small_mid
+    grid-gap: $gap_small_max
     align-items: center
     color: $font2_color_light
     &:hover
       color: $font2_color
       transition: $animation_transition
 
-    .topMenu-icon
+    .additionalMenu-icon
       width: $icon_size_small
       height: $icon_size_small
+
+
 

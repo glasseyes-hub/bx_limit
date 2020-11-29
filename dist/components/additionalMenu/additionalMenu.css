@@ -1,19 +1,19 @@
-.topMenu {
+.additionalMenu {
   display: grid;
   grid-auto-flow: column;
   grid-gap: 20px;
   padding: 10px; }
-  .topMenu a {
+  .additionalMenu a {
     text-decoration: none; }
-  .topMenu .topMenu-link {
+  .additionalMenu .additionalMenu-link {
     display: grid;
     grid-auto-flow: column;
-    grid-gap: 10px;
+    grid-gap: 5px;
     align-items: center;
     color: #757575; }
-    .topMenu .topMenu-link:hover {
+    .additionalMenu .additionalMenu-link:hover {
       color: #282828;
       transition: 0.2s; }
-    .topMenu .topMenu-link .topMenu-icon {
+    .additionalMenu .additionalMenu-link .additionalMenu-icon {
       width: 25px;
       height: 25px; }

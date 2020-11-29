@@ -1,12 +1,15 @@
+@import "../../sass/variables"
+
 .cart
-  display: flex
+  display: grid
+  grid-auto-flow: column
+  align-items: center
+  grid-gap: $gap_small_mid
 
   .cart-text
-    color: #ffffff
-    font-size: 15px
-    line-height: 27px
-    margin-right: 10px
+    color: $font2_color_light_max
+    font-size: $font_size_large
 
   .cart-logo
-    width: 25px
-    height: 25px
+    width: $icon_size_small
+    height: $icon_size_small
