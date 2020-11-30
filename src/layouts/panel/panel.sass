@@ -1,6 +1,6 @@
 @import "../../sass/variables"
 
-@mixin panel($className: '', $bgc: transparent, $col: auto, $width: $wrap, $padding: $padding_large_mid 0, $gap: $gap, $justify: space-between, $align: center)
+@mixin panel($className: '', $bgc: transparent, $col: auto, $width: $wrap, $padding: $padding_large 0, $gap: $gap, $justify: space-between, $align: center)
   .panel.panel__#{$className}
     background-color: $bgc
 
@@ -9,7 +9,7 @@
       padding: $padding
       margin: 0 auto
       display: grid
-      grid-gap: $gap_large
+      grid-gap: $gap
 
       .panel-header
         display: grid
@@ -21,7 +21,7 @@
           font-size: $title_size_large
 
         .panel-all
-          color: $font_color_dark_mid
+          color: $font2_color_light
           text-decoration: none
           &:hover
             text-decoration: underline

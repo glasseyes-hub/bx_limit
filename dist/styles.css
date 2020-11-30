@@ -7,640 +7,735 @@
   padding: 0; }
 
 body {
-  font-family: Roboto; }
-  body section.page {
+  font-family: Roboto;
+  color: #282828; }
+  body section.bannerPage {
     display: grid;
     grid-auto-flow: row;
     grid-gap: 80px;
     background-color: #f4f4f4;
     font-size: 14px; }
-    body section.page .strong {
-      color: #05ac9d; }
-    body section.page header.header .panel.panel__header-top {
-      background-color: #f4f4f4; }
-      body section.page header.header .panel.panel__header-top .panel-wrap {
+    body section.bannerPage .header .panel.panel__header-top {
+      background-color: white; }
+      body section.bannerPage .header .panel.panel__header-top .panel-wrap {
         width: 1326px;
         padding: 0;
         margin: 0 auto;
         display: grid;
-        grid-gap: 80px; }
-        body section.page header.header .panel.panel__header-top .panel-wrap .panel-header {
+        grid-gap: 40px; }
+        body section.bannerPage .header .panel.panel__header-top .panel-wrap .panel-header {
           display: grid;
           grid-auto-flow: column;
           justify-content: space-between;
           align-items: center; }
-          body section.page header.header .panel.panel__header-top .panel-wrap .panel-header .panel-title {
+          body section.bannerPage .header .panel.panel__header-top .panel-wrap .panel-header .panel-title {
             font-size: 28px; }
-          body section.page header.header .panel.panel__header-top .panel-wrap .panel-header .panel-all {
-            color: #047a70;
+          body section.bannerPage .header .panel.panel__header-top .panel-wrap .panel-header .panel-all {
+            color: #757575;
             text-decoration: none; }
-            body section.page header.header .panel.panel__header-top .panel-wrap .panel-header .panel-all:hover {
+            body section.bannerPage .header .panel.panel__header-top .panel-wrap .panel-header .panel-all:hover {
               text-decoration: underline; }
-        body section.page header.header .panel.panel__header-top .panel-wrap .panel-grid {
+        body section.bannerPage .header .panel.panel__header-top .panel-wrap .panel-grid {
           display: grid;
           grid-gap: 40px;
           grid-template-columns: repeat(2, auto);
           justify-content: space-between;
           align-items: center; }
-      body section.page header.header .panel.panel__header-top .topMenu {
+      body section.bannerPage .header .panel.panel__header-top .topMenu {
         display: grid;
         grid-auto-flow: column;
         grid-gap: 20px;
-        padding: 10px; }
-        body section.page header.header .panel.panel__header-top .topMenu a {
+        padding: 10px 0; }
+        body section.bannerPage .header .panel.panel__header-top .topMenu a {
           text-decoration: none; }
-        body section.page header.header .panel.panel__header-top .topMenu .topMenu-link {
+        body section.bannerPage .header .panel.panel__header-top .topMenu .topMenu-link {
           display: grid;
           grid-auto-flow: column;
           grid-gap: 10px;
           align-items: center;
           color: #757575; }
-          body section.page header.header .panel.panel__header-top .topMenu .topMenu-link:hover {
+          body section.bannerPage .header .panel.panel__header-top .topMenu .topMenu-link:hover {
             color: #282828;
             transition: 0.2s; }
-          body section.page header.header .panel.panel__header-top .topMenu .topMenu-link .topMenu-icon {
+          body section.bannerPage .header .panel.panel__header-top .topMenu .topMenu-link .topMenu-icon {
             width: 25px;
             height: 25px; }
-      body section.page header.header .panel.panel__header-top .additionalMenu {
+      body section.bannerPage .header .panel.panel__header-top .additionalMenu {
         display: grid;
         grid-auto-flow: column;
         grid-gap: 20px;
-        padding: 10px; }
-        body section.page header.header .panel.panel__header-top .additionalMenu a {
+        padding: 10px 0; }
+        body section.bannerPage .header .panel.panel__header-top .additionalMenu a {
           text-decoration: none; }
-        body section.page header.header .panel.panel__header-top .additionalMenu .additionalMenu-link {
+        body section.bannerPage .header .panel.panel__header-top .additionalMenu .additionalMenu-link {
           display: grid;
           grid-auto-flow: column;
           grid-gap: 5px;
           align-items: center;
           color: #757575; }
-          body section.page header.header .panel.panel__header-top .additionalMenu .additionalMenu-link:hover {
+          body section.bannerPage .header .panel.panel__header-top .additionalMenu .additionalMenu-link:hover {
             color: #282828;
             transition: 0.2s; }
-          body section.page header.header .panel.panel__header-top .additionalMenu .additionalMenu-link .additionalMenu-icon {
+          body section.bannerPage .header .panel.panel__header-top .additionalMenu .additionalMenu-link .additionalMenu-icon {
             width: 25px;
             height: 25px; }
-    body section.page header.header .panel.panel__header-main {
+    body section.bannerPage .header .panel.panel__header-main {
       background-color: #282828; }
-      body section.page header.header .panel.panel__header-main .panel-wrap {
+      body section.bannerPage .header .panel.panel__header-main .panel-wrap {
         width: 1326px;
         padding: 20px 0;
         margin: 0 auto;
         display: grid;
-        grid-gap: 80px; }
-        body section.page header.header .panel.panel__header-main .panel-wrap .panel-header {
+        grid-gap: 40px; }
+        body section.bannerPage .header .panel.panel__header-main .panel-wrap .panel-header {
           display: grid;
           grid-auto-flow: column;
           justify-content: space-between;
           align-items: center; }
-          body section.page header.header .panel.panel__header-main .panel-wrap .panel-header .panel-title {
+          body section.bannerPage .header .panel.panel__header-main .panel-wrap .panel-header .panel-title {
             font-size: 28px; }
-          body section.page header.header .panel.panel__header-main .panel-wrap .panel-header .panel-all {
-            color: #047a70;
+          body section.bannerPage .header .panel.panel__header-main .panel-wrap .panel-header .panel-all {
+            color: #757575;
             text-decoration: none; }
-            body section.page header.header .panel.panel__header-main .panel-wrap .panel-header .panel-all:hover {
+            body section.bannerPage .header .panel.panel__header-main .panel-wrap .panel-header .panel-all:hover {
               text-decoration: underline; }
-        body section.page header.header .panel.panel__header-main .panel-wrap .panel-grid {
+        body section.bannerPage .header .panel.panel__header-main .panel-wrap .panel-grid {
           display: grid;
           grid-gap: 40px;
           grid-template-columns: repeat(4, auto);
           justify-content: space-between;
           align-items: center; }
-      body section.page header.header .panel.panel__header-main .logo {
+      body section.bannerPage .header .panel.panel__header-main .logo {
         display: grid;
-        grid-gap: 10px; }
-        body section.page header.header .panel.panel__header-main .logo .logo-img {
+        grid-gap: 10px;
+        text-decoration: none; }
+        body section.bannerPage .header .panel.panel__header-main .logo .logo-img {
           width: 150px; }
-        body section.page header.header .panel.panel__header-main .logo .logo-text {
+        body section.bannerPage .header .panel.panel__header-main .logo .logo-text {
           color: #757575; }
-      body section.page header.header .panel.panel__header-main .phone {
+      body section.bannerPage .header .panel.panel__header-main .phone {
         display: grid;
         align-content: start;
         align-items: center;
         justify-content: start;
         grid-gap: 10px;
         grid-template-areas: 'logo title' 'text text'; }
-        body section.page header.header .panel.panel__header-main .phone .phone-logo {
+        body section.bannerPage .header .panel.panel__header-main .phone .phone-logo {
           grid-area: logo;
           width: 25px;
           height: 25px; }
-        body section.page header.header .panel.panel__header-main .phone .phone-title {
+        body section.bannerPage .header .panel.panel__header-main .phone .phone-title {
           grid-area: title;
           color: white;
           font-size: 16px; }
-        body section.page header.header .panel.panel__header-main .phone .phone-text {
+        body section.bannerPage .header .panel.panel__header-main .phone .phone-text {
           grid-area: text;
           color: #757575; }
-      body section.page header.header .panel.panel__header-main .worktime {
+      body section.bannerPage .header .panel.panel__header-main .worktime {
         display: grid;
         align-content: start;
         align-items: center;
         justify-content: start;
         grid-gap: 10px;
         grid-template-areas: 'logo title' 'text text'; }
-        body section.page header.header .panel.panel__header-main .worktime .worktime-logo {
+        body section.bannerPage .header .panel.panel__header-main .worktime .worktime-logo {
           grid-area: logo;
           width: 25px;
           height: 25px; }
-        body section.page header.header .panel.panel__header-main .worktime .worktime-title {
+        body section.bannerPage .header .panel.panel__header-main .worktime .worktime-title {
           grid-area: title;
           color: white;
           font-size: 16px; }
-        body section.page header.header .panel.panel__header-main .worktime .worktime-text {
+        body section.bannerPage .header .panel.panel__header-main .worktime .worktime-text {
           grid-area: text;
           color: #757575; }
-      body section.page header.header .panel.panel__header-main .cart {
+      body section.bannerPage .header .panel.panel__header-main .cart {
         display: grid;
         grid-auto-flow: column;
         align-items: center;
         grid-gap: 10px; }
-        body section.page header.header .panel.panel__header-main .cart .cart-text {
+        body section.bannerPage .header .panel.panel__header-main .cart .cart-text {
           color: white;
           font-size: 16px; }
-        body section.page header.header .panel.panel__header-main .cart .cart-logo {
+        body section.bannerPage .header .panel.panel__header-main .cart .cart-logo {
           width: 25px;
           height: 25px; }
-    body section.page header.header .panel.panel__header-menu {
-      background-color: #282828; }
-      body section.page header.header .panel.panel__header-menu .panel-wrap {
+    body section.bannerPage .header .panel.panel__header-menu {
+      background-color: #1b1b1b; }
+      body section.bannerPage .header .panel.panel__header-menu .panel-wrap {
         width: 1326px;
         padding: 0;
         margin: 0 auto;
         display: grid;
-        grid-gap: 80px; }
-        body section.page header.header .panel.panel__header-menu .panel-wrap .panel-header {
+        grid-gap: 40px; }
+        body section.bannerPage .header .panel.panel__header-menu .panel-wrap .panel-header {
           display: grid;
           grid-auto-flow: column;
           justify-content: space-between;
           align-items: center; }
-          body section.page header.header .panel.panel__header-menu .panel-wrap .panel-header .panel-title {
+          body section.bannerPage .header .panel.panel__header-menu .panel-wrap .panel-header .panel-title {
             font-size: 28px; }
-          body section.page header.header .panel.panel__header-menu .panel-wrap .panel-header .panel-all {
-            color: #047a70;
+          body section.bannerPage .header .panel.panel__header-menu .panel-wrap .panel-header .panel-all {
+            color: #757575;
             text-decoration: none; }
-            body section.page header.header .panel.panel__header-menu .panel-wrap .panel-header .panel-all:hover {
+            body section.bannerPage .header .panel.panel__header-menu .panel-wrap .panel-header .panel-all:hover {
               text-decoration: underline; }
-        body section.page header.header .panel.panel__header-menu .panel-wrap .panel-grid {
+        body section.bannerPage .header .panel.panel__header-menu .panel-wrap .panel-grid {
           display: grid;
           grid-gap: 40px;
           grid-template-columns: repeat(2, auto);
           justify-content: space-between;
           align-items: center; }
-      body section.page header.header .panel.panel__header-menu .menu {
+      body section.bannerPage .header .panel.panel__header-menu .menu {
         display: grid;
         grid-auto-flow: column;
         align-items: center;
         grid-gap: 40px; }
-        body section.page header.header .panel.panel__header-menu .menu .menu-link {
+        body section.bannerPage .header .panel.panel__header-menu .menu .menu-link {
           display: inline-block;
           text-decoration: none;
           color: white;
           text-transform: uppercase;
           padding: 10px 0; }
-          body section.page header.header .panel.panel__header-menu .menu .menu-link:hover {
+          body section.bannerPage .header .panel.panel__header-menu .menu .menu-link:hover {
             color: #05ac9d; }
-          body section.page header.header .panel.panel__header-menu .menu .menu-link_special {
+          body section.bannerPage .header .panel.panel__header-menu .menu .menu-link_special {
             background-color: #05ac9d;
             display: grid;
             grid-auto-flow: column;
             grid-gap: 5px;
             align-items: center;
             padding: 10px; }
-            body section.page header.header .panel.panel__header-menu .menu .menu-link_special:hover {
+            body section.bannerPage .header .panel.panel__header-menu .menu .menu-link_special:hover {
               background-color: #049386;
               color: white;
               transition: 0.2s; }
-            body section.page header.header .panel.panel__header-menu .menu .menu-link_special .menu-link-logo {
+            body section.bannerPage .header .panel.panel__header-menu .menu .menu-link_special .menu-link-logo {
               width: 25px;
               height: 25px; }
-      body section.page header.header .panel.panel__header-menu .search {
+      body section.bannerPage .header .panel.panel__header-menu .search {
         display: flex;
         align-items: center; }
-        body section.page header.header .panel.panel__header-menu .search .search-icon {
+        body section.bannerPage .header .panel.panel__header-menu .search .search-icon {
           width: 25px;
           height: 25px; }
-    body section.page header.header .panel.panel__header-banner {
+    body section.bannerPage .panel.panel__banner {
       background-color: transparent; }
-      body section.page header.header .panel.panel__header-banner .panel-wrap {
+      body section.bannerPage .panel.panel__banner .panel-wrap {
         width: 100%;
         padding: 0;
         margin: 0 auto;
         display: grid;
-        grid-gap: 80px; }
-        body section.page header.header .panel.panel__header-banner .panel-wrap .panel-header {
+        grid-gap: 40px; }
+        body section.bannerPage .panel.panel__banner .panel-wrap .panel-header {
           display: grid;
           grid-auto-flow: column;
           justify-content: space-between;
           align-items: center; }
-          body section.page header.header .panel.panel__header-banner .panel-wrap .panel-header .panel-title {
+          body section.bannerPage .panel.panel__banner .panel-wrap .panel-header .panel-title {
             font-size: 28px; }
-          body section.page header.header .panel.panel__header-banner .panel-wrap .panel-header .panel-all {
-            color: #047a70;
+          body section.bannerPage .panel.panel__banner .panel-wrap .panel-header .panel-all {
+            color: #757575;
             text-decoration: none; }
-            body section.page header.header .panel.panel__header-banner .panel-wrap .panel-header .panel-all:hover {
+            body section.bannerPage .panel.panel__banner .panel-wrap .panel-header .panel-all:hover {
               text-decoration: underline; }
-        body section.page header.header .panel.panel__header-banner .panel-wrap .panel-grid {
+        body section.bannerPage .panel.panel__banner .panel-wrap .panel-grid {
           display: grid;
           grid-gap: 40px;
           grid-template-columns: repeat(auto, auto);
           grid-auto-flow: column;
           justify-content: space-between;
           align-items: center; }
-      body section.page header.header .panel.panel__header-banner .banner {
+      body section.bannerPage .panel.panel__banner .banner {
         display: flex; }
-    body section.page header.header .panel.panel__header-seriesList {
+        body section.bannerPage .panel.panel__banner .banner .banner-img {
+          width: 100%; }
+    body section.bannerPage .panel.panel__seriesList {
       background-color: white; }
-      body section.page header.header .panel.panel__header-seriesList .panel-wrap {
+      body section.bannerPage .panel.panel__seriesList .panel-wrap {
         width: 1326px;
         padding: 10px 0;
         margin: 0 auto;
         display: grid;
-        grid-gap: 80px; }
-        body section.page header.header .panel.panel__header-seriesList .panel-wrap .panel-header {
+        grid-gap: 40px; }
+        body section.bannerPage .panel.panel__seriesList .panel-wrap .panel-header {
           display: grid;
           grid-auto-flow: column;
           justify-content: space-between;
           align-items: center; }
-          body section.page header.header .panel.panel__header-seriesList .panel-wrap .panel-header .panel-title {
+          body section.bannerPage .panel.panel__seriesList .panel-wrap .panel-header .panel-title {
             font-size: 28px; }
-          body section.page header.header .panel.panel__header-seriesList .panel-wrap .panel-header .panel-all {
-            color: #047a70;
+          body section.bannerPage .panel.panel__seriesList .panel-wrap .panel-header .panel-all {
+            color: #757575;
             text-decoration: none; }
-            body section.page header.header .panel.panel__header-seriesList .panel-wrap .panel-header .panel-all:hover {
+            body section.bannerPage .panel.panel__seriesList .panel-wrap .panel-header .panel-all:hover {
               text-decoration: underline; }
-        body section.page header.header .panel.panel__header-seriesList .panel-wrap .panel-grid {
+        body section.bannerPage .panel.panel__seriesList .panel-wrap .panel-grid {
           display: grid;
           grid-gap: 40px;
           grid-template-columns: repeat(auto, auto);
           grid-auto-flow: column;
           justify-content: space-between;
           align-items: center; }
-      body section.page header.header .panel.panel__header-seriesList .series {
+      body section.bannerPage .panel.panel__seriesList .series {
         display: inline-block;
-        color: #828282;
+        color: #757575;
         width: 40px;
         line-height: 40px;
-        border: 2px solid #ffffff;
+        border: 2px solid transparent;
         text-decoration: none;
         vertical-align: middle;
         text-align: center;
-        transition: .2s; }
-        body section.page header.header .panel.panel__header-seriesList .series:hover {
-          border-color: #000000;
-          color: #000000; }
-    body section.page main.content .panel.panel__products {
+        transition: 0.2s; }
+        body section.bannerPage .panel.panel__seriesList .series:hover {
+          border-color: #282828;
+          color: #282828; }
+    body section.bannerPage main.content .panel.panel__products {
       background-color: white; }
-      body section.page main.content .panel.panel__products .panel-wrap {
+      body section.bannerPage main.content .panel.panel__products .panel-wrap {
         width: 1326px;
-        padding: 60px 0;
+        padding: 40px 0;
         margin: 0 auto;
         display: grid;
-        grid-gap: 80px; }
-        body section.page main.content .panel.panel__products .panel-wrap .panel-header {
+        grid-gap: 40px; }
+        body section.bannerPage main.content .panel.panel__products .panel-wrap .panel-header {
           display: grid;
           grid-auto-flow: column;
           justify-content: space-between;
           align-items: center; }
-          body section.page main.content .panel.panel__products .panel-wrap .panel-header .panel-title {
+          body section.bannerPage main.content .panel.panel__products .panel-wrap .panel-header .panel-title {
             font-size: 28px; }
-          body section.page main.content .panel.panel__products .panel-wrap .panel-header .panel-all {
-            color: #047a70;
+          body section.bannerPage main.content .panel.panel__products .panel-wrap .panel-header .panel-all {
+            color: #757575;
             text-decoration: none; }
-            body section.page main.content .panel.panel__products .panel-wrap .panel-header .panel-all:hover {
+            body section.bannerPage main.content .panel.panel__products .panel-wrap .panel-header .panel-all:hover {
               text-decoration: underline; }
-        body section.page main.content .panel.panel__products .panel-wrap .panel-grid {
+        body section.bannerPage main.content .panel.panel__products .panel-wrap .panel-grid {
           display: grid;
           grid-gap: 40px;
           grid-template-columns: repeat(4, auto);
           justify-content: space-between;
           align-items: center; }
-      body section.page main.content .panel.panel__products .product {
+      body section.bannerPage main.content .panel.panel__products .product {
         position: relative;
         display: grid;
-        grid-auto-flow: row;
-        grid-gap: 10px;
+        grid-gap: 20px;
         justify-content: center;
-        width: 260px;
-        background-color: #fff;
-        border: 1px solid #efefef;
-        transition: .2s; }
-        body section.page main.content .panel.panel__products .product:hover {
+        width: 230px;
+        padding: 20px;
+        background-color: white;
+        border: 1px solid #c1c1c1;
+        transition: 0.2s; }
+        body section.bannerPage main.content .panel.panel__products .product:hover {
           box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-          border-color: #ffffff; }
-        body section.page main.content .panel.panel__products .product .product-info {
+          border-color: white; }
+        body section.bannerPage main.content .panel.panel__products .product .product-info {
           display: grid;
-          grid-auto-flow: row;
-          grid-gap: 10px;
-          padding: 20px 20px 0;
-          color: #000;
+          grid-gap: 20px;
+          color: #282828;
           text-decoration: none; }
-          body section.page main.content .panel.panel__products .product .product-info .product-labels {
+          body section.bannerPage main.content .panel.panel__products .product .product-info .product-series {
             position: absolute;
-            left: -5px;
-            top: 10px;
-            display: grid;
-            grid-auto-flow: row;
-            grid-gap: 5px; }
-            body section.page main.content .panel.panel__products .product .product-info .product-labels .product-label {
-              padding: 5px 10px;
-              text-align: center;
-              opacity: .8;
-              background-color: #282828;
-              font-weight: bold;
-              text-transform: uppercase;
-              font-size: 12px; }
-              body section.page main.content .panel.panel__products .product .product-info .product-labels .product-label_stock {
-                color: #05ac9d; }
-              body section.page main.content .panel.panel__products .product .product-info .product-labels .product-label_hit {
-                color: #ff2e2e; }
-              body section.page main.content .panel.panel__products .product .product-info .product-labels .product-label_sale {
-                color: #4cbf42; }
-              body section.page main.content .panel.panel__products .product .product-info .product-labels .product-label:hover {
-                opacity: .9; }
-          body section.page main.content .panel.panel__products .product .product-info .product-series {
-            position: absolute;
-            background-color: #fff;
+            background-color: white;
             color: #282828;
             left: -8px;
             top: -8px;
+            display: grid;
+            justify-content: center;
+            align-content: center;
             width: 40px;
             height: 40px;
-            line-height: 40px;
-            text-align: center;
-            vertical-align: middle;
             font-weight: bold;
-            border: 2px solid #282828;
-            transition: .2s; }
-          body section.page main.content .panel.panel__products .product .product-info .product-images {
-            width: 220px;
-            overflow: hidden;
-            display: flex;
-            justify-content: center; }
-          body section.page main.content .panel.panel__products .product .product-info .product-title {
-            padding: 10px;
+            border: 2px solid #282828; }
+          body section.bannerPage main.content .panel.panel__products .product .product-info .product-images {
+            width: 230px;
+            display: grid;
+            justify-content: center;
+            align-content: center;
+            overflow: hidden; }
+          body section.bannerPage main.content .panel.panel__products .product .product-info .product-title {
             font-weight: bold; }
-        body section.page main.content .panel.panel__products .product .product-bottom {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          padding: 0 20px 20px; }
-          body section.page main.content .panel.panel__products .product .product-bottom .product-button {
-            padding: 10px 15px;
-            background-color: #05ac9d;
-            border: none;
-            color: #fff;
-            font-weight: bold;
-            text-transform: uppercase;
-            transition: .2s;
-            cursor: pointer; }
-            body section.page main.content .panel.panel__products .product .product-bottom .product-button:hover {
-              background-color: #176e67; }
-          body section.page main.content .panel.panel__products .product .product-bottom .product-price {
-            font-size: 18px;
-            font-weight: bold; }
-    body section.page main.content .panel.panel__advantages {
-      background-color: transparent; }
-      body section.page main.content .panel.panel__advantages .panel-wrap {
-        width: 1326px;
-        padding: 60px 0;
-        margin: 0 auto;
-        display: grid;
-        grid-gap: 80px; }
-        body section.page main.content .panel.panel__advantages .panel-wrap .panel-header {
+        body section.bannerPage main.content .panel.panel__products .product .product-bottom {
           display: grid;
           grid-auto-flow: column;
           justify-content: space-between;
           align-items: center; }
-          body section.page main.content .panel.panel__advantages .panel-wrap .panel-header .panel-title {
+          body section.bannerPage main.content .panel.panel__products .product .product-bottom .product-button {
+            padding: 10px;
+            background-color: #05ac9d;
+            border: none;
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: 0.2s;
+            cursor: pointer; }
+            body section.bannerPage main.content .panel.panel__products .product .product-bottom .product-button:hover {
+              background-color: #049386; }
+          body section.bannerPage main.content .panel.panel__products .product .product-bottom .product-price {
+            font-size: 18px;
+            font-weight: bold; }
+    body section.bannerPage main.content .panel.panel__advantages {
+      background-color: transparent; }
+      body section.bannerPage main.content .panel.panel__advantages .panel-wrap {
+        width: 1326px;
+        padding: 40px 0;
+        margin: 0 auto;
+        display: grid;
+        grid-gap: 40px; }
+        body section.bannerPage main.content .panel.panel__advantages .panel-wrap .panel-header {
+          display: grid;
+          grid-auto-flow: column;
+          justify-content: space-between;
+          align-items: center; }
+          body section.bannerPage main.content .panel.panel__advantages .panel-wrap .panel-header .panel-title {
             font-size: 28px; }
-          body section.page main.content .panel.panel__advantages .panel-wrap .panel-header .panel-all {
-            color: #047a70;
+          body section.bannerPage main.content .panel.panel__advantages .panel-wrap .panel-header .panel-all {
+            color: #757575;
             text-decoration: none; }
-            body section.page main.content .panel.panel__advantages .panel-wrap .panel-header .panel-all:hover {
+            body section.bannerPage main.content .panel.panel__advantages .panel-wrap .panel-header .panel-all:hover {
               text-decoration: underline; }
-        body section.page main.content .panel.panel__advantages .panel-wrap .panel-grid {
+        body section.bannerPage main.content .panel.panel__advantages .panel-wrap .panel-grid {
           display: grid;
           grid-gap: 40px;
           grid-template-columns: repeat(3, auto);
           justify-content: space-between;
           align-items: center; }
-      body section.page main.content .panel.panel__advantages .advantage {
+      body section.bannerPage main.content .panel.panel__advantages .advantage {
         display: grid;
         grid-auto-flow: column;
         grid-gap: 40px; }
-        body section.page main.content .panel.panel__advantages .advantage .advantage-info {
+        body section.bannerPage main.content .panel.panel__advantages .advantage .advantage-info {
           display: grid;
           align-content: start;
-          grid-gap: 20px; }
-        body section.page main.content .panel.panel__advantages .advantage .advantage-image {
-          width: 100px;
+          grid-gap: 5px; }
+        body section.bannerPage main.content .panel.panel__advantages .advantage .advantage-image {
           height: 100px; }
-    body section.page main.content .panel.panel__works {
+    body section.bannerPage main.content .panel.panel__works {
       background-color: white; }
-      body section.page main.content .panel.panel__works .panel-wrap {
+      body section.bannerPage main.content .panel.panel__works .panel-wrap {
         width: 1326px;
-        padding: 60px 0;
+        padding: 40px 0;
         margin: 0 auto;
         display: grid;
-        grid-gap: 80px; }
-        body section.page main.content .panel.panel__works .panel-wrap .panel-header {
+        grid-gap: 40px; }
+        body section.bannerPage main.content .panel.panel__works .panel-wrap .panel-header {
           display: grid;
           grid-auto-flow: column;
           justify-content: space-between;
           align-items: center; }
-          body section.page main.content .panel.panel__works .panel-wrap .panel-header .panel-title {
+          body section.bannerPage main.content .panel.panel__works .panel-wrap .panel-header .panel-title {
             font-size: 28px; }
-          body section.page main.content .panel.panel__works .panel-wrap .panel-header .panel-all {
-            color: #047a70;
+          body section.bannerPage main.content .panel.panel__works .panel-wrap .panel-header .panel-all {
+            color: #757575;
             text-decoration: none; }
-            body section.page main.content .panel.panel__works .panel-wrap .panel-header .panel-all:hover {
+            body section.bannerPage main.content .panel.panel__works .panel-wrap .panel-header .panel-all:hover {
               text-decoration: underline; }
-        body section.page main.content .panel.panel__works .panel-wrap .panel-grid {
+        body section.bannerPage main.content .panel.panel__works .panel-wrap .panel-grid {
           display: grid;
           grid-gap: 40px;
           grid-template-columns: repeat(3, auto);
           justify-content: space-between;
           align-items: center; }
-      body section.page main.content .panel.panel__works .work {
+      body section.bannerPage main.content .panel.panel__works .work {
         position: relative;
         display: grid;
         grid-auto-flow: column;
         grid-gap: 20px;
         padding: 20px;
-        background-color: #fff;
-        border: 1px solid #efefef;
-        transition: .2s; }
-        body section.page main.content .panel.panel__works .work .work-image {
+        background-color: white;
+        border: 1px solid #c1c1c1;
+        transition: 0.2s; }
+        body section.bannerPage main.content .panel.panel__works .work .work-image {
           width: 150px;
-          height: 250px; }
-        body section.page main.content .panel.panel__works .work .work-info {
+          display: grid;
+          justify-content: center;
+          align-content: center;
+          overflow: hidden; }
+        body section.bannerPage main.content .panel.panel__works .work .work-info {
           display: grid;
           grid-gap: 20px; }
-          body section.page main.content .panel.panel__works .work .work-info .work-series {
+          body section.bannerPage main.content .panel.panel__works .work .work-info .work-series {
             position: absolute;
-            background-color: #fff;
+            background-color: white;
             color: #282828;
             left: -8px;
             top: -8px;
+            display: grid;
+            justify-content: center;
+            align-content: center;
             width: 40px;
             height: 40px;
-            line-height: 40px;
-            text-align: center;
-            vertical-align: middle;
             font-weight: bold;
-            border: 2px solid #282828;
-            transition: .2s; }
-          body section.page main.content .panel.panel__works .work .work-info .work-button {
+            border: 2px solid #282828; }
+          body section.bannerPage main.content .panel.panel__works .work .work-info .work-button {
             justify-self: right;
             align-self: end;
-            padding: 10px 15px;
+            padding: 10px;
             background-color: #05ac9d;
             border: none;
-            color: #fff;
+            color: white;
             font-weight: bold;
             text-transform: uppercase;
-            transition: .2s;
+            transition: 0.2s;
+            text-decoration: none;
             cursor: pointer; }
-            body section.page main.content .panel.panel__works .work .work-info .work-button:hover {
-              background-color: #176e67; }
-    body section.page .footer .panel.panel__footer-top {
-      background-color: #282828; }
-      body section.page .footer .panel.panel__footer-top .panel-wrap {
+            body section.bannerPage main.content .panel.panel__works .work .work-info .work-button:hover {
+              background-color: #049386; }
+    body section.bannerPage main.content .panel.panel__inform {
+      background-color: white; }
+      body section.bannerPage main.content .panel.panel__inform .panel-wrap {
         width: 1326px;
-        padding: 60px 0;
+        padding: 40px 0;
         margin: 0 auto;
         display: grid;
-        grid-gap: 80px; }
-        body section.page .footer .panel.panel__footer-top .panel-wrap .panel-header {
+        grid-gap: 40px; }
+        body section.bannerPage main.content .panel.panel__inform .panel-wrap .panel-header {
           display: grid;
           grid-auto-flow: column;
           justify-content: space-between;
           align-items: center; }
-          body section.page .footer .panel.panel__footer-top .panel-wrap .panel-header .panel-title {
+          body section.bannerPage main.content .panel.panel__inform .panel-wrap .panel-header .panel-title {
             font-size: 28px; }
-          body section.page .footer .panel.panel__footer-top .panel-wrap .panel-header .panel-all {
-            color: #047a70;
+          body section.bannerPage main.content .panel.panel__inform .panel-wrap .panel-header .panel-all {
+            color: #757575;
             text-decoration: none; }
-            body section.page .footer .panel.panel__footer-top .panel-wrap .panel-header .panel-all:hover {
+            body section.bannerPage main.content .panel.panel__inform .panel-wrap .panel-header .panel-all:hover {
               text-decoration: underline; }
-        body section.page .footer .panel.panel__footer-top .panel-wrap .panel-grid {
+        body section.bannerPage main.content .panel.panel__inform .panel-wrap .panel-grid {
+          display: grid;
+          grid-gap: 40px;
+          grid-template-columns: repeat(auto, auto);
+          grid-auto-flow: column;
+          justify-content: space-between;
+          align-items: center; }
+    body section.bannerPage main.content .panel.panel__catalog {
+      background-color: white; }
+      body section.bannerPage main.content .panel.panel__catalog .panel-wrap {
+        width: 1326px;
+        padding: 40px 0;
+        margin: 0 auto;
+        display: grid;
+        grid-gap: 40px; }
+        body section.bannerPage main.content .panel.panel__catalog .panel-wrap .panel-header {
+          display: grid;
+          grid-auto-flow: column;
+          justify-content: space-between;
+          align-items: center; }
+          body section.bannerPage main.content .panel.panel__catalog .panel-wrap .panel-header .panel-title {
+            font-size: 28px; }
+          body section.bannerPage main.content .panel.panel__catalog .panel-wrap .panel-header .panel-all {
+            color: #757575;
+            text-decoration: none; }
+            body section.bannerPage main.content .panel.panel__catalog .panel-wrap .panel-header .panel-all:hover {
+              text-decoration: underline; }
+        body section.bannerPage main.content .panel.panel__catalog .panel-wrap .panel-grid {
+          display: grid;
+          grid-gap: 40px;
+          grid-template-columns: repeat(3, auto);
+          justify-content: space-between;
+          align-items: center; }
+      body section.bannerPage main.content .panel.panel__catalog .product {
+        position: relative;
+        display: grid;
+        grid-gap: 20px;
+        justify-content: center;
+        width: 230px;
+        padding: 20px;
+        background-color: white;
+        border: 1px solid #c1c1c1;
+        transition: 0.2s; }
+        body section.bannerPage main.content .panel.panel__catalog .product:hover {
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+          border-color: white; }
+        body section.bannerPage main.content .panel.panel__catalog .product .product-info {
+          display: grid;
+          grid-gap: 20px;
+          color: #282828;
+          text-decoration: none; }
+          body section.bannerPage main.content .panel.panel__catalog .product .product-info .product-series {
+            position: absolute;
+            background-color: white;
+            color: #282828;
+            left: -8px;
+            top: -8px;
+            display: grid;
+            justify-content: center;
+            align-content: center;
+            width: 40px;
+            height: 40px;
+            font-weight: bold;
+            border: 2px solid #282828; }
+          body section.bannerPage main.content .panel.panel__catalog .product .product-info .product-images {
+            width: 230px;
+            display: grid;
+            justify-content: center;
+            align-content: center;
+            overflow: hidden; }
+          body section.bannerPage main.content .panel.panel__catalog .product .product-info .product-title {
+            font-weight: bold; }
+        body section.bannerPage main.content .panel.panel__catalog .product .product-bottom {
+          display: grid;
+          grid-auto-flow: column;
+          justify-content: space-between;
+          align-items: center; }
+          body section.bannerPage main.content .panel.panel__catalog .product .product-bottom .product-button {
+            padding: 10px;
+            background-color: #05ac9d;
+            border: none;
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: 0.2s;
+            cursor: pointer; }
+            body section.bannerPage main.content .panel.panel__catalog .product .product-bottom .product-button:hover {
+              background-color: #049386; }
+          body section.bannerPage main.content .panel.panel__catalog .product .product-bottom .product-price {
+            font-size: 18px;
+            font-weight: bold; }
+    body section.bannerPage .footer .panel.panel__footer-top {
+      background-color: #282828; }
+      body section.bannerPage .footer .panel.panel__footer-top .panel-wrap {
+        width: 1326px;
+        padding: 40px 0;
+        margin: 0 auto;
+        display: grid;
+        grid-gap: 40px; }
+        body section.bannerPage .footer .panel.panel__footer-top .panel-wrap .panel-header {
+          display: grid;
+          grid-auto-flow: column;
+          justify-content: space-between;
+          align-items: center; }
+          body section.bannerPage .footer .panel.panel__footer-top .panel-wrap .panel-header .panel-title {
+            font-size: 28px; }
+          body section.bannerPage .footer .panel.panel__footer-top .panel-wrap .panel-header .panel-all {
+            color: #757575;
+            text-decoration: none; }
+            body section.bannerPage .footer .panel.panel__footer-top .panel-wrap .panel-header .panel-all:hover {
+              text-decoration: underline; }
+        body section.bannerPage .footer .panel.panel__footer-top .panel-wrap .panel-grid {
           display: grid;
           grid-gap: 40px;
           grid-template-columns: repeat(3, auto);
           justify-content: space-between;
           align-items: start; }
-      body section.page .footer .panel.panel__footer-top .info {
+      body section.bannerPage .footer .panel.panel__footer-top .info {
         display: grid;
         grid-auto-flow: row;
-        grid-gap: 30px;
+        grid-gap: 40px;
         align-content: start;
-        color: #fff; }
-        body section.page .footer .panel.panel__footer-top .info .info-block .info-title {
-          text-transform: uppercase;
-          margin-bottom: 20px; }
-        body section.page .footer .panel.panel__footer-top .info .info-block .info-text_awards {
+        color: #c1c1c1; }
+        body section.bannerPage .footer .panel.panel__footer-top .info .info-block {
           display: grid;
-          grid-auto-flow: column;
-          justify-content: start;
           grid-gap: 20px; }
-        body section.page .footer .panel.panel__footer-top .info .info-block .info-text_payments {
-          display: grid;
-          grid-auto-flow: column;
-          justify-content: start;
-          grid-gap: 5px; }
-          body section.page .footer .panel.panel__footer-top .info .info-block .info-text_payments .info-payments-system {
-            background-image: url(/icons/sprite-payment.png);
-            width: 53px;
-            height: 33px;
-            background-color: red;
-            filter: grayscale(100%) brightness(40%); }
-          body section.page .footer .panel.panel__footer-top .info .info-block .info-text_payments .info-payments-system:hover {
-            filter: grayscale(0%) brightness(80%);
-            transition: .2s; }
-          body section.page .footer .panel.panel__footer-top .info .info-block .info-text_payments .info-payments-system_visa {
-            background-position: -0px 0; }
-          body section.page .footer .panel.panel__footer-top .info .info-block .info-text_payments .info-payments-system_mastercard {
-            background-position: -66px 0; }
-          body section.page .footer .panel.panel__footer-top .info .info-block .info-text_payments .info-payments-system_maestro {
-            background-position: -133px 0; }
-          body section.page .footer .panel.panel__footer-top .info .info-block .info-text_payments .info-payments-system_robocassa {
-            background-position: -199px 0; }
-          body section.page .footer .panel.panel__footer-top .info .info-block .info-text_payments .info-payments-system_yandex {
-            background-position: 0 -138px; }
-          body section.page .footer .panel.panel__footer-top .info .info-block .info-text_payments .info-payments-system_yandex {
-            background-position: 0 -185px; }
-      body section.page .footer .panel.panel__footer-top .contacts {
+          body section.bannerPage .footer .panel.panel__footer-top .info .info-block .info-title {
+            text-transform: uppercase;
+            color: white; }
+          body section.bannerPage .footer .panel.panel__footer-top .info .info-block .info-text_awards {
+            display: grid;
+            grid-auto-flow: column;
+            justify-content: start;
+            grid-gap: 20px; }
+          body section.bannerPage .footer .panel.panel__footer-top .info .info-block .info-text_payments {
+            display: grid;
+            grid-auto-flow: column;
+            justify-content: start;
+            grid-gap: 5px; }
+            body section.bannerPage .footer .panel.panel__footer-top .info .info-block .info-text_payments .info-payments-system {
+              background-image: url(/icons/sprite-payment.png);
+              width: 53px;
+              height: 33px;
+              background-color: #757575;
+              filter: grayscale(100%) brightness(40%); }
+            body section.bannerPage .footer .panel.panel__footer-top .info .info-block .info-text_payments .info-payments-system:hover {
+              filter: grayscale(0%) brightness(80%);
+              transition: 0.2s; }
+            body section.bannerPage .footer .panel.panel__footer-top .info .info-block .info-text_payments .info-payments-system_visa {
+              background-position: -0px 0; }
+            body section.bannerPage .footer .panel.panel__footer-top .info .info-block .info-text_payments .info-payments-system_mastercard {
+              background-position: -66px 0; }
+            body section.bannerPage .footer .panel.panel__footer-top .info .info-block .info-text_payments .info-payments-system_maestro {
+              background-position: -133px 0; }
+            body section.bannerPage .footer .panel.panel__footer-top .info .info-block .info-text_payments .info-payments-system_robocassa {
+              background-position: -199px 0; }
+            body section.bannerPage .footer .panel.panel__footer-top .info .info-block .info-text_payments .info-payments-system_yandex {
+              background-position: 0 -138px; }
+            body section.bannerPage .footer .panel.panel__footer-top .info .info-block .info-text_payments .info-payments-system_yandex {
+              background-position: 0 -185px; }
+      body section.bannerPage .footer .panel.panel__footer-top .contacts {
         display: grid;
         align-content: start;
-        grid-gap: 30px;
-        align-content: start; }
-        body section.page .footer .panel.panel__footer-top .contacts .contacts-block {
+        grid-gap: 40px; }
+        body section.bannerPage .footer .panel.panel__footer-top .contacts .contacts-block {
           display: grid;
           grid-gap: 20px; }
-          body section.page .footer .panel.panel__footer-top .contacts .contacts-block .contacts-title {
+          body section.bannerPage .footer .panel.panel__footer-top .contacts .contacts-block .contacts-title {
             text-transform: uppercase;
-            color: #fff; }
-          body section.page .footer .panel.panel__footer-top .contacts .contacts-block .contacts-body {
+            color: white; }
+          body section.bannerPage .footer .panel.panel__footer-top .contacts .contacts-block .contacts-body {
             display: grid;
             grid-gap: 10px; }
-            body section.page .footer .panel.panel__footer-top .contacts .contacts-block .contacts-body .contacts-item {
+            body section.bannerPage .footer .panel.panel__footer-top .contacts .contacts-block .contacts-body .contacts-item {
               display: grid;
               grid-auto-flow: column;
               grid-gap: 10px;
               justify-content: start;
-              align-content: center;
-              color: #b5b5b5;
+              align-items: center;
+              color: #c1c1c1;
               text-decoration: none; }
-              body section.page .footer .panel.panel__footer-top .contacts .contacts-block .contacts-body .contacts-item:hover {
-                color: #efefef; }
-              body section.page .footer .panel.panel__footer-top .contacts .contacts-block .contacts-body .contacts-item .contacts-logo {
-                width: 15px;
-                height: 15px; }
-            body section.page .footer .panel.panel__footer-top .contacts .contacts-block .contacts-body_social {
+              body section.bannerPage .footer .panel.panel__footer-top .contacts .contacts-block .contacts-body .contacts-item:hover {
+                color: white; }
+              body section.bannerPage .footer .panel.panel__footer-top .contacts .contacts-block .contacts-body .contacts-item .contacts-logo {
+                width: 16.66667px;
+                height: 16.66667px; }
+            body section.bannerPage .footer .panel.panel__footer-top .contacts .contacts-block .contacts-body_social {
               grid-auto-flow: column;
               justify-content: start; }
-              body section.page .footer .panel.panel__footer-top .contacts .contacts-block .contacts-body_social .contacts-item {
+              body section.bannerPage .footer .panel.panel__footer-top .contacts .contacts-block .contacts-body_social .contacts-item {
                 justify-content: center;
-                background-color: #363636;
+                background-color: #1b1b1b;
                 width: 35px;
                 height: 35px; }
-                body section.page .footer .panel.panel__footer-top .contacts .contacts-block .contacts-body_social .contacts-item:hover {
-                  background-color: #4e4e4e;
+                body section.bannerPage .footer .panel.panel__footer-top .contacts .contacts-block .contacts-body_social .contacts-item:hover {
+                  background-color: #0f0f0f;
                   transition: .2s; }
-                body section.page .footer .panel.panel__footer-top .contacts .contacts-block .contacts-body_social .contacts-item .contacts-logo {
+                body section.bannerPage .footer .panel.panel__footer-top .contacts .contacts-block .contacts-body_social .contacts-item .contacts-logo {
                   width: 20px;
                   height: 20px; }
-          body section.page .footer .panel.panel__footer-top .contacts .contacts-block_social {
+          body section.bannerPage .footer .panel.panel__footer-top .contacts .contacts-block_social {
             display: grid;
             grid-auto-flow: column; }
-    body section.page .footer .panel.panel__footer-bottom {
-      background-color: #353535; }
-      body section.page .footer .panel.panel__footer-bottom .panel-wrap {
+    body section.bannerPage .footer .panel.panel__footer-bottom {
+      background-color: #1b1b1b; }
+      body section.bannerPage .footer .panel.panel__footer-bottom .panel-wrap {
         width: 1326px;
         padding: 20px 0;
         margin: 0 auto;
         display: grid;
-        grid-gap: 80px; }
-        body section.page .footer .panel.panel__footer-bottom .panel-wrap .panel-header {
+        grid-gap: 40px; }
+        body section.bannerPage .footer .panel.panel__footer-bottom .panel-wrap .panel-header {
           display: grid;
           grid-auto-flow: column;
           justify-content: space-between;
           align-items: center; }
-          body section.page .footer .panel.panel__footer-bottom .panel-wrap .panel-header .panel-title {
+          body section.bannerPage .footer .panel.panel__footer-bottom .panel-wrap .panel-header .panel-title {
             font-size: 28px; }
-          body section.page .footer .panel.panel__footer-bottom .panel-wrap .panel-header .panel-all {
-            color: #047a70;
+          body section.bannerPage .footer .panel.panel__footer-bottom .panel-wrap .panel-header .panel-all {
+            color: #757575;
             text-decoration: none; }
-            body section.page .footer .panel.panel__footer-bottom .panel-wrap .panel-header .panel-all:hover {
+            body section.bannerPage .footer .panel.panel__footer-bottom .panel-wrap .panel-header .panel-all:hover {
               text-decoration: underline; }
-        body section.page .footer .panel.panel__footer-bottom .panel-wrap .panel-grid {
+        body section.bannerPage .footer .panel.panel__footer-bottom .panel-wrap .panel-grid {
           display: grid;
           grid-gap: 40px;
           grid-template-columns: repeat(2, auto);
           justify-content: space-between;
           align-items: center; }
-      body section.page .footer .panel.panel__footer-bottom .footer-copyright,
-      body section.page .footer .panel.panel__footer-bottom .footer-sitemap {
-        color: #047a70; }
-      body section.page .footer .panel.panel__footer-bottom .footer-sitemap:hover {
-        color: #036259; }
+      body section.bannerPage .footer .panel.panel__footer-bottom .footer-copyright,
+      body section.bannerPage .footer .panel.panel__footer-bottom .footer-sitemap {
+        color: #757575;
+        transition: 0.2s; }
+      body section.bannerPage .footer .panel.panel__footer-bottom .footer-sitemap {
+        text-decoration: none; }
+        body section.bannerPage .footer .panel.panel__footer-bottom .footer-sitemap:hover {
+          color: #c1c1c1;
+          text-decoration: underline; }

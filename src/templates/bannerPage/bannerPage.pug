@@ -21,6 +21,8 @@ block css
 section.bannerPage
     header
         include ../../blocks/header/header
+        +panel('banner')
+            include ../../components/banner/banner
         +panel('seriesList')
             h4.seriesList-title Серия
             include ../../components/series/series

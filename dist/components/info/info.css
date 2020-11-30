@@ -1,40 +1,43 @@
 .info {
   display: grid;
   grid-auto-flow: row;
-  grid-gap: 30px;
+  grid-gap: 40px;
   align-content: start;
-  color: #fff; }
-  .info .info-block .info-title {
-    text-transform: uppercase;
-    margin-bottom: 20px; }
-  .info .info-block .info-text_awards {
+  color: #c1c1c1; }
+  .info .info-block {
     display: grid;
-    grid-auto-flow: column;
-    justify-content: start;
     grid-gap: 20px; }
-  .info .info-block .info-text_payments {
-    display: grid;
-    grid-auto-flow: column;
-    justify-content: start;
-    grid-gap: 5px; }
-    .info .info-block .info-text_payments .info-payments-system {
-      background-image: url(/icons/sprite-payment.png);
-      width: 53px;
-      height: 33px;
-      background-color: red;
-      filter: grayscale(100%) brightness(40%); }
-    .info .info-block .info-text_payments .info-payments-system:hover {
-      filter: grayscale(0%) brightness(80%);
-      transition: .2s; }
-    .info .info-block .info-text_payments .info-payments-system_visa {
-      background-position: -0px 0; }
-    .info .info-block .info-text_payments .info-payments-system_mastercard {
-      background-position: -66px 0; }
-    .info .info-block .info-text_payments .info-payments-system_maestro {
-      background-position: -133px 0; }
-    .info .info-block .info-text_payments .info-payments-system_robocassa {
-      background-position: -199px 0; }
-    .info .info-block .info-text_payments .info-payments-system_yandex {
-      background-position: 0 -138px; }
-    .info .info-block .info-text_payments .info-payments-system_yandex {
-      background-position: 0 -185px; }
+    .info .info-block .info-title {
+      text-transform: uppercase;
+      color: white; }
+    .info .info-block .info-text_awards {
+      display: grid;
+      grid-auto-flow: column;
+      justify-content: start;
+      grid-gap: 20px; }
+    .info .info-block .info-text_payments {
+      display: grid;
+      grid-auto-flow: column;
+      justify-content: start;
+      grid-gap: 5px; }
+      .info .info-block .info-text_payments .info-payments-system {
+        background-image: url(/icons/sprite-payment.png);
+        width: 53px;
+        height: 33px;
+        background-color: #757575;
+        filter: grayscale(100%) brightness(40%); }
+      .info .info-block .info-text_payments .info-payments-system:hover {
+        filter: grayscale(0%) brightness(80%);
+        transition: 0.2s; }
+      .info .info-block .info-text_payments .info-payments-system_visa {
+        background-position: -0px 0; }
+      .info .info-block .info-text_payments .info-payments-system_mastercard {
+        background-position: -66px 0; }
+      .info .info-block .info-text_payments .info-payments-system_maestro {
+        background-position: -133px 0; }
+      .info .info-block .info-text_payments .info-payments-system_robocassa {
+        background-position: -199px 0; }
+      .info .info-block .info-text_payments .info-payments-system_yandex {
+        background-position: 0 -138px; }
+      .info .info-block .info-text_payments .info-payments-system_yandex {
+        background-position: 0 -185px; }

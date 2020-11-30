@@ -1,2 +1,4 @@
 .banner {
   display: flex; }
+  .banner .banner-img {
+    width: 100%; }

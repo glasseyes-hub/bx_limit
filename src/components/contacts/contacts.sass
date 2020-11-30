@@ -1,35 +1,36 @@
+@import "../../sass/variables"
+
 .contacts
     display: grid
     align-content: start
-    grid-gap: 30px
-    align-content: start
+    grid-gap: $gap
 
     .contacts-block
         display: grid
-        grid-gap: 20px
+        grid-gap: $gap_small
 
         .contacts-title
             text-transform: uppercase
-            color: #fff
+            color: $font2_color_light_max
 
         .contacts-body
             display: grid
-            grid-gap: 10px
+            grid-gap: $gap_small_mid
 
             .contacts-item
                 display: grid
                 grid-auto-flow: column
-                grid-gap: 10px
+                grid-gap: $gap_small_mid
                 justify-content: start
-                align-content: center
-                color: #b5b5b5
+                align-items: center
+                color: $font2_color_light_mid
                 text-decoration: none
                 &:hover
-                    color: #efefef
+                    color: $font2_color_light_max
 
                 .contacts-logo
-                    width: 15px
-                    height: 15px
+                    width: $icon_size_small_mid
+                    height: $icon_size_small_mid
 
             &_social
                 grid-auto-flow: column
@@ -37,11 +38,11 @@
 
                 .contacts-item
                     justify-content: center
-                    background-color: #363636
+                    background-color: $font2_color_dark
                     width: 35px
                     height: 35px
                     &:hover
-                        background-color: #4e4e4e
+                        background-color: $font2_color_dark_mid
                         transition: .2s
 
                     .contacts-logo

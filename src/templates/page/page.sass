@@ -1,19 +1,20 @@
 @import "../../sass/variables"
+@import "../../layouts/panel/panel"
 
-@mixin page
-  section.page
-    display: grid
-    grid-auto-flow: row
-    grid-gap: $gap_large
-    background-color: $background_color80
-    font-size: $font_size
+@mixin bannerPage
+    section.bannerPage
+        display: grid
+        grid-auto-flow: row
+        grid-gap: $gap_large
+        background-color: $font2_color_light_high
+        font-size: $font_size
 
-    .strong
-      color: $font_color
+        +panel('seriesList', $font2_color_light_max, $padding: $padding_small 0)
+            @import "../../components/series/series"
 
-    @import "../../blocks/header/header"
+        @import "../../blocks/header/header"
 
-    main.content
-      @content
+        main.content
+            @content
 
-    @import "../../blocks/footer/footer"
+        @import "../../blocks/footer/footer"

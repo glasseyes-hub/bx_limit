@@ -1,109 +1,71 @@
 @import "../../sass/variables"
 
-$stock_color: $color_main
-$hit_color: #ff2e2e
-$sale_color: #4cbf42
-
 .product
   position: relative
   display: grid
-  grid-auto-flow: row
-  grid-gap: 10px
+  grid-gap: $gap_small
   justify-content: center
-  width: 260px
-  background-color: #fff
-  border: 1px solid #efefef
-  transition: .2s
+  width: 230px
+  padding: $padding
+  background-color: $font2_color_light_max
+  border: 1px solid $font2_color_light_mid
+  transition: $animation_transition
 
   &:hover
-    box-shadow: 0 0 15px rgba(0,0,0,0.3)
-    border-color: #ffffff
-    //.product-info
-    //  .product-series
-    //    color: $color_main
+    box-shadow: $shadow
+    border-color: $font2_color_light_max
 
   .product-info
     display: grid
-    grid-auto-flow: row
-    grid-gap: 10px
-    padding: 20px 20px 0
-    color: #000
+    grid-gap: $gap_small
+    color: $font2_color
     text-decoration: none
-  
-    .product-labels
-      position: absolute
-      left: -5px
-      top: 10px
-      display: grid
-      grid-auto-flow: row
-      grid-gap: 5px
-
-      .product-label
-        padding: 5px 10px
-        text-align: center
-        opacity: .8
-        background-color: #282828
-        font-weight: bold
-        text-transform: uppercase
-        font-size: 12px
-
-        &_stock
-          color: $stock_color
-        &_hit
-          color: $hit_color
-        &_sale
-          color: $sale_color
-
-        &:hover
-          opacity: .9
-
 
     .product-series
       position: absolute
-      background-color: #fff
-      color: $color_bg_main
+      background-color: $font2_color_light_max
+      color: $font2_color
       left: -8px
       top: -8px
+      display: grid
+      justify-content: center
+      align-content: center
       width: 40px
       height: 40px
-      line-height: 40px
-      text-align: center
-      vertical-align: middle
       font-weight: bold
-      border: 2px solid $color_bg_main
-      transition: .2s
+      border: 2px solid $font2_color
 
     .product-images
-      width: 220px
-      overflow: hidden
-      display: flex
+      width: 230px
+      display: grid
       justify-content: center
+      align-content: center
+      overflow: hidden
 
     .product-title
-      padding: 10px
       font-weight: bold
 
   .product-bottom
-    display: flex
+    display: grid
+    grid-auto-flow: column
     justify-content: space-between
     align-items: center
-    padding: 0 20px 20px
 
 
     .product-button
-      padding: 10px 15px
-      background-color: $color_main
+      padding: $padding_small
+      background-color: $font_color
       border: none
-      color: #fff
+      color: $font2_color_light_max
       font-weight: bold
       text-transform: uppercase
-      transition: .2s
+      transition: $animation_transition
       cursor: pointer
       &:hover
-        background-color: #176e67
+        background-color: $font_color_dark
 
     .product-price
-      font-size: 18px
+      font-size: $font_size_large_mid
       font-weight: bold
 
 

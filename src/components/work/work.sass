@@ -4,45 +4,48 @@
   position: relative
   display: grid
   grid-auto-flow: column
-  grid-gap: 20px
-  padding: 20px
-  background-color: #fff
-  border: 1px solid #efefef
-  transition: .2s
+  grid-gap: $gap_small
+  padding: $padding
+  background-color: $font2_color_light_max
+  border: 1px solid $font2_color_light_mid
+  transition: $animation_transition
 
   .work-image
     width: 150px
-    height: 250px
+    display: grid
+    justify-content: center
+    align-content: center
+    overflow: hidden
 
   .work-info
     display: grid
-    grid-gap: 20px
+    grid-gap: $gap_small
 
     .work-series
       position: absolute
-      background-color: #fff
-      color: $color_bg_main
+      background-color: $font2_color_light_max
+      color: $font2_color
       left: -8px
       top: -8px
+      display: grid
+      justify-content: center
+      align-content: center
       width: 40px
       height: 40px
-      line-height: 40px
-      text-align: center
-      vertical-align: middle
       font-weight: bold
-      border: 2px solid $color_bg_main
-      transition: .2s
+      border: 2px solid $font2_color
 
     .work-button
       justify-self: right
       align-self: end
-      padding: 10px 15px
-      background-color: $color_main
+      padding: $padding_small
+      background-color: $font_color
       border: none
-      color: #fff
+      color: $font2_color_light_max
       font-weight: bold
       text-transform: uppercase
-      transition: .2s
+      transition: $animation_transition
+      text-decoration: none
       cursor: pointer
       &:hover
-        background-color: #176e67
+        background-color: $font_color_dark

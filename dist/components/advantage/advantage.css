@@ -5,7 +5,6 @@
   .advantage .advantage-info {
     display: grid;
     align-content: start;
-    grid-gap: 20px; }
+    grid-gap: 5px; }
   .advantage .advantage-image {
-    width: 100px;
     height: 100px; }

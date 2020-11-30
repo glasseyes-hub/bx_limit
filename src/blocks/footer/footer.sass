@@ -2,15 +2,18 @@
 @import "../../layouts/panel/panel"
 
 .footer
-  +panel('footer-top', $background_color, 3, $gap: 40px, $align: start)
+  +panel('footer-top', $font2_color, 3, $align: start)
     @import "../../components/info/info"
     @import "../../components/contacts/contacts"
     @import "../../components/map/map"
-  +panel('footer-bottom', $background_color5, 2, $padding: 20px 0 )
+  +panel('footer-bottom', $font2_color_dark, 2, $padding: $padding 0 )
     .footer-copyright,
     .footer-sitemap
-      color: $font_color_dark_mid
+      color: $font2_color_light
+      transition: $animation_transition
 
     .footer-sitemap
+      text-decoration: none
       &:hover
-        color: $font_color_dark_max
+        color: $font2_color_light_mid
+        text-decoration: underline

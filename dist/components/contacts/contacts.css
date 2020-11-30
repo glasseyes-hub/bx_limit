@@ -1,14 +1,13 @@
 .contacts {
   display: grid;
   align-content: start;
-  grid-gap: 30px;
-  align-content: start; }
+  grid-gap: 40px; }
   .contacts .contacts-block {
     display: grid;
     grid-gap: 20px; }
     .contacts .contacts-block .contacts-title {
       text-transform: uppercase;
-      color: #fff; }
+      color: white; }
     .contacts .contacts-block .contacts-body {
       display: grid;
       grid-gap: 10px; }
@@ -17,24 +16,24 @@
         grid-auto-flow: column;
         grid-gap: 10px;
         justify-content: start;
-        align-content: center;
-        color: #b5b5b5;
+        align-items: center;
+        color: #c1c1c1;
         text-decoration: none; }
         .contacts .contacts-block .contacts-body .contacts-item:hover {
-          color: #efefef; }
+          color: white; }
         .contacts .contacts-block .contacts-body .contacts-item .contacts-logo {
-          width: 15px;
-          height: 15px; }
+          width: 16.66667px;
+          height: 16.66667px; }
       .contacts .contacts-block .contacts-body_social {
         grid-auto-flow: column;
         justify-content: start; }
         .contacts .contacts-block .contacts-body_social .contacts-item {
           justify-content: center;
-          background-color: #363636;
+          background-color: #1b1b1b;
           width: 35px;
           height: 35px; }
           .contacts .contacts-block .contacts-body_social .contacts-item:hover {
-            background-color: #4e4e4e;
+            background-color: #0f0f0f;
             transition: .2s; }
           .contacts .contacts-block .contacts-body_social .contacts-item .contacts-logo {
             width: 20px;

@@ -1,13 +1,13 @@
 .series {
   display: inline-block;
-  color: #828282;
+  color: #757575;
   width: 40px;
   line-height: 40px;
-  border: 2px solid #ffffff;
+  border: 2px solid transparent;
   text-decoration: none;
   vertical-align: middle;
   text-align: center;
-  transition: .2s; }
+  transition: 0.2s; }
   .series:hover {
-    border-color: #000000;
-    color: #000000; }
+    border-color: #282828;
+    color: #282828; }
