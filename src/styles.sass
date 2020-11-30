@@ -23,5 +23,14 @@ body
     +panel('works', $font2_color_light_max, 3)
       @import "components/work/work"
     +panel('inform', $font2_color_light_max)
-    +panel('catalog', $font2_color_light_max, 3)
-      @import "components/product/product"
+    +panel('catalog', $font2_color_light_max, 2, $align: start)
+      .catalog-filter
+        background-color: red
+        width: 300px
+        height: 700px
+
+      .catalog-list
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        grid-gap: 60px
+        @import "components/product/product"

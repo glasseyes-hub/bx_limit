@@ -531,67 +531,75 @@ body {
         body section.bannerPage main.content .panel.panel__catalog .panel-wrap .panel-grid {
           display: grid;
           grid-gap: 40px;
-          grid-template-columns: repeat(3, auto);
+          grid-template-columns: repeat(2, auto);
           justify-content: space-between;
-          align-items: center; }
-      body section.bannerPage main.content .panel.panel__catalog .product {
-        position: relative;
+          align-items: start; }
+      body section.bannerPage main.content .panel.panel__catalog .catalog-filter {
+        background-color: red;
+        width: 300px;
+        height: 700px; }
+      body section.bannerPage main.content .panel.panel__catalog .catalog-list {
         display: grid;
-        grid-gap: 20px;
-        justify-content: center;
-        width: 230px;
-        padding: 20px;
-        background-color: white;
-        border: 1px solid #c1c1c1;
-        transition: 0.2s; }
-        body section.bannerPage main.content .panel.panel__catalog .product:hover {
-          box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-          border-color: white; }
-        body section.bannerPage main.content .panel.panel__catalog .product .product-info {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 60px; }
+        body section.bannerPage main.content .panel.panel__catalog .catalog-list .product {
+          position: relative;
           display: grid;
           grid-gap: 20px;
-          color: #282828;
-          text-decoration: none; }
-          body section.bannerPage main.content .panel.panel__catalog .product .product-info .product-series {
-            position: absolute;
-            background-color: white;
+          justify-content: center;
+          width: 230px;
+          padding: 20px;
+          background-color: white;
+          border: 1px solid #c1c1c1;
+          transition: 0.2s; }
+          body section.bannerPage main.content .panel.panel__catalog .catalog-list .product:hover {
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+            border-color: white; }
+          body section.bannerPage main.content .panel.panel__catalog .catalog-list .product .product-info {
+            display: grid;
+            grid-gap: 20px;
             color: #282828;
-            left: -8px;
-            top: -8px;
+            text-decoration: none; }
+            body section.bannerPage main.content .panel.panel__catalog .catalog-list .product .product-info .product-series {
+              position: absolute;
+              background-color: white;
+              color: #282828;
+              left: -8px;
+              top: -8px;
+              display: grid;
+              justify-content: center;
+              align-content: center;
+              width: 40px;
+              height: 40px;
+              font-weight: bold;
+              border: 2px solid #282828; }
+            body section.bannerPage main.content .panel.panel__catalog .catalog-list .product .product-info .product-images {
+              width: 230px;
+              display: grid;
+              justify-content: center;
+              align-content: center;
+              overflow: hidden; }
+            body section.bannerPage main.content .panel.panel__catalog .catalog-list .product .product-info .product-title {
+              font-weight: bold; }
+          body section.bannerPage main.content .panel.panel__catalog .catalog-list .product .product-bottom {
             display: grid;
-            justify-content: center;
-            align-content: center;
-            width: 40px;
-            height: 40px;
-            font-weight: bold;
-            border: 2px solid #282828; }
-          body section.bannerPage main.content .panel.panel__catalog .product .product-info .product-images {
-            width: 230px;
-            display: grid;
-            justify-content: center;
-            align-content: center;
-            overflow: hidden; }
-          body section.bannerPage main.content .panel.panel__catalog .product .product-info .product-title {
-            font-weight: bold; }
-        body section.bannerPage main.content .panel.panel__catalog .product .product-bottom {
-          display: grid;
-          grid-auto-flow: column;
-          justify-content: space-between;
-          align-items: center; }
-          body section.bannerPage main.content .panel.panel__catalog .product .product-bottom .product-button {
-            padding: 10px;
-            background-color: #05ac9d;
-            border: none;
-            color: white;
-            font-weight: bold;
-            text-transform: uppercase;
-            transition: 0.2s;
-            cursor: pointer; }
-            body section.bannerPage main.content .panel.panel__catalog .product .product-bottom .product-button:hover {
-              background-color: #049386; }
-          body section.bannerPage main.content .panel.panel__catalog .product .product-bottom .product-price {
-            font-size: 18px;
-            font-weight: bold; }
+            grid-auto-flow: column;
+            justify-content: space-between;
+            align-items: center; }
+            body section.bannerPage main.content .panel.panel__catalog .catalog-list .product .product-bottom .product-button {
+              padding: 10px;
+              background-color: #05ac9d;
+              border: none;
+              color: white;
+              font-weight: bold;
+              text-transform: uppercase;
+              transition: 0.2s;
+              cursor: pointer; }
+              body section.bannerPage main.content .panel.panel__catalog .catalog-list .product .product-bottom .product-button:hover {
+                background-color: #049386; }
+            body section.bannerPage main.content .panel.panel__catalog .catalog-list .product .product-bottom .product-price {
+              font-size: 18px;
+              font-weight: bold; }
     body section.bannerPage .footer .panel.panel__footer-top {
       background-color: #282828; }
       body section.bannerPage .footer .panel.panel__footer-top .panel-wrap {
