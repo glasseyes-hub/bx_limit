@@ -25,9 +25,50 @@ body
     +panel('inform', $font2_color_light_max)
     +panel('catalog', $font2_color_light_max, 2, $align: start)
       .catalog-filter
-        background-color: red
         width: 300px
         height: 700px
+
+        .js-slider_limit
+          .irs-line
+            background-color: $font2_color
+            border-radius: 0
+
+          .irs-grid-text
+            color: $font2_color_light
+
+          .irs-grid-pol
+            background-color: $font2_color_light_mid
+            top: 1px
+
+          .irs-bar,
+          .irs-min,
+          .irs-max,
+          .irs-from,
+          .irs-to,
+          .irs-single
+            background-color: $font_color
+
+          .irs-from:before,
+          .irs-to:before,
+          .irs-single:before
+            border-top-color: $font_color
+
+
+          .irs-from,
+          .irs-to,
+          .irs-single
+            padding: $padding_small_max $padding_small_mid
+            border-radius: 0
+
+          .irs-handle
+            background-color: $font_color
+            width: 16px
+            height: 16px
+            box-shadow: none
+            border: 3px solid #fff
+            border-radius: 0
+            top: 30px
+
 
       .catalog-list
         display: grid

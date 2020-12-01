@@ -535,9 +535,40 @@ body {
           justify-content: space-between;
           align-items: start; }
       body section.bannerPage main.content .panel.panel__catalog .catalog-filter {
-        background-color: red;
         width: 300px;
         height: 700px; }
+        body section.bannerPage main.content .panel.panel__catalog .catalog-filter .js-slider_limit .irs-line {
+          background-color: #282828;
+          border-radius: 0; }
+        body section.bannerPage main.content .panel.panel__catalog .catalog-filter .js-slider_limit .irs-grid-text {
+          color: #757575; }
+        body section.bannerPage main.content .panel.panel__catalog .catalog-filter .js-slider_limit .irs-grid-pol {
+          background-color: #c1c1c1;
+          top: 1px; }
+        body section.bannerPage main.content .panel.panel__catalog .catalog-filter .js-slider_limit .irs-bar,
+        body section.bannerPage main.content .panel.panel__catalog .catalog-filter .js-slider_limit .irs-min,
+        body section.bannerPage main.content .panel.panel__catalog .catalog-filter .js-slider_limit .irs-max,
+        body section.bannerPage main.content .panel.panel__catalog .catalog-filter .js-slider_limit .irs-from,
+        body section.bannerPage main.content .panel.panel__catalog .catalog-filter .js-slider_limit .irs-to,
+        body section.bannerPage main.content .panel.panel__catalog .catalog-filter .js-slider_limit .irs-single {
+          background-color: #05ac9d; }
+        body section.bannerPage main.content .panel.panel__catalog .catalog-filter .js-slider_limit .irs-from:before,
+        body section.bannerPage main.content .panel.panel__catalog .catalog-filter .js-slider_limit .irs-to:before,
+        body section.bannerPage main.content .panel.panel__catalog .catalog-filter .js-slider_limit .irs-single:before {
+          border-top-color: #05ac9d; }
+        body section.bannerPage main.content .panel.panel__catalog .catalog-filter .js-slider_limit .irs-from,
+        body section.bannerPage main.content .panel.panel__catalog .catalog-filter .js-slider_limit .irs-to,
+        body section.bannerPage main.content .panel.panel__catalog .catalog-filter .js-slider_limit .irs-single {
+          padding: 5px 6.66667px;
+          border-radius: 0; }
+        body section.bannerPage main.content .panel.panel__catalog .catalog-filter .js-slider_limit .irs-handle {
+          background-color: #05ac9d;
+          width: 16px;
+          height: 16px;
+          box-shadow: none;
+          border: 3px solid #fff;
+          border-radius: 0;
+          top: 30px; }
       body section.bannerPage main.content .panel.panel__catalog .catalog-list {
         display: grid;
         grid-template-columns: repeat(3, 1fr);

@@ -1,10 +1,17 @@
 extends templates/page/page
-
 include layouts/panel/panel
+
+block append scripts
+    script(type="module" src='/js/jquery-3.5.1.min.js')
+    script(type="module" src='/assets/ion-rangeslider-2.3.1/js/ion.rangeSlider.js')
+
+block append styles
+    link(rel="stylesheet" href="/assets/ion-rangeslider-2.3.1/css/ion.rangeSlider.css")
 
 block content
     +panel('catalog', 'Каталог')
         .catalog-filter
+            input.js-slider
         .catalog-list
             include components/product/product
             include components/product/product

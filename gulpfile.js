@@ -13,6 +13,7 @@ function serve() {
 
   watch("src/**/*.pug", html);
   watch("src/**/*.sass", css);
+  watch("src/js/*.js", js);
 }
 
 function clear() {
@@ -27,10 +28,21 @@ function html() {
 }
 
 function css() {
-  return src(["src/**/*.sass", "!src/layouts/**/*.sass", "!src/sass/*.sass"])
+  return src([
+    "src/**/*.sass",
+    "!src/layouts/**/*.sass",
+    "!src/sass/*.sass",
+    "!src/assets/*",
+  ])
     .pipe(sass())
     .pipe(autoprefixer())
     .pipe(dest("dist"))
+    .pipe(browserSync.stream());
+}
+
+function js() {
+  return src(["src/js/**/*.js"])
+    .pipe(dest("dist/js"))
     .pipe(browserSync.stream());
 }
 
@@ -46,10 +58,16 @@ function icons() {
     .pipe(browserSync.stream());
 }
 
+function assets() {
+  return src("src/assets/**")
+    .pipe(dest("dist/assets"))
+    .pipe(browserSync.stream());
+}
+
 function img() {
   return src("src/img/**").pipe(dest("dist/img")).pipe(browserSync.stream());
 }
 
-exports.build = build = series(clear, html, css, fonts, icons, img);
+exports.build = build = series(clear, html, css, js, fonts, icons, img, assets);
 
 exports.dev = series(build, serve);
