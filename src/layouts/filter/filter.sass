@@ -1,0 +1,31 @@
+@import '../../sass/variables'
+
+@mixin filter
+    .filter
+        display: grid
+        grid-gap: $gap_small
+        align-content: start
+
+        .filter-title
+            text-transform: uppercase
+            cursor: pointer
+            transition: $animation_transition
+            &:hover
+                color: $font2_color_light
+
+        .filter-body
+            display: grid
+            grid-gap: $gap_small
+
+            .filter-list
+                display: grid
+                grid-gap: $gap_small_mid
+
+            .filter-showAll
+                color: $font2_color_light
+                cursor: pointer
+                transition: $animation_transition
+                &:hover
+                    color: $font2_color
+
+        @content

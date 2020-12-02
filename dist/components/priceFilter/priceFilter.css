@@ -1,0 +1,45 @@
+.priceFilter {
+  display: grid;
+  grid-gap: 20px; }
+  .priceFilter .priceFilter-inputs {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between; }
+    .priceFilter .priceFilter-inputs .priceFilter-input {
+      width: 90px; }
+  .priceFilter .irs .irs-line {
+    background-color: #282828;
+    border-radius: 0;
+    cursor: pointer; }
+  .priceFilter .irs .irs-grid-text {
+    color: #757575; }
+  .priceFilter .irs .irs-grid-pol {
+    background-color: #c1c1c1;
+    top: 1px; }
+  .priceFilter .irs .irs-bar,
+  .priceFilter .irs .irs-min,
+  .priceFilter .irs .irs-max,
+  .priceFilter .irs .irs-from,
+  .priceFilter .irs .irs-to,
+  .priceFilter .irs .irs-single {
+    background-color: #05ac9d;
+    cursor: pointer; }
+  .priceFilter .irs .irs-from:before,
+  .priceFilter .irs .irs-to:before,
+  .priceFilter .irs .irs-single:before {
+    border-top-color: #05ac9d;
+    cursor: pointer; }
+  .priceFilter .irs .irs-from,
+  .priceFilter .irs .irs-to,
+  .priceFilter .irs .irs-single {
+    padding: 5px 6.66667px;
+    border-radius: 0; }
+  .priceFilter .irs .irs-handle {
+    background-color: #05ac9d;
+    width: 16px;
+    height: 16px;
+    box-shadow: none;
+    border: 3px solid #fff;
+    border-radius: 0;
+    top: 30px;
+    cursor: pointer; }

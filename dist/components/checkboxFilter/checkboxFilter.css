@@ -1,0 +1,31 @@
+.checkboxFilter {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 5px;
+  justify-content: start;
+  align-items: center; }
+  .checkboxFilter .checkboxFilter-checkbox,
+  .checkboxFilter .checkboxFilter-input {
+    width: 19px;
+    height: 19px; }
+  .checkboxFilter .checkboxFilter-checkbox {
+    position: relative; }
+    .checkboxFilter .checkboxFilter-checkbox .checkboxFilter-input {
+      position: absolute;
+      width: 19px;
+      height: 19px;
+      z-index: 1;
+      opacity: 0;
+      cursor: pointer; }
+      .checkboxFilter .checkboxFilter-checkbox .checkboxFilter-input:checked ~ .checkboxFilter-icon {
+        border-color: white;
+        background-color: #05ac9d; }
+    .checkboxFilter .checkboxFilter-checkbox .checkboxFilter-icon {
+      position: absolute;
+      width: 11px;
+      height: 11px;
+      border: 2px solid #282828;
+      margin: 2px;
+      transition: 0.2s; }
+  .checkboxFilter .checkboxFilter-summury {
+    color: #05ac9d; }

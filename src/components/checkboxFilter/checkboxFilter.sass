@@ -1,0 +1,39 @@
+@import "../../sass/variables"
+
+.checkboxFilter
+    display: grid
+    grid-auto-flow: column
+    grid-gap: $gap_small_max
+    justify-content: start
+    align-items: center
+
+    .checkboxFilter-checkbox,
+    .checkboxFilter-input
+        width: $icon_size_small - 6px
+        height: $icon_size_small - 6px
+
+
+    .checkboxFilter-checkbox
+        position: relative
+
+        .checkboxFilter-input
+            position: absolute
+            width: $icon_size_small - 6px
+            height: $icon_size_small - 6px
+            z-index: 1
+            opacity: 0
+            cursor: pointer
+            &:checked ~ .checkboxFilter-icon
+                border-color: $font2_color_light_max
+                background-color: $font_color
+
+        .checkboxFilter-icon
+            position: absolute
+            width: $icon_size_small - 14px
+            height: $icon_size_small - 14px
+            border: 2px solid $font2_color
+            margin: 2px
+            transition: $animation_transition
+
+    .checkboxFilter-summury
+        color: $font_color

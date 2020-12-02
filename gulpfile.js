@@ -1,5 +1,6 @@
 const { src, dest, watch, series } = require("gulp");
 const browserSync = require("browser-sync").create();
+const concat = require("gulp-concat");
 const del = require("del");
 
 const sass = require("gulp-sass");
@@ -13,7 +14,7 @@ function serve() {
 
   watch("src/**/*.pug", html);
   watch("src/**/*.sass", css);
-  watch("src/js/*.js", js);
+  watch("src/**/*.js", series(js, jsComponents));
 }
 
 function clear() {
@@ -41,7 +42,18 @@ function css() {
 }
 
 function js() {
-  return src(["src/js/**/*.js"])
+  return src(["src/js/*.js", "!src/js/main.js"])
+    .pipe(dest("dist/js"))
+    .pipe(browserSync.stream());
+}
+
+function jsComponents() {
+  return src([
+    "src/components/**/*.js",
+    "src/layouts/**/*.js",
+    "src/js/main.js",
+  ])
+    .pipe(concat("main.js"))
     .pipe(dest("dist/js"))
     .pipe(browserSync.stream());
 }
@@ -68,6 +80,16 @@ function img() {
   return src("src/img/**").pipe(dest("dist/img")).pipe(browserSync.stream());
 }
 
-exports.build = build = series(clear, html, css, js, fonts, icons, img, assets);
+exports.build = build = series(
+  clear,
+  html,
+  css,
+  js,
+  jsComponents,
+  fonts,
+  icons,
+  img,
+  assets
+);
 
 exports.dev = series(build, serve);

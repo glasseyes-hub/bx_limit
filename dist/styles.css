@@ -9,6 +9,9 @@
 body {
   font-family: Roboto;
   color: #282828; }
+  body input {
+    padding: 10px;
+    color: #757575; }
   body section.bannerPage {
     display: grid;
     grid-auto-flow: row;
@@ -533,42 +536,126 @@ body {
           grid-gap: 40px;
           grid-template-columns: repeat(2, auto);
           justify-content: space-between;
-          align-items: start; }
+          align-items: stretch; }
       body section.bannerPage main.content .panel.panel__catalog .catalog-filter {
-        width: 300px;
-        height: 700px; }
-        body section.bannerPage main.content .panel.panel__catalog .catalog-filter .js-slider_limit .irs-line {
-          background-color: #282828;
-          border-radius: 0; }
-        body section.bannerPage main.content .panel.panel__catalog .catalog-filter .js-slider_limit .irs-grid-text {
-          color: #757575; }
-        body section.bannerPage main.content .panel.panel__catalog .catalog-filter .js-slider_limit .irs-grid-pol {
-          background-color: #c1c1c1;
-          top: 1px; }
-        body section.bannerPage main.content .panel.panel__catalog .catalog-filter .js-slider_limit .irs-bar,
-        body section.bannerPage main.content .panel.panel__catalog .catalog-filter .js-slider_limit .irs-min,
-        body section.bannerPage main.content .panel.panel__catalog .catalog-filter .js-slider_limit .irs-max,
-        body section.bannerPage main.content .panel.panel__catalog .catalog-filter .js-slider_limit .irs-from,
-        body section.bannerPage main.content .panel.panel__catalog .catalog-filter .js-slider_limit .irs-to,
-        body section.bannerPage main.content .panel.panel__catalog .catalog-filter .js-slider_limit .irs-single {
-          background-color: #05ac9d; }
-        body section.bannerPage main.content .panel.panel__catalog .catalog-filter .js-slider_limit .irs-from:before,
-        body section.bannerPage main.content .panel.panel__catalog .catalog-filter .js-slider_limit .irs-to:before,
-        body section.bannerPage main.content .panel.panel__catalog .catalog-filter .js-slider_limit .irs-single:before {
-          border-top-color: #05ac9d; }
-        body section.bannerPage main.content .panel.panel__catalog .catalog-filter .js-slider_limit .irs-from,
-        body section.bannerPage main.content .panel.panel__catalog .catalog-filter .js-slider_limit .irs-to,
-        body section.bannerPage main.content .panel.panel__catalog .catalog-filter .js-slider_limit .irs-single {
-          padding: 5px 6.66667px;
-          border-radius: 0; }
-        body section.bannerPage main.content .panel.panel__catalog .catalog-filter .js-slider_limit .irs-handle {
-          background-color: #05ac9d;
-          width: 16px;
-          height: 16px;
-          box-shadow: none;
-          border: 3px solid #fff;
-          border-radius: 0;
-          top: 30px; }
+        width: 250px;
+        display: grid;
+        grid-gap: 40px;
+        border-right: 1px solid #c1c1c1;
+        padding-right: 60px;
+        align-content: start; }
+        body section.bannerPage main.content .panel.panel__catalog .catalog-filter .filter {
+          display: grid;
+          grid-gap: 20px;
+          align-content: start; }
+          body section.bannerPage main.content .panel.panel__catalog .catalog-filter .filter .filter-title {
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: 0.2s; }
+            body section.bannerPage main.content .panel.panel__catalog .catalog-filter .filter .filter-title:hover {
+              color: #757575; }
+          body section.bannerPage main.content .panel.panel__catalog .catalog-filter .filter .filter-body {
+            display: grid;
+            grid-gap: 20px; }
+            body section.bannerPage main.content .panel.panel__catalog .catalog-filter .filter .filter-body .filter-list {
+              display: grid;
+              grid-gap: 10px; }
+            body section.bannerPage main.content .panel.panel__catalog .catalog-filter .filter .filter-body .filter-showAll {
+              color: #757575;
+              cursor: pointer;
+              transition: 0.2s; }
+              body section.bannerPage main.content .panel.panel__catalog .catalog-filter .filter .filter-body .filter-showAll:hover {
+                color: #282828; }
+          body section.bannerPage main.content .panel.panel__catalog .catalog-filter .filter .priceFilter {
+            display: grid;
+            grid-gap: 20px; }
+            body section.bannerPage main.content .panel.panel__catalog .catalog-filter .filter .priceFilter .priceFilter-inputs {
+              display: grid;
+              grid-auto-flow: column;
+              justify-content: space-between; }
+              body section.bannerPage main.content .panel.panel__catalog .catalog-filter .filter .priceFilter .priceFilter-inputs .priceFilter-input {
+                width: 90px; }
+            body section.bannerPage main.content .panel.panel__catalog .catalog-filter .filter .priceFilter .irs .irs-line {
+              background-color: #282828;
+              border-radius: 0;
+              cursor: pointer; }
+            body section.bannerPage main.content .panel.panel__catalog .catalog-filter .filter .priceFilter .irs .irs-grid-text {
+              color: #757575; }
+            body section.bannerPage main.content .panel.panel__catalog .catalog-filter .filter .priceFilter .irs .irs-grid-pol {
+              background-color: #c1c1c1;
+              top: 1px; }
+            body section.bannerPage main.content .panel.panel__catalog .catalog-filter .filter .priceFilter .irs .irs-bar,
+            body section.bannerPage main.content .panel.panel__catalog .catalog-filter .filter .priceFilter .irs .irs-min,
+            body section.bannerPage main.content .panel.panel__catalog .catalog-filter .filter .priceFilter .irs .irs-max,
+            body section.bannerPage main.content .panel.panel__catalog .catalog-filter .filter .priceFilter .irs .irs-from,
+            body section.bannerPage main.content .panel.panel__catalog .catalog-filter .filter .priceFilter .irs .irs-to,
+            body section.bannerPage main.content .panel.panel__catalog .catalog-filter .filter .priceFilter .irs .irs-single {
+              background-color: #05ac9d;
+              cursor: pointer; }
+            body section.bannerPage main.content .panel.panel__catalog .catalog-filter .filter .priceFilter .irs .irs-from:before,
+            body section.bannerPage main.content .panel.panel__catalog .catalog-filter .filter .priceFilter .irs .irs-to:before,
+            body section.bannerPage main.content .panel.panel__catalog .catalog-filter .filter .priceFilter .irs .irs-single:before {
+              border-top-color: #05ac9d;
+              cursor: pointer; }
+            body section.bannerPage main.content .panel.panel__catalog .catalog-filter .filter .priceFilter .irs .irs-from,
+            body section.bannerPage main.content .panel.panel__catalog .catalog-filter .filter .priceFilter .irs .irs-to,
+            body section.bannerPage main.content .panel.panel__catalog .catalog-filter .filter .priceFilter .irs .irs-single {
+              padding: 5px 6.66667px;
+              border-radius: 0; }
+            body section.bannerPage main.content .panel.panel__catalog .catalog-filter .filter .priceFilter .irs .irs-handle {
+              background-color: #05ac9d;
+              width: 16px;
+              height: 16px;
+              box-shadow: none;
+              border: 3px solid #fff;
+              border-radius: 0;
+              top: 30px;
+              cursor: pointer; }
+          body section.bannerPage main.content .panel.panel__catalog .catalog-filter .filter .itemFilter {
+            display: grid;
+            grid-auto-flow: column;
+            grid-gap: 5px;
+            justify-content: start;
+            align-items: center;
+            cursor: pointer; }
+            body section.bannerPage main.content .panel.panel__catalog .catalog-filter .filter .itemFilter:hover .itemFilter-text {
+              color: #757575; }
+            body section.bannerPage main.content .panel.panel__catalog .catalog-filter .filter .itemFilter .itemFilter-icon {
+              width: 25px;
+              height: 25px; }
+            body section.bannerPage main.content .panel.panel__catalog .catalog-filter .filter .itemFilter .itemFilter-summury {
+              color: #05ac9d; }
+          body section.bannerPage main.content .panel.panel__catalog .catalog-filter .filter .checkboxFilter {
+            display: grid;
+            grid-auto-flow: column;
+            grid-gap: 5px;
+            justify-content: start;
+            align-items: center; }
+            body section.bannerPage main.content .panel.panel__catalog .catalog-filter .filter .checkboxFilter .checkboxFilter-checkbox,
+            body section.bannerPage main.content .panel.panel__catalog .catalog-filter .filter .checkboxFilter .checkboxFilter-input {
+              width: 19px;
+              height: 19px; }
+            body section.bannerPage main.content .panel.panel__catalog .catalog-filter .filter .checkboxFilter .checkboxFilter-checkbox {
+              position: relative; }
+              body section.bannerPage main.content .panel.panel__catalog .catalog-filter .filter .checkboxFilter .checkboxFilter-checkbox .checkboxFilter-input {
+                position: absolute;
+                width: 19px;
+                height: 19px;
+                z-index: 1;
+                opacity: 0;
+                cursor: pointer; }
+                body section.bannerPage main.content .panel.panel__catalog .catalog-filter .filter .checkboxFilter .checkboxFilter-checkbox .checkboxFilter-input:checked ~ .checkboxFilter-icon {
+                  border-color: white;
+                  background-color: #05ac9d; }
+              body section.bannerPage main.content .panel.panel__catalog .catalog-filter .filter .checkboxFilter .checkboxFilter-checkbox .checkboxFilter-icon {
+                position: absolute;
+                width: 11px;
+                height: 11px;
+                border: 2px solid #282828;
+                margin: 2px;
+                transition: 0.2s; }
+            body section.bannerPage main.content .panel.panel__catalog .catalog-filter .filter .checkboxFilter .checkboxFilter-summury {
+              color: #05ac9d; }
       body section.bannerPage main.content .panel.panel__catalog .catalog-list {
         display: grid;
         grid-template-columns: repeat(3, 1fr);

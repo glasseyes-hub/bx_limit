@@ -1,0 +1,14 @@
+.itemFilter {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 5px;
+  justify-content: start;
+  align-items: center;
+  cursor: pointer; }
+  .itemFilter:hover .itemFilter-text {
+    color: #757575; }
+  .itemFilter .itemFilter-icon {
+    width: 25px;
+    height: 25px; }
+  .itemFilter .itemFilter-summury {
+    color: #05ac9d; }
