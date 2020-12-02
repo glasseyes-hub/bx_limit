@@ -4,9 +4,10 @@
   .priceFilter .priceFilter-inputs {
     display: grid;
     grid-auto-flow: column;
-    justify-content: space-between; }
+    justify-content: space-between;
+    grid-gap: 20px; }
     .priceFilter .priceFilter-inputs .priceFilter-input {
-      width: 90px; }
+      width: 100px; }
   .priceFilter .irs .irs-line {
     background-color: #282828;
     border-radius: 0;
