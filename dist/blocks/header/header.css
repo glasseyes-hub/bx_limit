@@ -22,7 +22,7 @@ section.header .header-top .wrap {
         section.header .header-top .wrap .wrap-container .grid .topMenu .topMenu-link {
           color: #757575; }
           section.header .header-top .wrap .wrap-container .grid .topMenu .topMenu-link:hover {
-            color: #282828;
+            color: #b4b4b4;
             transition: 0.2s; }
       section.header .header-top .wrap .wrap-container .grid .additionalMenu {
         display: grid;
@@ -37,7 +37,7 @@ section.header .header-top .wrap {
           align-items: center;
           color: #757575; }
           section.header .header-top .wrap .wrap-container .grid .additionalMenu .additionalMenu-link:hover {
-            color: #282828;
+            color: #b4b4b4;
             transition: 0.2s; }
           section.header .header-top .wrap .wrap-container .grid .additionalMenu .additionalMenu-link .additionalMenu-icon {
             width: 25px;

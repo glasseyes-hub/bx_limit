@@ -17,7 +17,7 @@
         grid-auto-flow: row;
         grid-gap: 40px;
         align-content: start;
-        color: #c1c1c1; }
+        color: #b4b4b4; }
         .footer .footer-top .wrap .wrap-container .grid .info .info-block {
           display: grid;
           grid-gap: 20px; }
@@ -74,7 +74,7 @@
               grid-gap: 10px;
               justify-content: start;
               align-items: center;
-              color: #c1c1c1;
+              color: #b4b4b4;
               text-decoration: none; }
               .footer .footer-top .wrap .wrap-container .grid .contacts .contacts-block .contacts-body .contacts-item:hover {
                 color: white; }
@@ -90,7 +90,7 @@
                 width: 35px;
                 height: 35px; }
                 .footer .footer-top .wrap .wrap-container .grid .contacts .contacts-block .contacts-body_social .contacts-item:hover {
-                  background-color: #0f0f0f;
+                  background-color: #161616;
                   transition: .2s; }
                 .footer .footer-top .wrap .wrap-container .grid .contacts .contacts-block .contacts-body_social .contacts-item .contacts-logo {
                   width: 20px;
@@ -118,5 +118,5 @@
         color: #757575;
         transition: 0.2s; }
       .footer .footer-bottom .wrap .wrap-container .grid .footer-sitemap:hover {
-        color: #c1c1c1;
+        color: #b4b4b4;
         text-decoration: underline; }

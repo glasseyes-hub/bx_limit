@@ -18,7 +18,7 @@
       opacity: 0;
       cursor: pointer; }
       .checkboxFilter .checkboxFilter-checkbox .checkboxFilter-input:hover ~ .checkboxFilter-icon {
-        border-color: #c1c1c1; }
+        border-color: #757575; }
       .checkboxFilter .checkboxFilter-checkbox .checkboxFilter-input:checked ~ .checkboxFilter-icon {
         border-color: white;
         background-color: #05ac9d; }

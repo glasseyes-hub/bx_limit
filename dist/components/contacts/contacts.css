@@ -17,7 +17,7 @@
         grid-gap: 10px;
         justify-content: start;
         align-items: center;
-        color: #c1c1c1;
+        color: #b4b4b4;
         text-decoration: none; }
         .contacts .contacts-block .contacts-body .contacts-item:hover {
           color: white; }
@@ -33,7 +33,7 @@
           width: 35px;
           height: 35px; }
           .contacts .contacts-block .contacts-body_social .contacts-item:hover {
-            background-color: #0f0f0f;
+            background-color: #161616;
             transition: .2s; }
           .contacts .contacts-block .contacts-body_social .contacts-item .contacts-logo {
             width: 20px;
