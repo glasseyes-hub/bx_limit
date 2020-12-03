@@ -2,18 +2,11 @@
   display: grid;
   grid-auto-flow: column;
   grid-gap: 20px;
-  padding: 10px 0; }
+  align-items: center; }
   .topMenu a {
     text-decoration: none; }
   .topMenu .topMenu-link {
-    display: grid;
-    grid-auto-flow: column;
-    grid-gap: 10px;
-    align-items: center;
     color: #757575; }
     .topMenu .topMenu-link:hover {
       color: #282828;
       transition: 0.2s; }
-    .topMenu .topMenu-link .topMenu-icon {
-      width: 25px;
-      height: 25px; }

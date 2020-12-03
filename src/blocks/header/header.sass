@@ -1,15 +1,25 @@
 @import "../../sass/variables"
-@import "../../layouts/panel/panel"
+@import "../../layouts/wrap/wrap"
+@import "../../layouts/grid/grid"
 
-.header
-  +panel('header-top', $font2_color_light_max, $col:2, $padding: 0)
-    @import "../../components/topMenu/topMenu"
-    @import "../../components/additionalMenu/additionalMenu"
-  +panel('header-main', $font2_color, 4, $padding: $padding 0)
-    @import "../../components/logo/logo"
-    @import "../../components/phone/phone"
-    @import "../../components/worktime/worktime"
-    @import "../../components/cart/cart"
-  +panel('header-menu', $font2_color_dark, 2, $padding: 0)
-    @import "../../components/menu/menu"
-    @import "../../components/search/search"
+section.header
+    .header-top
+        +wrap($font2_color_light_max, $padding: $padding_small 0)
+            +grid($justify: space-between)
+                @import "../../components/topMenu/topMenu"
+                @import "../../components/additionalMenu/additionalMenu"
+    .header-main
+        +wrap($font2_color, $padding: $padding 0)
+            +grid($col: 4)
+                & > *:last-child
+                    justify-self: end
+                    align-self: start
+                @import "../../components/logo/logo"
+                @import "../../components/phone/phone"
+                @import "../../components/worktime/worktime"
+                @import "../../components/cart/cart"
+    .header-menu
+        +wrap($font2_color_dark, $padding: 0)
+            +grid($justify: space-between)
+                @import "../../components/menu/menu"
+                @import "../../components/search/search"

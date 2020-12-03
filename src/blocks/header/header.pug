@@ -1,14 +1,21 @@
-include ../../layouts/panel/panel
+include ../../layouts/wrap/wrap
+include ../../layouts/grid/grid
 
-.header
-    +panel('header-top')
-        include ../../components/topMenu/topMenu
-        include ../../components/additionalMenu/additionalMenu
-    +panel('header-main')
-        include ../../components/logo/logo
-        include ../../components/phone/phone
-        include ../../components/worktime/worktime
-        include ../../components/cart/cart
-    +panel('header-menu')
-        include ../../components/menu/menu
-        include ../../components/search/seacrh
+section.header
+    .header-top
+        +wrap
+            +grid
+                include ../../components/topMenu/topMenu
+                include ../../components/additionalMenu/additionalMenu
+    .header-main
+        +wrap
+            +grid
+                include ../../components/logo/logo
+                include ../../components/phone/phone
+                include ../../components/worktime/worktime
+                include ../../components/cart/cart
+    .header-menu
+        +wrap
+            +grid
+                include ../../components/menu/menu
+                include ../../components/search/seacrh

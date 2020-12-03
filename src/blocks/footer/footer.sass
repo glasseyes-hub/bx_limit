@@ -1,19 +1,24 @@
 @import "../../sass/variables"
-@import "../../layouts/panel/panel"
+@import "../../layouts/wrap/wrap"
+@import "../../layouts/grid/grid"
 
 .footer
-  +panel('footer-top', $font2_color, 3, $align: start)
-    @import "../../components/info/info"
-    @import "../../components/contacts/contacts"
-    @import "../../components/map/map"
-  +panel('footer-bottom', $font2_color_dark, 2, $padding: $padding 0 )
-    .footer-copyright,
-    .footer-sitemap
-      color: $font2_color_light
-      transition: $animation_transition
+    .footer-top
+        +wrap($font2_color)
+            +grid($col: 3, $align: start)
+                @import "../../components/info/info"
+                @import "../../components/contacts/contacts"
+                @import "../../components/map/map"
+    .footer-bottom
+        +wrap($font2_color_dark, $padding: $padding 0 )
+            +grid($col: 2, $align: start)
+                .footer-copyright,
+                .footer-sitemap
+                    color: $font2_color_light
+                    transition: $animation_transition
 
-    .footer-sitemap
-      text-decoration: none
-      &:hover
-        color: $font2_color_light_mid
-        text-decoration: underline
+                .footer-sitemap
+                    text-decoration: none
+                    &:hover
+                        color: $font2_color_light_mid
+                        text-decoration: underline

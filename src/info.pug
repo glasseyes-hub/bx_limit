@@ -1,7 +1,25 @@
 extends templates/page/page
+include layouts/wrap/wrap
+include layouts/grid/grid
 
-include layouts/panel/panel
+block header
+    .seriesList
+        +wrap
+            +grid
+                h4.seriesList-title Серия
+                include components/series/series
+                include components/series/series
+                include components/series/series
+                include components/series/series
+                include components/series/series
+                include components/series/series
+                include components/series/series
+                include components/series/series
+                include components/series/series
+                include components/series/series
 
 block content
-    +panel('inform', 'Информационная страница')
-        | На этой странице размещен информационный контент
+    .inform
+        +wrap
+            +grid
+                | На этой странице размещен информационный контент

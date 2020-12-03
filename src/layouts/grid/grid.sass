@@ -1,0 +1,14 @@
+@import "../../sass/variables"
+
+@mixin grid($col: auto, $gap: $gap, $justify: stretch, $align: stretch)
+    .grid
+        display: grid
+        grid-gap: $gap
+        grid-template-columns: repeat($col, 1fr)
+        @if $col == 'auto'
+            grid-auto-flow: column
+        justify-content: $justify
+        align-items: $align
+
+        @content
+

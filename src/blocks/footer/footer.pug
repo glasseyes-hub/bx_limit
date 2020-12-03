@@ -1,10 +1,15 @@
-include ../../layouts/panel/panel
+include ../../layouts/wrap/wrap
+include ../../layouts/grid/grid
 
 .footer
-    +panel('footer-top')
-        include ../../components/info/info
-        include ../../components/contacts/contacts
-        include ../../components/map/map
-    +panel('footer-bottom')
-        p.footer-copyright © Межкомнатные и входные двери от производителя ПрофильДорс СПб
-        a.footer-sitemap(href="") Карта сайта
+    .footer-top
+        +wrap
+            +grid
+                include ../../components/info/info
+                include ../../components/contacts/contacts
+                include ../../components/map/map
+    .footer-bottom
+        +wrap
+            +grid
+                p.footer-copyright © Межкомнатные и входные двери от производителя ПрофильДорс СПб
+                a.footer-sitemap(href="") Карта сайта

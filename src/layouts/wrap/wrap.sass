@@ -1,0 +1,16 @@
+@import "../../sass/variables"
+
+@mixin wrap($bgc: transparent, $width: $wrap, $padding: $padding_large 0, $gap: $gap)
+  .wrap
+    background-color: $bgc
+
+    .wrap-container
+      width: $width
+      padding: $padding
+      margin: 0 auto
+      display: grid
+      grid-gap: $gap
+
+      @content
+
+

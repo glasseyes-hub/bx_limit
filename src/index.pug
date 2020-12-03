@@ -1,20 +1,49 @@
-extends templates/bannerPage/bannerPage
+extends templates/page/page
+include layouts/wrap/wrap
+include layouts/grid/grid
 
-include layouts/panel/panel
+block header
+    .banner
+        +wrap
+            +grid
+                include components/banner/banner
+
+    .seriesList
+        +wrap
+            +grid
+                h4.seriesList-title Серия
+                include components/series/series
+                include components/series/series
+                include components/series/series
+                include components/series/series
+                include components/series/series
+                include components/series/series
+                include components/series/series
+                include components/series/series
+                include components/series/series
+                include components/series/series
 
 block content
-    +panel('products', 'Новинки', '#')
-        include components/product/product
-        include components/product/product
-        include components/product/product
-        include components/product/product
-        include components/product/product
-        include components/product/product
-    +panel('advantages')
-        include components/advantage/advantage
-        include components/advantage/advantage
-        include components/advantage/advantage
-    +panel('works', 'Наши работы', '#')
-        include components/work/work
-        include components/work/work
-        include components/work/work
+    .products
+        +wrap
+            +grid
+                include components/product/product
+                include components/product/product
+                include components/product/product
+                include components/product/product
+                include components/product/product
+                include components/product/product
+
+    .advantages
+        +wrap
+            +grid
+                include components/advantage/advantage
+                include components/advantage/advantage
+                include components/advantage/advantage
+
+    .works
+        +wrap
+            +grid
+                include components/work/work
+                include components/work/work
+                include components/work/work

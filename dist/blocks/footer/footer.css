@@ -1,148 +1,124 @@
-.footer .panel.panel__footer-top {
+.footer .footer-top .wrap {
   background-color: #282828; }
-  .footer .panel.panel__footer-top .panel-wrap {
+  .footer .footer-top .wrap .wrap-container {
     width: 1326px;
     padding: 40px 0;
     margin: 0 auto;
     display: grid;
     grid-gap: 40px; }
-    .footer .panel.panel__footer-top .panel-wrap .panel-header {
-      display: grid;
-      grid-auto-flow: column;
-      justify-content: space-between;
-      align-items: center; }
-      .footer .panel.panel__footer-top .panel-wrap .panel-header .panel-title {
-        font-size: 28px; }
-      .footer .panel.panel__footer-top .panel-wrap .panel-header .panel-all {
-        color: #757575;
-        text-decoration: none; }
-        .footer .panel.panel__footer-top .panel-wrap .panel-header .panel-all:hover {
-          text-decoration: underline; }
-    .footer .panel.panel__footer-top .panel-wrap .panel-grid {
+    .footer .footer-top .wrap .wrap-container .grid {
       display: grid;
       grid-gap: 40px;
-      grid-template-columns: repeat(3, auto);
-      justify-content: space-between;
+      grid-template-columns: repeat(3, 1fr);
+      justify-content: stretch;
       align-items: start; }
-  .footer .panel.panel__footer-top .info {
-    display: grid;
-    grid-auto-flow: row;
-    grid-gap: 40px;
-    align-content: start;
-    color: #c1c1c1; }
-    .footer .panel.panel__footer-top .info .info-block {
-      display: grid;
-      grid-gap: 20px; }
-      .footer .panel.panel__footer-top .info .info-block .info-title {
-        text-transform: uppercase;
-        color: white; }
-      .footer .panel.panel__footer-top .info .info-block .info-text_awards {
+      .footer .footer-top .wrap .wrap-container .grid .info {
         display: grid;
-        grid-auto-flow: column;
-        justify-content: start;
-        grid-gap: 20px; }
-      .footer .panel.panel__footer-top .info .info-block .info-text_payments {
-        display: grid;
-        grid-auto-flow: column;
-        justify-content: start;
-        grid-gap: 5px; }
-        .footer .panel.panel__footer-top .info .info-block .info-text_payments .info-payments-system {
-          background-image: url(/icons/sprite-payment.png);
-          width: 53px;
-          height: 33px;
-          background-color: #757575;
-          filter: grayscale(100%) brightness(40%); }
-        .footer .panel.panel__footer-top .info .info-block .info-text_payments .info-payments-system:hover {
-          filter: grayscale(0%) brightness(80%);
-          transition: 0.2s; }
-        .footer .panel.panel__footer-top .info .info-block .info-text_payments .info-payments-system_visa {
-          background-position: -0px 0; }
-        .footer .panel.panel__footer-top .info .info-block .info-text_payments .info-payments-system_mastercard {
-          background-position: -66px 0; }
-        .footer .panel.panel__footer-top .info .info-block .info-text_payments .info-payments-system_maestro {
-          background-position: -133px 0; }
-        .footer .panel.panel__footer-top .info .info-block .info-text_payments .info-payments-system_robocassa {
-          background-position: -199px 0; }
-        .footer .panel.panel__footer-top .info .info-block .info-text_payments .info-payments-system_yandex {
-          background-position: 0 -138px; }
-        .footer .panel.panel__footer-top .info .info-block .info-text_payments .info-payments-system_yandex {
-          background-position: 0 -185px; }
-  .footer .panel.panel__footer-top .contacts {
-    display: grid;
-    align-content: start;
-    grid-gap: 40px; }
-    .footer .panel.panel__footer-top .contacts .contacts-block {
-      display: grid;
-      grid-gap: 20px; }
-      .footer .panel.panel__footer-top .contacts .contacts-block .contacts-title {
-        text-transform: uppercase;
-        color: white; }
-      .footer .panel.panel__footer-top .contacts .contacts-block .contacts-body {
-        display: grid;
-        grid-gap: 10px; }
-        .footer .panel.panel__footer-top .contacts .contacts-block .contacts-body .contacts-item {
+        grid-auto-flow: row;
+        grid-gap: 40px;
+        align-content: start;
+        color: #c1c1c1; }
+        .footer .footer-top .wrap .wrap-container .grid .info .info-block {
           display: grid;
-          grid-auto-flow: column;
-          grid-gap: 10px;
-          justify-content: start;
-          align-items: center;
-          color: #c1c1c1;
-          text-decoration: none; }
-          .footer .panel.panel__footer-top .contacts .contacts-block .contacts-body .contacts-item:hover {
+          grid-gap: 20px; }
+          .footer .footer-top .wrap .wrap-container .grid .info .info-block .info-title {
+            text-transform: uppercase;
             color: white; }
-          .footer .panel.panel__footer-top .contacts .contacts-block .contacts-body .contacts-item .contacts-logo {
-            width: 16.66667px;
-            height: 16.66667px; }
-        .footer .panel.panel__footer-top .contacts .contacts-block .contacts-body_social {
-          grid-auto-flow: column;
-          justify-content: start; }
-          .footer .panel.panel__footer-top .contacts .contacts-block .contacts-body_social .contacts-item {
-            justify-content: center;
-            background-color: #1b1b1b;
-            width: 35px;
-            height: 35px; }
-            .footer .panel.panel__footer-top .contacts .contacts-block .contacts-body_social .contacts-item:hover {
-              background-color: #0f0f0f;
-              transition: .2s; }
-            .footer .panel.panel__footer-top .contacts .contacts-block .contacts-body_social .contacts-item .contacts-logo {
-              width: 20px;
-              height: 20px; }
-      .footer .panel.panel__footer-top .contacts .contacts-block_social {
+          .footer .footer-top .wrap .wrap-container .grid .info .info-block .info-text_awards {
+            display: grid;
+            grid-auto-flow: column;
+            justify-content: start;
+            grid-gap: 20px; }
+          .footer .footer-top .wrap .wrap-container .grid .info .info-block .info-text_payments {
+            display: grid;
+            grid-auto-flow: column;
+            justify-content: start;
+            grid-gap: 5px; }
+            .footer .footer-top .wrap .wrap-container .grid .info .info-block .info-text_payments .info-payments-system {
+              background-image: url(/icons/sprite-payment.png);
+              width: 53px;
+              height: 33px;
+              background-color: #757575;
+              filter: grayscale(100%) brightness(40%); }
+            .footer .footer-top .wrap .wrap-container .grid .info .info-block .info-text_payments .info-payments-system:hover {
+              filter: grayscale(0%) brightness(80%);
+              transition: 0.2s; }
+            .footer .footer-top .wrap .wrap-container .grid .info .info-block .info-text_payments .info-payments-system_visa {
+              background-position: -0px 0; }
+            .footer .footer-top .wrap .wrap-container .grid .info .info-block .info-text_payments .info-payments-system_mastercard {
+              background-position: -66px 0; }
+            .footer .footer-top .wrap .wrap-container .grid .info .info-block .info-text_payments .info-payments-system_maestro {
+              background-position: -133px 0; }
+            .footer .footer-top .wrap .wrap-container .grid .info .info-block .info-text_payments .info-payments-system_robocassa {
+              background-position: -199px 0; }
+            .footer .footer-top .wrap .wrap-container .grid .info .info-block .info-text_payments .info-payments-system_yandex {
+              background-position: 0 -138px; }
+            .footer .footer-top .wrap .wrap-container .grid .info .info-block .info-text_payments .info-payments-system_yandex {
+              background-position: 0 -185px; }
+      .footer .footer-top .wrap .wrap-container .grid .contacts {
         display: grid;
-        grid-auto-flow: column; }
+        align-content: start;
+        grid-gap: 40px; }
+        .footer .footer-top .wrap .wrap-container .grid .contacts .contacts-block {
+          display: grid;
+          grid-gap: 20px; }
+          .footer .footer-top .wrap .wrap-container .grid .contacts .contacts-block .contacts-title {
+            text-transform: uppercase;
+            color: white; }
+          .footer .footer-top .wrap .wrap-container .grid .contacts .contacts-block .contacts-body {
+            display: grid;
+            grid-gap: 10px; }
+            .footer .footer-top .wrap .wrap-container .grid .contacts .contacts-block .contacts-body .contacts-item {
+              display: grid;
+              grid-auto-flow: column;
+              grid-gap: 10px;
+              justify-content: start;
+              align-items: center;
+              color: #c1c1c1;
+              text-decoration: none; }
+              .footer .footer-top .wrap .wrap-container .grid .contacts .contacts-block .contacts-body .contacts-item:hover {
+                color: white; }
+              .footer .footer-top .wrap .wrap-container .grid .contacts .contacts-block .contacts-body .contacts-item .contacts-logo {
+                width: 16.66667px;
+                height: 16.66667px; }
+            .footer .footer-top .wrap .wrap-container .grid .contacts .contacts-block .contacts-body_social {
+              grid-auto-flow: column;
+              justify-content: start; }
+              .footer .footer-top .wrap .wrap-container .grid .contacts .contacts-block .contacts-body_social .contacts-item {
+                justify-content: center;
+                background-color: #1b1b1b;
+                width: 35px;
+                height: 35px; }
+                .footer .footer-top .wrap .wrap-container .grid .contacts .contacts-block .contacts-body_social .contacts-item:hover {
+                  background-color: #0f0f0f;
+                  transition: .2s; }
+                .footer .footer-top .wrap .wrap-container .grid .contacts .contacts-block .contacts-body_social .contacts-item .contacts-logo {
+                  width: 20px;
+                  height: 20px; }
+          .footer .footer-top .wrap .wrap-container .grid .contacts .contacts-block_social {
+            display: grid;
+            grid-auto-flow: column; }
 
-.footer .panel.panel__footer-bottom {
+.footer .footer-bottom .wrap {
   background-color: #1b1b1b; }
-  .footer .panel.panel__footer-bottom .panel-wrap {
+  .footer .footer-bottom .wrap .wrap-container {
     width: 1326px;
     padding: 20px 0;
     margin: 0 auto;
     display: grid;
     grid-gap: 40px; }
-    .footer .panel.panel__footer-bottom .panel-wrap .panel-header {
-      display: grid;
-      grid-auto-flow: column;
-      justify-content: space-between;
-      align-items: center; }
-      .footer .panel.panel__footer-bottom .panel-wrap .panel-header .panel-title {
-        font-size: 28px; }
-      .footer .panel.panel__footer-bottom .panel-wrap .panel-header .panel-all {
-        color: #757575;
-        text-decoration: none; }
-        .footer .panel.panel__footer-bottom .panel-wrap .panel-header .panel-all:hover {
-          text-decoration: underline; }
-    .footer .panel.panel__footer-bottom .panel-wrap .panel-grid {
+    .footer .footer-bottom .wrap .wrap-container .grid {
       display: grid;
       grid-gap: 40px;
-      grid-template-columns: repeat(2, auto);
-      justify-content: space-between;
-      align-items: center; }
-  .footer .panel.panel__footer-bottom .footer-copyright,
-  .footer .panel.panel__footer-bottom .footer-sitemap {
-    color: #757575;
-    transition: 0.2s; }
-  .footer .panel.panel__footer-bottom .footer-sitemap {
-    text-decoration: none; }
-    .footer .panel.panel__footer-bottom .footer-sitemap:hover {
-      color: #c1c1c1;
-      text-decoration: underline; }
+      grid-template-columns: repeat(2, 1fr);
+      justify-content: stretch;
+      align-items: start; }
+      .footer .footer-bottom .wrap .wrap-container .grid .footer-copyright,
+      .footer .footer-bottom .wrap .wrap-container .grid .footer-sitemap {
+        color: #757575;
+        transition: 0.2s; }
+      .footer .footer-bottom .wrap .wrap-container .grid .footer-sitemap {
+        text-decoration: none; }
+        .footer .footer-bottom .wrap .wrap-container .grid .footer-sitemap:hover {
+          color: #c1c1c1;
+          text-decoration: underline; }

@@ -1,7 +1,8 @@
 @import "sass/variables"
-@import "templates/bannerPage/bannerPage"
-@import "layouts/panel/panel"
-@import "layouts/filter/filter"
+@import "templates/page/page"
+@import "layouts/wrap/wrap"
+@import "layouts/grid/grid"
+@import "layouts/filterItem/filterItem"
 
 @font-face
     font-family: Roboto
@@ -19,31 +20,53 @@ body
         padding: $padding_small
         color: $font2_color_light
 
-    +bannerPage
-        +panel('products', $font2_color_light_max, 4)
-            @import "components/product/product"
-        +panel('advantages', $col: 3)
-            @import "components/advantage/advantage"
-        +panel('works', $font2_color_light_max, 3)
-            @import "components/work/work"
-        +panel('inform', $font2_color_light_max)
-        +panel('catalog', $font2_color_light_max, 2, $align: stretch)
-            .catalog-filter
-                display: grid
-                grid-gap: $gap
-                border-right: 1px solid $font2_color_light_mid
-                padding-right: $padding_large_mid
-                align-content: start
+    +page
+        .banner
+            +wrap($width: 100%, $padding: 0)
+                +grid
+                    @import "components/banner/banner"
 
-                +filter
-                    @import "components/priceFilter/priceFilter"
-                    @import "components/itemFilter/itemFilter"
-                    @import "components/checkboxFilter/checkboxFilter"
+        .seriesList
+            +wrap($font2_color_light_max, $padding: $padding_small 0)
+                +grid($align: center)
+                    @import "components/series/series"
 
+        .products
+            +wrap($font2_color_light_max)
+                +grid($col: 4)
+                    @import "components/product/product"
 
+        .advantages
+            +wrap
+                +grid($col: 3)
+                    @import "components/advantage/advantage"
 
-            .catalog-list
-                display: grid
-                grid-template-columns: repeat(3, 1fr)
-                grid-gap: 60px
-                @import "components/product/product"
+        .works
+            +wrap($font2_color_light_max)
+                +grid($col: 3)
+                    @import "components/work/work"
+
+        .inform
+            +wrap($font2_color_light_max)
+                +grid
+
+        .catalog
+            +wrap($font2_color_light_max)
+                +grid($col: 2, $align: stretch)
+                    .catalog-filter
+                        display: grid
+                        grid-gap: $gap
+                        border-right: 1px solid $font2_color_light_mid
+                        padding-right: $padding_large_mid
+                        align-content: start
+
+                        +filterItem
+                            @import "components/priceFilter/priceFilter"
+                            @import "components/itemFilter/itemFilter"
+                            @import "components/checkboxFilter/checkboxFilter"
+
+                    .catalog-list
+                        display: grid
+                        grid-template-columns: repeat(3, 1fr)
+                        grid-gap: 60px
+                        @import "components/product/product"

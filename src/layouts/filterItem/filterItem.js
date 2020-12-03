@@ -1,14 +1,14 @@
-class Filter {
+class FilterItem {
   maxShowElements = 5;
   bodyHidden = false;
   listHidden = false;
 
   constructor(filter) {
     this.filter = $(filter);
-    this.title = this.filter.find($(".filter-title"));
-    this.body = this.filter.find($(".filter-body"));
-    this.list = this.filter.find($(".filter-list"));
-    this.button = this.filter.find($(".filter-showAll"));
+    this.title = this.filter.find($(".filterItem-title"));
+    this.body = this.filter.find($(".filterItem-body"));
+    this.list = this.filter.find($(".filterItem-list"));
+    this.button = this.filter.find($(".filterItem-showAll"));
 
     this.title.on("click", this.toggleBody);
     this.button.on("click", this.toggleList);
@@ -58,6 +58,6 @@ class Filter {
   showAll = () => {};
 }
 
-$(".filter").each((index, element) => {
-  const filter = new Filter(element);
+$(".filterItem").each((index, element) => {
+  const filter = new FilterItem(element);
 });

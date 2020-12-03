@@ -1,8 +1,7 @@
 .additionalMenu {
   display: grid;
   grid-auto-flow: column;
-  grid-gap: 20px;
-  padding: 10px 0; }
+  grid-gap: 20px; }
   .additionalMenu a {
     text-decoration: none; }
   .additionalMenu .additionalMenu-link {
