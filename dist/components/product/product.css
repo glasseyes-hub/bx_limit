@@ -3,7 +3,6 @@
   display: grid;
   grid-gap: 20px;
   justify-content: center;
-  width: 230px;
   padding: 20px;
   background-color: white;
   border: 1px solid #c1c1c1;
@@ -30,10 +29,9 @@
       font-weight: bold;
       border: 2px solid #282828; }
     .product .product-info .product-images {
-      width: 230px;
       display: grid;
       justify-content: center;
-      align-content: center;
+      align-items: center;
       overflow: hidden; }
     .product .product-info .product-title {
       font-weight: bold; }

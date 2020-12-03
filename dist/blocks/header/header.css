@@ -9,7 +9,6 @@ section.header .header-top .wrap {
     section.header .header-top .wrap .wrap-container .grid {
       display: grid;
       grid-gap: 40px;
-      grid-template-columns: repeat(auto, 1fr);
       grid-auto-flow: column;
       justify-content: space-between;
       align-items: stretch; }
@@ -128,7 +127,6 @@ section.header .header-menu .wrap {
     section.header .header-menu .wrap .wrap-container .grid {
       display: grid;
       grid-gap: 40px;
-      grid-template-columns: repeat(auto, 1fr);
       grid-auto-flow: column;
       justify-content: space-between;
       align-items: stretch; }

@@ -1,0 +1,14 @@
+@import "../../sass/variables"
+
+@mixin title
+    .title
+        display: grid
+        grid-auto-flow: column
+        justify-content: space-between
+        align-items: center
+
+        a
+            color: $color2_light
+            &:hover
+                color: $color2_light_low
+                text-decoration: underline

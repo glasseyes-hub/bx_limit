@@ -5,26 +5,25 @@
   display: grid
   grid-gap: $gap_small
   justify-content: center
-  width: 230px
   padding: $padding
-  background-color: $font2_color_light_max
-  border: 1px solid $font2_color_light_mid
+  background-color: $color2_light_high
+  border: 1px solid $color2_light_low
   transition: $animation_transition
 
   &:hover
     box-shadow: $shadow
-    border-color: $font2_color_light_max
+    border-color: $color2_light_high
 
   .product-info
     display: grid
     grid-gap: $gap_small
-    color: $font2_color
+    color: $color2
     text-decoration: none
 
     .product-series
       position: absolute
-      background-color: $font2_color_light_max
-      color: $font2_color
+      background-color: $color2_light_high
+      color: $color2
       left: -8px
       top: -8px
       display: grid
@@ -33,13 +32,12 @@
       width: 40px
       height: 40px
       font-weight: bold
-      border: 2px solid $font2_color
+      border: 2px solid $color2
 
     .product-images
-      width: 230px
       display: grid
       justify-content: center
-      align-content: center
+      align-items: center
       overflow: hidden
 
     .product-title
@@ -54,18 +52,18 @@
 
     .product-button
       padding: $padding_small
-      background-color: $font_color
+      background-color: $color
       border: none
-      color: $font2_color_light_max
+      color: $color2_light_high
       font-weight: bold
       text-transform: uppercase
       transition: $animation_transition
       cursor: pointer
       &:hover
-        background-color: $font_color_dark
+        background-color: $color_dark
 
     .product-price
-      font-size: $font_size_large_mid
+      font-size: $font_size_large_low
       font-weight: bold
 
 

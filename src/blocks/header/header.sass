@@ -4,12 +4,12 @@
 
 section.header
     .header-top
-        +wrap($font2_color_light_max, $padding: $padding_small 0)
+        +wrap($color2_light_high, $padding: $padding_small 0)
             +grid($justify: space-between)
                 @import "../../components/topMenu/topMenu"
                 @import "../../components/additionalMenu/additionalMenu"
     .header-main
-        +wrap($font2_color, $padding: $padding 0)
+        +wrap($color2, $padding: $padding 0)
             +grid($col: 4)
                 & > *:last-child
                     justify-self: end
@@ -19,7 +19,7 @@ section.header
                 @import "../../components/worktime/worktime"
                 @import "../../components/cart/cart"
     .header-menu
-        +wrap($font2_color_dark, $padding: 0)
+        +wrap($color2_dark)
             +grid($justify: space-between)
                 @import "../../components/menu/menu"
                 @import "../../components/search/search"

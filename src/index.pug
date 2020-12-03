@@ -1,6 +1,7 @@
 extends templates/page/page
 include layouts/wrap/wrap
 include layouts/grid/grid
+include layouts/title/title
 
 block header
     .banner
@@ -26,6 +27,7 @@ block header
 block content
     .products
         +wrap
+            +title('h1', 'Новинки', 'Показать все', '/catalog.html')
             +grid
                 include components/product/product
                 include components/product/product
@@ -43,6 +45,7 @@ block content
 
     .works
         +wrap
+            +title('h1', 'Наши работы', 'Показать все', '/catalog.html')
             +grid
                 include components/work/work
                 include components/work/work

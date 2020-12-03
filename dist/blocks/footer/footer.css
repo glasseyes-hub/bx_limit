@@ -110,15 +110,13 @@
     .footer .footer-bottom .wrap .wrap-container .grid {
       display: grid;
       grid-gap: 40px;
-      grid-template-columns: repeat(2, 1fr);
-      justify-content: stretch;
-      align-items: start; }
+      grid-auto-flow: column;
+      justify-content: space-between;
+      align-items: stretch; }
       .footer .footer-bottom .wrap .wrap-container .grid .footer-copyright,
       .footer .footer-bottom .wrap .wrap-container .grid .footer-sitemap {
         color: #757575;
         transition: 0.2s; }
-      .footer .footer-bottom .wrap .wrap-container .grid .footer-sitemap {
-        text-decoration: none; }
-        .footer .footer-bottom .wrap .wrap-container .grid .footer-sitemap:hover {
-          color: #c1c1c1;
-          text-decoration: underline; }
+      .footer .footer-bottom .wrap .wrap-container .grid .footer-sitemap:hover {
+        color: #c1c1c1;
+        text-decoration: underline; }

@@ -4,9 +4,10 @@
     .grid
         display: grid
         grid-gap: $gap
-        grid-template-columns: repeat($col, 1fr)
         @if $col == 'auto'
             grid-auto-flow: column
+        @else
+            grid-template-columns: repeat($col, 1fr)
         justify-content: $justify
         align-items: $align
 

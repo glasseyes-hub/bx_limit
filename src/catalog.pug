@@ -1,6 +1,7 @@
 extends templates/page/page
 include layouts/wrap/wrap
 include layouts/grid/grid
+include layouts/title/title
 include layouts/filterItem/filterItem
 
 block prepend scripts
@@ -30,6 +31,7 @@ block header
 block content
     .catalog
         +wrap
+            +title('h1', 'Каталог')
             +grid
                 .catalog-filter
                     +filterItem('Цена')
@@ -60,12 +62,13 @@ block content
                         include components/checkboxFilter/checkboxFilter
 
                 .catalog-list
-                    include components/product/product
-                    include components/product/product
-                    include components/product/product
-                    include components/product/product
-                    include components/product/product
-                    include components/product/product
-                    include components/product/product
-                    include components/product/product
-                    include components/product/product
+                    +grid
+                        include components/product/product
+                        include components/product/product
+                        include components/product/product
+                        include components/product/product
+                        include components/product/product
+                        include components/product/product
+                        include components/product/product
+                        include components/product/product
+                        include components/product/product

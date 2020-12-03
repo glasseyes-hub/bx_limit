@@ -1,0 +1,5 @@
+mixin title(tag, text, subtext, href)
+    .title
+        #{tag}.title-text #{text}
+        if subtext
+            a.title-subtext(href=href) #{subtext}

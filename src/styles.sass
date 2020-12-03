@@ -2,6 +2,7 @@
 @import "templates/page/page"
 @import "layouts/wrap/wrap"
 @import "layouts/grid/grid"
+@import "layouts/title/title"
 @import "layouts/filterItem/filterItem"
 
 @font-face
@@ -14,51 +15,65 @@
 
 body
     font-family: Roboto
-    color: $font2_color
+    color: $color2
 
     input
         padding: $padding_small
-        color: $font2_color_light
+        color: $color2_light
+
+    h1
+        font-size: $font_size_large_high
+    h2
+        font-size: $font_size_large_mid
+    h3
+        font-size: $font_size_large_low
+    h4
+        font-size: $font_size_large
+
+    a
+        transition: $animation_transition
+
+    +title
 
     +page
         .banner
-            +wrap($width: 100%, $padding: 0)
+            +wrap($width: 100%)
                 +grid
                     @import "components/banner/banner"
 
         .seriesList
-            +wrap($font2_color_light_max, $padding: $padding_small 0)
-                +grid($align: center)
+            +wrap($color2_light_high, $padding: $padding_small 0)
+                +grid($align: center, $justify: space-between)
                     @import "components/series/series"
 
         .products
-            +wrap($font2_color_light_max)
+            +wrap($color2_light_high, $padding: $padding_large 0)
                 +grid($col: 4)
                     @import "components/product/product"
 
         .advantages
-            +wrap
+            +wrap($padding: $padding_large 0)
                 +grid($col: 3)
                     @import "components/advantage/advantage"
 
         .works
-            +wrap($font2_color_light_max)
+            +wrap($color2_light_high, $padding: $padding_large 0)
                 +grid($col: 3)
                     @import "components/work/work"
 
         .inform
-            +wrap($font2_color_light_max)
+            +wrap($color2_light_high, $padding: $padding_large 0)
                 +grid
 
         .catalog
-            +wrap($font2_color_light_max)
-                +grid($col: 2, $align: stretch)
+            +wrap($color2_light_high, $padding: $padding_large 0)
+                +grid($col: 4)
                     .catalog-filter
                         display: grid
                         grid-gap: $gap
-                        border-right: 1px solid $font2_color_light_mid
-                        padding-right: $padding_large_mid
                         align-content: start
+                        grid-column-start: 1
+                        grid-column-end: 2
 
                         +filterItem
                             @import "components/priceFilter/priceFilter"
@@ -66,7 +81,7 @@ body
                             @import "components/checkboxFilter/checkboxFilter"
 
                     .catalog-list
-                        display: grid
-                        grid-template-columns: repeat(3, 1fr)
-                        grid-gap: 60px
-                        @import "components/product/product"
+                        grid-column-start: 2
+                        grid-column-end: 5
+                        +grid($col: 3)
+                            @import "components/product/product"

@@ -54,8 +54,6 @@ class FilterItem {
 
     this.button.text("Свернуть");
   }
-
-  showAll = () => {};
 }
 
 $(".filterItem").each((index, element) => {

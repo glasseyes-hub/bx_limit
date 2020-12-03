@@ -4,21 +4,20 @@
 
 .footer
     .footer-top
-        +wrap($font2_color)
+        +wrap($color2, $padding: $padding_large 0)
             +grid($col: 3, $align: start)
                 @import "../../components/info/info"
                 @import "../../components/contacts/contacts"
                 @import "../../components/map/map"
     .footer-bottom
-        +wrap($font2_color_dark, $padding: $padding 0 )
-            +grid($col: 2, $align: start)
+        +wrap($color2_dark, $padding: $padding 0 )
+            +grid($justify: space-between)
                 .footer-copyright,
                 .footer-sitemap
-                    color: $font2_color_light
+                    color: $color2_light
                     transition: $animation_transition
 
                 .footer-sitemap
-                    text-decoration: none
                     &:hover
-                        color: $font2_color_light_mid
+                        color: $color2_light_low
                         text-decoration: underline
