@@ -33,6 +33,10 @@
       justify-content: center;
       align-items: center;
       overflow: hidden; }
+      .product .product-info .product-images .product-image {
+        height: 350px;
+        -o-object-fit: scale-down;
+           object-fit: scale-down; }
     .product .product-info .product-title {
       font-weight: bold; }
   .product .product-bottom {
