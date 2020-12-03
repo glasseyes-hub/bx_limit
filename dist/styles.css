@@ -234,14 +234,14 @@ body {
           justify-content: space-between;
           align-items: center; }
           body section.page .seriesList .wrap .wrap-container .grid .series {
-            display: inline-block;
+            display: grid;
             color: #757575;
             width: 40px;
-            line-height: 40px;
+            height: 40px;
             border: 2px solid transparent;
             text-decoration: none;
-            vertical-align: middle;
-            text-align: center;
+            align-items: center;
+            justify-items: center;
             transition: 0.2s; }
             body section.page .seriesList .wrap .wrap-container .grid .series:hover {
               border-color: #282828;
