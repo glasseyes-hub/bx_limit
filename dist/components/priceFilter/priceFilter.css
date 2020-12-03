@@ -44,3 +44,5 @@
     border-radius: 0;
     top: 30px;
     cursor: pointer; }
+    .priceFilter .irs .irs-handle:hover {
+      background-color: #047a70; }

@@ -17,9 +17,13 @@
       z-index: 1;
       opacity: 0;
       cursor: pointer; }
+      .checkboxFilter .checkboxFilter-checkbox .checkboxFilter-input:hover ~ .checkboxFilter-icon {
+        border-color: #c1c1c1; }
       .checkboxFilter .checkboxFilter-checkbox .checkboxFilter-input:checked ~ .checkboxFilter-icon {
         border-color: white;
         background-color: #05ac9d; }
+      .checkboxFilter .checkboxFilter-checkbox .checkboxFilter-input:hover:checked ~ .checkboxFilter-icon {
+        background-color: #047a70; }
     .checkboxFilter .checkboxFilter-checkbox .checkboxFilter-icon {
       position: absolute;
       width: 11px;

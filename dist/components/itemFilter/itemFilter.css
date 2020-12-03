@@ -6,7 +6,7 @@
   align-items: center;
   cursor: pointer; }
   .itemFilter:hover .itemFilter-text {
-    color: #757575; }
+    color: #c1c1c1; }
   .itemFilter .itemFilter-icon {
     width: 25px;
     height: 25px; }

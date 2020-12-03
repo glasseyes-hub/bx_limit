@@ -23,9 +23,15 @@
             z-index: 1
             opacity: 0
             cursor: pointer
+            &:hover ~ .checkboxFilter-icon
+                border-color: $color2_light_low
+
             &:checked ~ .checkboxFilter-icon
                 border-color: $color2_light_high
                 background-color: $color
+
+            &:hover:checked ~ .checkboxFilter-icon
+                background-color: $color_dark
 
         .checkboxFilter-icon
             position: absolute

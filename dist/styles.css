@@ -189,7 +189,7 @@ body {
                 align-items: center;
                 padding: 10px; }
                 body section.page section.header .header-menu .wrap .wrap-container .grid .menu .menu-link_special:hover {
-                  background-color: #049386;
+                  background-color: #047a70;
                   color: white;
                   transition: 0.2s; }
                 body section.page section.header .header-menu .wrap .wrap-container .grid .menu .menu-link_special .menu-link-logo {
@@ -316,7 +316,7 @@ body {
                 transition: 0.2s;
                 cursor: pointer; }
                 body section.page .products .wrap .wrap-container .grid .product .product-bottom .product-button:hover {
-                  background-color: #049386; }
+                  background-color: #047a70; }
               body section.page .products .wrap .wrap-container .grid .product .product-bottom .product-price {
                 font-size: 18px;
                 font-weight: bold; }
@@ -402,7 +402,7 @@ body {
                 text-decoration: none;
                 cursor: pointer; }
                 body section.page .works .wrap .wrap-container .grid .work .work-info .work-button:hover {
-                  background-color: #049386; }
+                  background-color: #047a70; }
     body section.page .inform .wrap {
       background-color: white; }
       body section.page .inform .wrap .wrap-container {
@@ -457,7 +457,11 @@ body {
                 body section.page .catalog .wrap .wrap-container .grid .catalog-filter .filterItem .filterItem-body .filterItem-showAll {
                   color: #757575;
                   cursor: pointer;
-                  transition: 0.2s; }
+                  transition: 0.2s;
+                  text-decoration: underline;
+                  -webkit-text-decoration-style: dashed;
+                          text-decoration-style: dashed;
+                  justify-self: start; }
                   body section.page .catalog .wrap .wrap-container .grid .catalog-filter .filterItem .filterItem-body .filterItem-showAll:hover {
                     color: #282828; }
               body section.page .catalog .wrap .wrap-container .grid .catalog-filter .filterItem .priceFilter {
@@ -506,6 +510,8 @@ body {
                   border-radius: 0;
                   top: 30px;
                   cursor: pointer; }
+                  body section.page .catalog .wrap .wrap-container .grid .catalog-filter .filterItem .priceFilter .irs .irs-handle:hover {
+                    background-color: #047a70; }
               body section.page .catalog .wrap .wrap-container .grid .catalog-filter .filterItem .itemFilter {
                 display: grid;
                 grid-auto-flow: column;
@@ -514,7 +520,7 @@ body {
                 align-items: center;
                 cursor: pointer; }
                 body section.page .catalog .wrap .wrap-container .grid .catalog-filter .filterItem .itemFilter:hover .itemFilter-text {
-                  color: #757575; }
+                  color: #c1c1c1; }
                 body section.page .catalog .wrap .wrap-container .grid .catalog-filter .filterItem .itemFilter .itemFilter-icon {
                   width: 25px;
                   height: 25px; }
@@ -539,9 +545,13 @@ body {
                     z-index: 1;
                     opacity: 0;
                     cursor: pointer; }
+                    body section.page .catalog .wrap .wrap-container .grid .catalog-filter .filterItem .checkboxFilter .checkboxFilter-checkbox .checkboxFilter-input:hover ~ .checkboxFilter-icon {
+                      border-color: #c1c1c1; }
                     body section.page .catalog .wrap .wrap-container .grid .catalog-filter .filterItem .checkboxFilter .checkboxFilter-checkbox .checkboxFilter-input:checked ~ .checkboxFilter-icon {
                       border-color: white;
                       background-color: #05ac9d; }
+                    body section.page .catalog .wrap .wrap-container .grid .catalog-filter .filterItem .checkboxFilter .checkboxFilter-checkbox .checkboxFilter-input:hover:checked ~ .checkboxFilter-icon {
+                      background-color: #047a70; }
                   body section.page .catalog .wrap .wrap-container .grid .catalog-filter .filterItem .checkboxFilter .checkboxFilter-checkbox .checkboxFilter-icon {
                     position: absolute;
                     width: 11px;
@@ -616,7 +626,7 @@ body {
                     transition: 0.2s;
                     cursor: pointer; }
                     body section.page .catalog .wrap .wrap-container .grid .catalog-list .grid .product .product-bottom .product-button:hover {
-                      background-color: #049386; }
+                      background-color: #047a70; }
                   body section.page .catalog .wrap .wrap-container .grid .catalog-list .grid .product .product-bottom .product-price {
                     font-size: 18px;
                     font-weight: bold; }
