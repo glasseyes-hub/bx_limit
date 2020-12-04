@@ -1,45 +1,49 @@
 .work {
   position: relative;
   display: grid;
-  grid-auto-flow: column;
   grid-gap: 20px;
   padding: 20px;
   background-color: white;
   border: 1px solid #b4b4b4;
   transition: 0.2s; }
-  .work .work-image {
-    width: 150px;
+  .work .work-series {
+    position: absolute;
+    background-color: white;
+    color: #282828;
+    left: -8px;
+    top: -8px;
     display: grid;
     justify-content: center;
     align-content: center;
+    width: 40px;
+    height: 40px;
+    font-weight: bold;
+    border: 2px solid #282828; }
+  .work .work-images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 140px);
+    grid-gap: 5px;
     overflow: hidden; }
+    .work .work-images .work-image {
+      -o-object-fit: cover;
+         object-fit: cover;
+      width: 100%;
+      height: 100%; }
   .work .work-info {
     display: grid;
     grid-gap: 20px; }
-    .work .work-info .work-series {
-      position: absolute;
-      background-color: white;
-      color: #282828;
-      left: -8px;
-      top: -8px;
-      display: grid;
-      justify-content: center;
-      align-content: center;
-      width: 40px;
-      height: 40px;
-      font-weight: bold;
-      border: 2px solid #282828; }
+    .work .work-info .work-text {
+      text-align: justify; }
     .work .work-info .work-button {
       justify-self: right;
       align-self: end;
-      padding: 10px;
-      background-color: #05ac9d;
       border: none;
-      color: white;
+      color: #05ac9d;
       font-weight: bold;
       text-transform: uppercase;
       transition: 0.2s;
       text-decoration: none;
       cursor: pointer; }
       .work .work-info .work-button:hover {
-        background-color: #047a70; }
+        color: #047a70; }
