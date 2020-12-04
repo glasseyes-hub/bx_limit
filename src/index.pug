@@ -10,33 +10,13 @@ block prepend scripts
     script(src='/js/pagination.min.js')
 
 block header
-    .banner
-        +wrap
-            +grid
-                include components/banner/banner
-
-    .seriesList
-        +wrap
-            +grid
-                h4.seriesList-title Серия
-                include components/series/series
-                include components/series/series
-                include components/series/series
-                include components/series/series
-                include components/series/series
-                include components/series/series
-                include components/series/series
-                include components/series/series
-                include components/series/series
-                include components/series/series
+    include components/banner/banner
 
 block content
     .products
         +wrap
             +title('h1', 'Новинки', 'Показать все', '/catalog.html')
             +grid
-                include components/product/product
-                include components/product/product
                 include components/product/product
                 include components/product/product
                 include components/product/product

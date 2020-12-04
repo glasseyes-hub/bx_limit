@@ -36,15 +36,9 @@ body
     +title
 
     +page
-        .banner
-            +wrap($width: 100%)
-                +grid
-                    @import "components/banner/banner"
+        @import "components/banner/banner"
+        @import "blocks/seriesList/seriesList"
 
-        .seriesList
-            +wrap($color2_light_high, $padding: $padding_small 0)
-                +grid($align: center, $justify: space-between)
-                    @import "components/series/series"
 
         .products
             +wrap($color2_light_high, $padding: $padding_large 0)
@@ -68,17 +62,7 @@ body
         .catalog
             +wrap($color2_light_high, $padding: $padding_large 0)
                 +grid($col: 4)
-                    .catalog-filter
-                        display: grid
-                        grid-gap: $gap
-                        align-content: start
-                        grid-column-start: 1
-                        grid-column-end: 2
-
-                        +filterItem
-                            @import "components/priceFilter/priceFilter"
-                            @import "components/itemFilter/itemFilter"
-                            @import "components/checkboxFilter/checkboxFilter"
+                    @import "blocks/filter/filter"
 
                     .catalog-list
                         grid-column-start: 2
@@ -86,34 +70,7 @@ body
                         display: grid
                         grid-gap: $gap
 
-                        .catalog-view
-                            display: grid
-                            grid-auto-flow: column
-                            justify-content: space-between
-
-                            .catalog-block
-                                display: grid
-                                grid-auto-flow: column
-                                grid-gap: $gap_small
-
-                                .catalog-view-body
-                                    display: grid
-                                    grid-auto-flow: column
-                                    grid-gap: $gap_small
-                                    justify-content: start
-                                    margin-top: 2px
-
-                                    .catalog-view-item
-                                        display: grid
-                                        align-self: center
-                                        cursor: pointer
-                                        &:hover
-                                            color: $color2_light_low
-                                        &_selected
-                                            font-weight: bold
-                                            color: $color
-                                            &:hover
-                                                color: $color_dark
+                        @import "components/sorting/sorting"
 
                         +grid($col: 3)
                             @import "components/product/product"

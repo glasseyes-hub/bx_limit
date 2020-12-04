@@ -1,0 +1,13 @@
+@import "../../layouts/filterItem/filterItem"
+
+.filter
+  display: grid
+  grid-gap: $gap
+  align-content: start
+  grid-column-start: 1
+  grid-column-end: 2
+
+  +filterItem
+    @import "../../components/priceFilter/priceFilter"
+    @import "../../components/itemFilter/itemFilter"
+    @import "../../components/checkboxFilter/checkboxFilter"

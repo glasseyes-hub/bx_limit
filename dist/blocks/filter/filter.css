@@ -1,0 +1,126 @@
+.filter {
+  display: grid;
+  grid-gap: 40px;
+  align-content: start;
+  grid-column-start: 1;
+  grid-column-end: 2; }
+  .filter .filterItem {
+    display: grid;
+    grid-gap: 20px;
+    align-content: start;
+    justify-content: start; }
+    .filter .filterItem .filterItem-title {
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: 0.2s; }
+      .filter .filterItem .filterItem-title:hover {
+        color: #757575; }
+    .filter .filterItem .filterItem-body {
+      display: grid;
+      grid-gap: 20px; }
+      .filter .filterItem .filterItem-body .filterItem-list {
+        display: grid;
+        grid-gap: 10px; }
+      .filter .filterItem .filterItem-body .filterItem-showAll {
+        color: #757575;
+        cursor: pointer;
+        transition: 0.2s;
+        text-decoration: underline;
+        -webkit-text-decoration-style: dashed;
+                text-decoration-style: dashed;
+        justify-self: start; }
+        .filter .filterItem .filterItem-body .filterItem-showAll:hover {
+          color: #b4b4b4; }
+    .filter .filterItem .priceFilter {
+      display: grid;
+      grid-gap: 20px; }
+      .filter .filterItem .priceFilter .priceFilter-inputs {
+        display: grid;
+        grid-auto-flow: column;
+        justify-content: space-between;
+        grid-gap: 20px; }
+        .filter .filterItem .priceFilter .priceFilter-inputs .priceFilter-input {
+          width: 100px; }
+      .filter .filterItem .priceFilter .irs .irs-line {
+        background-color: #282828;
+        border-radius: 0;
+        cursor: pointer; }
+      .filter .filterItem .priceFilter .irs .irs-grid-text {
+        color: #b4b4b4; }
+      .filter .filterItem .priceFilter .irs .irs-grid-pol {
+        background-color: #b4b4b4;
+        top: 1px; }
+      .filter .filterItem .priceFilter .irs .irs-bar,
+      .filter .filterItem .priceFilter .irs .irs-min,
+      .filter .filterItem .priceFilter .irs .irs-max,
+      .filter .filterItem .priceFilter .irs .irs-from,
+      .filter .filterItem .priceFilter .irs .irs-to,
+      .filter .filterItem .priceFilter .irs .irs-single {
+        background-color: #05ac9d;
+        cursor: pointer; }
+      .filter .filterItem .priceFilter .irs .irs-from:before,
+      .filter .filterItem .priceFilter .irs .irs-to:before,
+      .filter .filterItem .priceFilter .irs .irs-single:before {
+        border-top-color: #05ac9d;
+        cursor: pointer; }
+      .filter .filterItem .priceFilter .irs .irs-from,
+      .filter .filterItem .priceFilter .irs .irs-to,
+      .filter .filterItem .priceFilter .irs .irs-single {
+        padding: 5px 6.66667px;
+        border-radius: 0; }
+      .filter .filterItem .priceFilter .irs .irs-handle {
+        background-color: #05ac9d;
+        width: 16px;
+        height: 16px;
+        box-shadow: none;
+        border: 3px solid #fff;
+        border-radius: 0;
+        top: 30px;
+        cursor: pointer; }
+        .filter .filterItem .priceFilter .irs .irs-handle:hover {
+          background-color: #047a70; }
+    .filter .filterItem .itemFilter {
+      display: grid;
+      grid-auto-flow: column;
+      grid-gap: 5px;
+      justify-content: start;
+      align-items: center;
+      cursor: pointer; }
+      .filter .filterItem .itemFilter:hover .itemFilter-text {
+        color: #757575; }
+      .filter .filterItem .itemFilter .itemFilter-icon {
+        width: 25px;
+        height: 25px; }
+    .filter .filterItem .checkboxFilter {
+      display: grid;
+      grid-auto-flow: column;
+      grid-gap: 5px;
+      justify-content: start;
+      align-items: center; }
+      .filter .filterItem .checkboxFilter .checkboxFilter-checkbox,
+      .filter .filterItem .checkboxFilter .checkboxFilter-input {
+        width: 19px;
+        height: 19px; }
+      .filter .filterItem .checkboxFilter .checkboxFilter-checkbox {
+        position: relative; }
+        .filter .filterItem .checkboxFilter .checkboxFilter-checkbox .checkboxFilter-input {
+          position: absolute;
+          width: 19px;
+          height: 19px;
+          z-index: 1;
+          opacity: 0;
+          cursor: pointer; }
+          .filter .filterItem .checkboxFilter .checkboxFilter-checkbox .checkboxFilter-input:hover ~ .checkboxFilter-icon {
+            border-color: #757575; }
+          .filter .filterItem .checkboxFilter .checkboxFilter-checkbox .checkboxFilter-input:checked ~ .checkboxFilter-icon {
+            border-color: white;
+            background-color: #05ac9d; }
+          .filter .filterItem .checkboxFilter .checkboxFilter-checkbox .checkboxFilter-input:hover:checked ~ .checkboxFilter-icon {
+            background-color: #047a70; }
+        .filter .filterItem .checkboxFilter .checkboxFilter-checkbox .checkboxFilter-icon {
+          position: absolute;
+          width: 11px;
+          height: 11px;
+          border: 2px solid #282828;
+          margin: 2px;
+          transition: 0.2s; }

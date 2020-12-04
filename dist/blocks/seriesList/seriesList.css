@@ -1,0 +1,27 @@
+.seriesList .wrap {
+  background-color: white; }
+  .seriesList .wrap .wrap-container {
+    width: 1326px;
+    padding: 10px 0;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 40px; }
+    .seriesList .wrap .wrap-container .grid {
+      display: grid;
+      grid-gap: 40px;
+      grid-auto-flow: column;
+      justify-content: space-between;
+      align-items: center; }
+      .seriesList .wrap .wrap-container .grid .series {
+        display: grid;
+        color: #757575;
+        width: 40px;
+        height: 40px;
+        border: 2px solid transparent;
+        text-decoration: none;
+        align-items: center;
+        justify-items: center;
+        transition: 0.2s; }
+        .seriesList .wrap .wrap-container .grid .series:hover {
+          border-color: #282828;
+          color: #282828; }

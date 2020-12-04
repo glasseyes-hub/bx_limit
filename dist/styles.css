@@ -201,24 +201,10 @@ body {
             body section.page section.header .header-menu .wrap .wrap-container .grid .search .search-icon {
               width: 25px;
               height: 25px; }
-    body section.page .banner .wrap {
-      background-color: transparent; }
-      body section.page .banner .wrap .wrap-container {
-        width: 100%;
-        padding: 0;
-        margin: 0 auto;
-        display: grid;
-        grid-gap: 40px; }
-        body section.page .banner .wrap .wrap-container .grid {
-          display: grid;
-          grid-gap: 40px;
-          grid-auto-flow: column;
-          justify-content: stretch;
-          align-items: stretch; }
-          body section.page .banner .wrap .wrap-container .grid .banner {
-            display: flex; }
-            body section.page .banner .wrap .wrap-container .grid .banner .banner-img {
-              width: 100%; }
+    body section.page .banner {
+      display: flex; }
+      body section.page .banner .banner-img {
+        width: 100%; }
     body section.page .seriesList .wrap {
       background-color: white; }
       body section.page .seriesList .wrap .wrap-container {
@@ -435,30 +421,30 @@ body {
           grid-template-columns: repeat(4, 1fr);
           justify-content: stretch;
           align-items: stretch; }
-          body section.page .catalog .wrap .wrap-container .grid .catalog-filter {
+          body section.page .catalog .wrap .wrap-container .grid .filter {
             display: grid;
             grid-gap: 40px;
             align-content: start;
             grid-column-start: 1;
             grid-column-end: 2; }
-            body section.page .catalog .wrap .wrap-container .grid .catalog-filter .filterItem {
+            body section.page .catalog .wrap .wrap-container .grid .filter .filterItem {
               display: grid;
               grid-gap: 20px;
               align-content: start;
               justify-content: start; }
-              body section.page .catalog .wrap .wrap-container .grid .catalog-filter .filterItem .filterItem-title {
+              body section.page .catalog .wrap .wrap-container .grid .filter .filterItem .filterItem-title {
                 text-transform: uppercase;
                 cursor: pointer;
                 transition: 0.2s; }
-                body section.page .catalog .wrap .wrap-container .grid .catalog-filter .filterItem .filterItem-title:hover {
+                body section.page .catalog .wrap .wrap-container .grid .filter .filterItem .filterItem-title:hover {
                   color: #757575; }
-              body section.page .catalog .wrap .wrap-container .grid .catalog-filter .filterItem .filterItem-body {
+              body section.page .catalog .wrap .wrap-container .grid .filter .filterItem .filterItem-body {
                 display: grid;
                 grid-gap: 20px; }
-                body section.page .catalog .wrap .wrap-container .grid .catalog-filter .filterItem .filterItem-body .filterItem-list {
+                body section.page .catalog .wrap .wrap-container .grid .filter .filterItem .filterItem-body .filterItem-list {
                   display: grid;
                   grid-gap: 10px; }
-                body section.page .catalog .wrap .wrap-container .grid .catalog-filter .filterItem .filterItem-body .filterItem-showAll {
+                body section.page .catalog .wrap .wrap-container .grid .filter .filterItem .filterItem-body .filterItem-showAll {
                   color: #757575;
                   cursor: pointer;
                   transition: 0.2s;
@@ -466,46 +452,46 @@ body {
                   -webkit-text-decoration-style: dashed;
                           text-decoration-style: dashed;
                   justify-self: start; }
-                  body section.page .catalog .wrap .wrap-container .grid .catalog-filter .filterItem .filterItem-body .filterItem-showAll:hover {
+                  body section.page .catalog .wrap .wrap-container .grid .filter .filterItem .filterItem-body .filterItem-showAll:hover {
                     color: #b4b4b4; }
-              body section.page .catalog .wrap .wrap-container .grid .catalog-filter .filterItem .priceFilter {
+              body section.page .catalog .wrap .wrap-container .grid .filter .filterItem .priceFilter {
                 display: grid;
                 grid-gap: 20px; }
-                body section.page .catalog .wrap .wrap-container .grid .catalog-filter .filterItem .priceFilter .priceFilter-inputs {
+                body section.page .catalog .wrap .wrap-container .grid .filter .filterItem .priceFilter .priceFilter-inputs {
                   display: grid;
                   grid-auto-flow: column;
                   justify-content: space-between;
                   grid-gap: 20px; }
-                  body section.page .catalog .wrap .wrap-container .grid .catalog-filter .filterItem .priceFilter .priceFilter-inputs .priceFilter-input {
+                  body section.page .catalog .wrap .wrap-container .grid .filter .filterItem .priceFilter .priceFilter-inputs .priceFilter-input {
                     width: 100px; }
-                body section.page .catalog .wrap .wrap-container .grid .catalog-filter .filterItem .priceFilter .irs .irs-line {
+                body section.page .catalog .wrap .wrap-container .grid .filter .filterItem .priceFilter .irs .irs-line {
                   background-color: #282828;
                   border-radius: 0;
                   cursor: pointer; }
-                body section.page .catalog .wrap .wrap-container .grid .catalog-filter .filterItem .priceFilter .irs .irs-grid-text {
+                body section.page .catalog .wrap .wrap-container .grid .filter .filterItem .priceFilter .irs .irs-grid-text {
                   color: #b4b4b4; }
-                body section.page .catalog .wrap .wrap-container .grid .catalog-filter .filterItem .priceFilter .irs .irs-grid-pol {
+                body section.page .catalog .wrap .wrap-container .grid .filter .filterItem .priceFilter .irs .irs-grid-pol {
                   background-color: #b4b4b4;
                   top: 1px; }
-                body section.page .catalog .wrap .wrap-container .grid .catalog-filter .filterItem .priceFilter .irs .irs-bar,
-                body section.page .catalog .wrap .wrap-container .grid .catalog-filter .filterItem .priceFilter .irs .irs-min,
-                body section.page .catalog .wrap .wrap-container .grid .catalog-filter .filterItem .priceFilter .irs .irs-max,
-                body section.page .catalog .wrap .wrap-container .grid .catalog-filter .filterItem .priceFilter .irs .irs-from,
-                body section.page .catalog .wrap .wrap-container .grid .catalog-filter .filterItem .priceFilter .irs .irs-to,
-                body section.page .catalog .wrap .wrap-container .grid .catalog-filter .filterItem .priceFilter .irs .irs-single {
+                body section.page .catalog .wrap .wrap-container .grid .filter .filterItem .priceFilter .irs .irs-bar,
+                body section.page .catalog .wrap .wrap-container .grid .filter .filterItem .priceFilter .irs .irs-min,
+                body section.page .catalog .wrap .wrap-container .grid .filter .filterItem .priceFilter .irs .irs-max,
+                body section.page .catalog .wrap .wrap-container .grid .filter .filterItem .priceFilter .irs .irs-from,
+                body section.page .catalog .wrap .wrap-container .grid .filter .filterItem .priceFilter .irs .irs-to,
+                body section.page .catalog .wrap .wrap-container .grid .filter .filterItem .priceFilter .irs .irs-single {
                   background-color: #05ac9d;
                   cursor: pointer; }
-                body section.page .catalog .wrap .wrap-container .grid .catalog-filter .filterItem .priceFilter .irs .irs-from:before,
-                body section.page .catalog .wrap .wrap-container .grid .catalog-filter .filterItem .priceFilter .irs .irs-to:before,
-                body section.page .catalog .wrap .wrap-container .grid .catalog-filter .filterItem .priceFilter .irs .irs-single:before {
+                body section.page .catalog .wrap .wrap-container .grid .filter .filterItem .priceFilter .irs .irs-from:before,
+                body section.page .catalog .wrap .wrap-container .grid .filter .filterItem .priceFilter .irs .irs-to:before,
+                body section.page .catalog .wrap .wrap-container .grid .filter .filterItem .priceFilter .irs .irs-single:before {
                   border-top-color: #05ac9d;
                   cursor: pointer; }
-                body section.page .catalog .wrap .wrap-container .grid .catalog-filter .filterItem .priceFilter .irs .irs-from,
-                body section.page .catalog .wrap .wrap-container .grid .catalog-filter .filterItem .priceFilter .irs .irs-to,
-                body section.page .catalog .wrap .wrap-container .grid .catalog-filter .filterItem .priceFilter .irs .irs-single {
+                body section.page .catalog .wrap .wrap-container .grid .filter .filterItem .priceFilter .irs .irs-from,
+                body section.page .catalog .wrap .wrap-container .grid .filter .filterItem .priceFilter .irs .irs-to,
+                body section.page .catalog .wrap .wrap-container .grid .filter .filterItem .priceFilter .irs .irs-single {
                   padding: 5px 6.66667px;
                   border-radius: 0; }
-                body section.page .catalog .wrap .wrap-container .grid .catalog-filter .filterItem .priceFilter .irs .irs-handle {
+                body section.page .catalog .wrap .wrap-container .grid .filter .filterItem .priceFilter .irs .irs-handle {
                   background-color: #05ac9d;
                   width: 16px;
                   height: 16px;
@@ -514,47 +500,47 @@ body {
                   border-radius: 0;
                   top: 30px;
                   cursor: pointer; }
-                  body section.page .catalog .wrap .wrap-container .grid .catalog-filter .filterItem .priceFilter .irs .irs-handle:hover {
+                  body section.page .catalog .wrap .wrap-container .grid .filter .filterItem .priceFilter .irs .irs-handle:hover {
                     background-color: #047a70; }
-              body section.page .catalog .wrap .wrap-container .grid .catalog-filter .filterItem .itemFilter {
+              body section.page .catalog .wrap .wrap-container .grid .filter .filterItem .itemFilter {
                 display: grid;
                 grid-auto-flow: column;
                 grid-gap: 5px;
                 justify-content: start;
                 align-items: center;
                 cursor: pointer; }
-                body section.page .catalog .wrap .wrap-container .grid .catalog-filter .filterItem .itemFilter:hover .itemFilter-text {
+                body section.page .catalog .wrap .wrap-container .grid .filter .filterItem .itemFilter:hover .itemFilter-text {
                   color: #757575; }
-                body section.page .catalog .wrap .wrap-container .grid .catalog-filter .filterItem .itemFilter .itemFilter-icon {
+                body section.page .catalog .wrap .wrap-container .grid .filter .filterItem .itemFilter .itemFilter-icon {
                   width: 25px;
                   height: 25px; }
-              body section.page .catalog .wrap .wrap-container .grid .catalog-filter .filterItem .checkboxFilter {
+              body section.page .catalog .wrap .wrap-container .grid .filter .filterItem .checkboxFilter {
                 display: grid;
                 grid-auto-flow: column;
                 grid-gap: 5px;
                 justify-content: start;
                 align-items: center; }
-                body section.page .catalog .wrap .wrap-container .grid .catalog-filter .filterItem .checkboxFilter .checkboxFilter-checkbox,
-                body section.page .catalog .wrap .wrap-container .grid .catalog-filter .filterItem .checkboxFilter .checkboxFilter-input {
+                body section.page .catalog .wrap .wrap-container .grid .filter .filterItem .checkboxFilter .checkboxFilter-checkbox,
+                body section.page .catalog .wrap .wrap-container .grid .filter .filterItem .checkboxFilter .checkboxFilter-input {
                   width: 19px;
                   height: 19px; }
-                body section.page .catalog .wrap .wrap-container .grid .catalog-filter .filterItem .checkboxFilter .checkboxFilter-checkbox {
+                body section.page .catalog .wrap .wrap-container .grid .filter .filterItem .checkboxFilter .checkboxFilter-checkbox {
                   position: relative; }
-                  body section.page .catalog .wrap .wrap-container .grid .catalog-filter .filterItem .checkboxFilter .checkboxFilter-checkbox .checkboxFilter-input {
+                  body section.page .catalog .wrap .wrap-container .grid .filter .filterItem .checkboxFilter .checkboxFilter-checkbox .checkboxFilter-input {
                     position: absolute;
                     width: 19px;
                     height: 19px;
                     z-index: 1;
                     opacity: 0;
                     cursor: pointer; }
-                    body section.page .catalog .wrap .wrap-container .grid .catalog-filter .filterItem .checkboxFilter .checkboxFilter-checkbox .checkboxFilter-input:hover ~ .checkboxFilter-icon {
+                    body section.page .catalog .wrap .wrap-container .grid .filter .filterItem .checkboxFilter .checkboxFilter-checkbox .checkboxFilter-input:hover ~ .checkboxFilter-icon {
                       border-color: #757575; }
-                    body section.page .catalog .wrap .wrap-container .grid .catalog-filter .filterItem .checkboxFilter .checkboxFilter-checkbox .checkboxFilter-input:checked ~ .checkboxFilter-icon {
+                    body section.page .catalog .wrap .wrap-container .grid .filter .filterItem .checkboxFilter .checkboxFilter-checkbox .checkboxFilter-input:checked ~ .checkboxFilter-icon {
                       border-color: white;
                       background-color: #05ac9d; }
-                    body section.page .catalog .wrap .wrap-container .grid .catalog-filter .filterItem .checkboxFilter .checkboxFilter-checkbox .checkboxFilter-input:hover:checked ~ .checkboxFilter-icon {
+                    body section.page .catalog .wrap .wrap-container .grid .filter .filterItem .checkboxFilter .checkboxFilter-checkbox .checkboxFilter-input:hover:checked ~ .checkboxFilter-icon {
                       background-color: #047a70; }
-                  body section.page .catalog .wrap .wrap-container .grid .catalog-filter .filterItem .checkboxFilter .checkboxFilter-checkbox .checkboxFilter-icon {
+                  body section.page .catalog .wrap .wrap-container .grid .filter .filterItem .checkboxFilter .checkboxFilter-checkbox .checkboxFilter-icon {
                     position: absolute;
                     width: 11px;
                     height: 11px;
@@ -566,30 +552,30 @@ body {
             grid-column-end: 5;
             display: grid;
             grid-gap: 40px; }
-            body section.page .catalog .wrap .wrap-container .grid .catalog-list .catalog-view {
+            body section.page .catalog .wrap .wrap-container .grid .catalog-list .sorting {
               display: grid;
               grid-auto-flow: column;
               justify-content: space-between; }
-              body section.page .catalog .wrap .wrap-container .grid .catalog-list .catalog-view .catalog-block {
+              body section.page .catalog .wrap .wrap-container .grid .catalog-list .sorting .sorting-block {
                 display: grid;
                 grid-auto-flow: column;
                 grid-gap: 20px; }
-                body section.page .catalog .wrap .wrap-container .grid .catalog-list .catalog-view .catalog-block .catalog-view-body {
+                body section.page .catalog .wrap .wrap-container .grid .catalog-list .sorting .sorting-block .sorting-body {
                   display: grid;
                   grid-auto-flow: column;
                   grid-gap: 20px;
                   justify-content: start;
                   margin-top: 2px; }
-                  body section.page .catalog .wrap .wrap-container .grid .catalog-list .catalog-view .catalog-block .catalog-view-body .catalog-view-item {
+                  body section.page .catalog .wrap .wrap-container .grid .catalog-list .sorting .sorting-block .sorting-body .sorting-item {
                     display: grid;
                     align-self: center;
                     cursor: pointer; }
-                    body section.page .catalog .wrap .wrap-container .grid .catalog-list .catalog-view .catalog-block .catalog-view-body .catalog-view-item:hover {
+                    body section.page .catalog .wrap .wrap-container .grid .catalog-list .sorting .sorting-block .sorting-body .sorting-item:hover {
                       color: #b4b4b4; }
-                    body section.page .catalog .wrap .wrap-container .grid .catalog-list .catalog-view .catalog-block .catalog-view-body .catalog-view-item_selected {
+                    body section.page .catalog .wrap .wrap-container .grid .catalog-list .sorting .sorting-block .sorting-body .sorting-item_selected {
                       font-weight: bold;
                       color: #05ac9d; }
-                      body section.page .catalog .wrap .wrap-container .grid .catalog-list .catalog-view .catalog-block .catalog-view-body .catalog-view-item_selected:hover {
+                      body section.page .catalog .wrap .wrap-container .grid .catalog-list .sorting .sorting-block .sorting-body .sorting-item_selected:hover {
                         color: #047a70; }
             body section.page .catalog .wrap .wrap-container .grid .catalog-list .grid {
               display: grid;
