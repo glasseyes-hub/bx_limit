@@ -1,0 +1,25 @@
+@import "../../sass/variables"
+
+.pagination
+    display: grid
+    grid-auto-flow: column
+    grid-gap: $gap_small
+    justify-content: center
+    .pagination-item
+        display: inline-block
+        border: 1px solid $color2_light_low
+        padding: $padding_small
+        min-width: $icon_size_small_mid
+        text-align: center
+        text-decoration: none
+        color: $color2
+        &:hover
+            border-color: $color
+            color: $color
+        &_selected
+            border-color: $color
+            color: $color
+            font-weight: bold
+            &:hover
+                border-color: $color2
+                color: $color2

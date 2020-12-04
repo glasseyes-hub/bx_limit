@@ -83,5 +83,39 @@ body
                     .catalog-list
                         grid-column-start: 2
                         grid-column-end: 5
+                        display: grid
+                        grid-gap: $gap
+
+                        .catalog-view
+                            display: grid
+                            grid-auto-flow: column
+                            justify-content: space-between
+
+                            .catalog-block
+                                display: grid
+                                grid-auto-flow: column
+                                grid-gap: $gap_small
+
+                                .catalog-view-body
+                                    display: grid
+                                    grid-auto-flow: column
+                                    grid-gap: $gap_small
+                                    justify-content: start
+                                    margin-top: 2px
+
+                                    .catalog-view-item
+                                        display: grid
+                                        align-self: center
+                                        cursor: pointer
+                                        &:hover
+                                            color: $color2_light_low
+                                        &_selected
+                                            font-weight: bold
+                                            color: $color
+                                            &:hover
+                                                color: $color_dark
+
                         +grid($col: 3)
                             @import "components/product/product"
+
+                        @import "components/pagination/pagination"

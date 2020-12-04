@@ -528,8 +528,6 @@ body {
                 body section.page .catalog .wrap .wrap-container .grid .catalog-filter .filterItem .itemFilter .itemFilter-icon {
                   width: 25px;
                   height: 25px; }
-                body section.page .catalog .wrap .wrap-container .grid .catalog-filter .filterItem .itemFilter .itemFilter-summury {
-                  color: #05ac9d; }
               body section.page .catalog .wrap .wrap-container .grid .catalog-filter .filterItem .checkboxFilter {
                 display: grid;
                 grid-auto-flow: column;
@@ -563,11 +561,36 @@ body {
                     border: 2px solid #282828;
                     margin: 2px;
                     transition: 0.2s; }
-                body section.page .catalog .wrap .wrap-container .grid .catalog-filter .filterItem .checkboxFilter .checkboxFilter-summury {
-                  color: #05ac9d; }
           body section.page .catalog .wrap .wrap-container .grid .catalog-list {
             grid-column-start: 2;
-            grid-column-end: 5; }
+            grid-column-end: 5;
+            display: grid;
+            grid-gap: 40px; }
+            body section.page .catalog .wrap .wrap-container .grid .catalog-list .catalog-view {
+              display: grid;
+              grid-auto-flow: column;
+              justify-content: space-between; }
+              body section.page .catalog .wrap .wrap-container .grid .catalog-list .catalog-view .catalog-block {
+                display: grid;
+                grid-auto-flow: column;
+                grid-gap: 20px; }
+                body section.page .catalog .wrap .wrap-container .grid .catalog-list .catalog-view .catalog-block .catalog-view-body {
+                  display: grid;
+                  grid-auto-flow: column;
+                  grid-gap: 20px;
+                  justify-content: start;
+                  margin-top: 2px; }
+                  body section.page .catalog .wrap .wrap-container .grid .catalog-list .catalog-view .catalog-block .catalog-view-body .catalog-view-item {
+                    display: grid;
+                    align-self: center;
+                    cursor: pointer; }
+                    body section.page .catalog .wrap .wrap-container .grid .catalog-list .catalog-view .catalog-block .catalog-view-body .catalog-view-item:hover {
+                      color: #b4b4b4; }
+                    body section.page .catalog .wrap .wrap-container .grid .catalog-list .catalog-view .catalog-block .catalog-view-body .catalog-view-item_selected {
+                      font-weight: bold;
+                      color: #05ac9d; }
+                      body section.page .catalog .wrap .wrap-container .grid .catalog-list .catalog-view .catalog-block .catalog-view-body .catalog-view-item_selected:hover {
+                        color: #047a70; }
             body section.page .catalog .wrap .wrap-container .grid .catalog-list .grid {
               display: grid;
               grid-gap: 40px;
@@ -634,6 +657,29 @@ body {
                   body section.page .catalog .wrap .wrap-container .grid .catalog-list .grid .product .product-bottom .product-price {
                     font-size: 18px;
                     font-weight: bold; }
+            body section.page .catalog .wrap .wrap-container .grid .catalog-list .pagination {
+              display: grid;
+              grid-auto-flow: column;
+              grid-gap: 20px;
+              justify-content: center; }
+              body section.page .catalog .wrap .wrap-container .grid .catalog-list .pagination .pagination-item {
+                display: inline-block;
+                border: 1px solid #b4b4b4;
+                padding: 10px;
+                min-width: 16.66667px;
+                text-align: center;
+                text-decoration: none;
+                color: #282828; }
+                body section.page .catalog .wrap .wrap-container .grid .catalog-list .pagination .pagination-item:hover {
+                  border-color: #05ac9d;
+                  color: #05ac9d; }
+                body section.page .catalog .wrap .wrap-container .grid .catalog-list .pagination .pagination-item_selected {
+                  border-color: #05ac9d;
+                  color: #05ac9d;
+                  font-weight: bold; }
+                  body section.page .catalog .wrap .wrap-container .grid .catalog-list .pagination .pagination-item_selected:hover {
+                    border-color: #282828;
+                    color: #282828; }
     body section.page .footer .footer-top .wrap {
       background-color: #282828; }
       body section.page .footer .footer-top .wrap .wrap-container {

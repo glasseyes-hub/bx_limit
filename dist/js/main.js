@@ -1,3 +1,4 @@
+
 const inputs = $(".priceFilter-input");
 const updateInputs = (data) => {
   $(".priceFilter-input_from").val(data.from);

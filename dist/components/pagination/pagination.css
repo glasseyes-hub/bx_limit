@@ -1,0 +1,23 @@
+.pagination {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 20px;
+  justify-content: center; }
+  .pagination .pagination-item {
+    display: inline-block;
+    border: 1px solid #b4b4b4;
+    padding: 10px;
+    min-width: 16.66667px;
+    text-align: center;
+    text-decoration: none;
+    color: #282828; }
+    .pagination .pagination-item:hover {
+      border-color: #05ac9d;
+      color: #05ac9d; }
+    .pagination .pagination-item_selected {
+      border-color: #05ac9d;
+      color: #05ac9d;
+      font-weight: bold; }
+      .pagination .pagination-item_selected:hover {
+        border-color: #282828;
+        color: #282828; }
