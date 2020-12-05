@@ -32,7 +32,7 @@ function css() {
   return src([
     "src/**/*.sass",
     "!src/layouts/**/*.sass",
-    "!src/sass/*.sass",
+    "!src/sass/variables.sass",
     "!src/assets/*",
   ])
     .pipe(sass())

@@ -1,9 +1,4 @@
 @import "sass/variables"
-@import "templates/page/page"
-@import "layouts/wrap/wrap"
-@import "layouts/grid/grid"
-@import "layouts/title/title"
-@import "layouts/filterItem/filterItem"
 
 @font-face
     font-family: Roboto
@@ -15,12 +10,16 @@
 
 body
     font-family: Roboto
+    display: grid
+    grid-auto-flow: row
+    grid-gap: $gap_large
     color: $color2
+    font-size: $font_size
+    background-color: $color2_light_mid
 
     input
         padding: $padding_small
         color: $color2_light
-
     h1
         font-size: $font_size_large_high
     h2
@@ -29,50 +28,28 @@ body
         font-size: $font_size_large_low
     h4
         font-size: $font_size_large
-
     a
         transition: $animation_transition
 
-    +title
-
-    +page
+    header
+        @import "blocks/header/header"
         @import "components/banner/banner"
         @import "blocks/seriesList/seriesList"
+    main
+        display: grid
+        grid-auto-flow: row
+        grid-gap: $gap_large
+        @import "blocks/novelties/novelties"
+        @import "blocks/advantages/advantages"
+        @import "blocks/works/works"
+        @import "blocks/catalog/catalog"
+        @import "blocks/information/information"
+    footer
+        @import "blocks/footer/footer"
 
 
-        .products
-            +wrap($color2_light_high, $padding: $padding_large 0)
-                +grid($col: 4)
-                    @import "components/product/product"
 
-        .advantages
-            +wrap($padding: $padding_large 0)
-                +grid($col: 3)
-                    @import "components/advantage/advantage"
 
-        .works
-            +wrap($color2_light_high, $padding: $padding_large 0)
-                +grid($col: 3)
-                    @import "components/work/work"
 
-        .inform
-            +wrap($color2_light_high, $padding: $padding_large 0)
-                +grid
 
-        .catalog
-            +wrap($color2_light_high, $padding: $padding_large 0)
-                +grid($col: 4)
-                    @import "blocks/filter/filter"
 
-                    .catalog-list
-                        grid-column-start: 2
-                        grid-column-end: 5
-                        display: grid
-                        grid-gap: $gap
-
-                        @import "components/sorting/sorting"
-
-                        +grid($col: 3)
-                            @import "components/product/product"
-
-                        @import "components/pagination/pagination"

@@ -1,0 +1,26 @@
+.information .wrap {
+  background-color: white; }
+  .information .wrap .wrap-container {
+    width: 1326px;
+    padding: 40px 0;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 40px; }
+    .information .wrap .wrap-container .grid {
+      display: grid;
+      grid-gap: 40px;
+      grid-template-columns: repeat(1, 1fr);
+      justify-content: stretch;
+      align-items: stretch; }
+      .information .wrap .wrap-container .grid .title {
+        display: grid;
+        grid-auto-flow: column;
+        justify-content: space-between;
+        align-items: center; }
+        .information .wrap .wrap-container .grid .title a {
+          color: #757575; }
+          .information .wrap .wrap-container .grid .title a:hover {
+            color: #b4b4b4;
+            text-decoration: underline; }
+      .information .wrap .wrap-container .grid .text {
+        color: #282828; }

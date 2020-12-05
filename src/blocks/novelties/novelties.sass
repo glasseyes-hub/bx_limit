@@ -1,0 +1,10 @@
+@import "../../sass/variables"
+@import "../../layouts/wrap/wrap"
+@import "../../layouts/grid/grid"
+@import "../../layouts/title/title"
+
+.novelties
+  +wrap($color2_light_high, $padding: $padding_large 0)
+    +title
+    +grid($col: 4)
+      @import "../../components/product/product"

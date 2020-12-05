@@ -1,0 +1,12 @@
+include ../../layouts/wrap/wrap
+include ../../layouts/grid/grid
+include ../../layouts/title/title
+
+.novelties
+    +wrap
+        +title('h1', 'Новинки', 'Показать все', '/catalog.html')
+        +grid
+            include ../../components/product/product
+            include ../../components/product/product
+            include ../../components/product/product
+            include ../../components/product/product

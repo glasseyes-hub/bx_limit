@@ -1,0 +1,22 @@
+include ../../layouts/wrap/wrap
+include ../../layouts/grid/grid
+include ../../layouts/title/title
+
+.catalog
+    +wrap
+        +grid
+            include ../../blocks/filter/filter
+            .catalog-list
+                +title('h1', 'Каталог')
+                include ../../components/sorting/sorting
+                +grid
+                    include ../../components/product/product
+                    include ../../components/product/product
+                    include ../../components/product/product
+                    include ../../components/product/product
+                    include ../../components/product/product
+                    include ../../components/product/product
+                    include ../../components/product/product
+                    include ../../components/product/product
+                    include ../../components/product/product
+                include ../../components/pagination/pagination

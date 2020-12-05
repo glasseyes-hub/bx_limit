@@ -1,0 +1,10 @@
+@import "../../sass/variables"
+@import "../../layouts/wrap/wrap"
+@import "../../layouts/grid/grid"
+@import "../../layouts/title/title"
+
+.works
+  +wrap($color2_light_high, $padding: $padding_large 0)
+    +title
+    +grid($col: 3)
+      @import "../../components/work/work"

@@ -1,0 +1,25 @@
+.sorting {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-between; }
+  .sorting .sorting-block {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 20px; }
+    .sorting .sorting-block .sorting-body {
+      display: grid;
+      grid-auto-flow: column;
+      grid-gap: 20px;
+      justify-content: start;
+      margin-top: 2px; }
+      .sorting .sorting-block .sorting-body .sorting-item {
+        display: grid;
+        align-self: center;
+        cursor: pointer; }
+        .sorting .sorting-block .sorting-body .sorting-item:hover {
+          color: #b4b4b4; }
+        .sorting .sorting-block .sorting-body .sorting-item_selected {
+          font-weight: bold;
+          color: #05ac9d; }
+          .sorting .sorting-block .sorting-body .sorting-item_selected:hover {
+            color: #047a70; }

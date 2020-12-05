@@ -1,0 +1,73 @@
+.works .wrap {
+  background-color: white; }
+  .works .wrap .wrap-container {
+    width: 1326px;
+    padding: 40px 0;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 40px; }
+    .works .wrap .wrap-container .title {
+      display: grid;
+      grid-auto-flow: column;
+      justify-content: space-between;
+      align-items: center; }
+      .works .wrap .wrap-container .title a {
+        color: #757575; }
+        .works .wrap .wrap-container .title a:hover {
+          color: #b4b4b4;
+          text-decoration: underline; }
+    .works .wrap .wrap-container .grid {
+      display: grid;
+      grid-gap: 40px;
+      grid-template-columns: repeat(3, 1fr);
+      justify-content: stretch;
+      align-items: stretch; }
+      .works .wrap .wrap-container .grid .work {
+        position: relative;
+        display: grid;
+        grid-gap: 20px;
+        padding: 20px;
+        background-color: white;
+        border: 1px solid #b4b4b4;
+        transition: 0.2s; }
+        .works .wrap .wrap-container .grid .work .work-series {
+          position: absolute;
+          background-color: white;
+          color: #282828;
+          left: -8px;
+          top: -8px;
+          display: grid;
+          justify-content: center;
+          align-content: center;
+          width: 40px;
+          height: 40px;
+          font-weight: bold;
+          border: 2px solid #282828; }
+        .works .wrap .wrap-container .grid .work .work-images {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          grid-template-rows: repeat(2, 140px);
+          grid-gap: 5px;
+          overflow: hidden; }
+          .works .wrap .wrap-container .grid .work .work-images .work-image {
+            -o-object-fit: cover;
+               object-fit: cover;
+            width: 100%;
+            height: 100%; }
+        .works .wrap .wrap-container .grid .work .work-info {
+          display: grid;
+          grid-gap: 20px; }
+          .works .wrap .wrap-container .grid .work .work-info .work-text {
+            text-align: justify; }
+          .works .wrap .wrap-container .grid .work .work-info .work-button {
+            justify-self: right;
+            align-self: end;
+            border: none;
+            color: #05ac9d;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: 0.2s;
+            text-decoration: none;
+            cursor: pointer; }
+            .works .wrap .wrap-container .grid .work .work-info .work-button:hover {
+              color: #047a70; }

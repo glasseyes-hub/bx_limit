@@ -1,9 +1,11 @@
-extends templates/page/page
-include layouts/wrap/wrap
-include layouts/grid/grid
+extends templates/main
 
-block content
-    .inform
-        +wrap
-            +grid
-                | На этой странице размещен информационный контент
+block header
+    include blocks/header/header
+    include blocks/seriesList/seriesList
+
+block main
+    include blocks/information/information
+
+block footer
+    include blocks/footer/footer

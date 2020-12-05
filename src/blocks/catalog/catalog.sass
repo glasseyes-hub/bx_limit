@@ -1,0 +1,21 @@
+@import "../../sass/variables"
+@import "../../layouts/wrap/wrap"
+@import "../../layouts/grid/grid"
+
+.catalog
+  +wrap($color2_light_high, $padding: $padding_large 0)
+    +grid($col: 4)
+      @import "../../blocks/filter/filter"
+
+      .catalog-list
+        grid-column-start: 2
+        grid-column-end: 5
+        display: grid
+        grid-gap: $gap
+
+        @import "../../components/sorting/sorting"
+
+        +grid($col: 3)
+          @import "../../components/product/product"
+
+        @import "../../components/pagination/pagination"
