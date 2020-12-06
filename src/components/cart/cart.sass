@@ -1,15 +1,53 @@
 @import "../../sass/variables"
 
 .cart
+  position: relative
   display: grid
-  grid-auto-flow: column
-  align-items: center
   grid-gap: $gap_small_mid
+  color: $color2_light_mid
 
-  .cart-text
-    color: $color2_light_high
-    font-size: $font_size_large
+  .cart-header
+    position: relative
+    display: grid
+    grid-auto-flow: column
+    grid-gap: $gap_small_mid
+    align-items: center
+    justify-content: end
+    padding: $padding_small
+    background-color: $color2_dark
+    transition: $animation_transition
+    cursor: pointer
+    &:hover
 
-  .cart-logo
-    width: $icon_size_small
-    height: $icon_size_small
+      .cart-price
+        color: $color
+
+    .cart-itemsAmount
+      position: absolute
+      top: -14px
+      right: -14px
+      display: grid
+      align-content: center
+      justify-content: center
+      background-color: $color
+      color: $color2
+      width: $icon_size_small - 6px
+      height: $icon_size_small - 6px
+      border: 4px solid $color2
+      text-transform: uppercase
+      font-weight: bold
+
+    .cart-logo
+      width: $icon_size_small
+      height: $icon_size_small
+
+    .cart-price
+      font-size: $font_size_large
+      justify-self: end
+      transition: $animation_transition
+
+  .cart-full
+    color: $color2_light
+    justify-self: end
+
+
