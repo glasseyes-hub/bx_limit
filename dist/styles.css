@@ -156,7 +156,7 @@ body {
             justify-content: end;
             padding: 10px;
             background-color: #1b1b1b;
-            transition: 0.2s;
+            transition: 0.5s;
             text-decoration: none; }
             body header section.header .header-main .wrap .wrap-container .grid .cart .cart-header .cart-itemsAmount {
               position: absolute;
@@ -306,9 +306,70 @@ body {
             width: 16.66667px;
             height: 16.66667px; }
   body header .banner {
-    display: flex; }
-    body header .banner .banner-img {
-      width: 100%; }
+    position: relative;
+    display: grid;
+    height: 600px;
+    overflow: hidden; }
+    body header .banner .banner-wrap {
+      position: relative;
+      width: 1326px;
+      margin: 0 auto; }
+      body header .banner .banner-wrap .banner-descriptions {
+        position: absolute;
+        z-index: 2; }
+        body header .banner .banner-wrap .banner-descriptions .banner-info {
+          display: grid;
+          grid-gap: 40px;
+          align-content: start;
+          justify-content: center;
+          justify-items: start;
+          width: 442px;
+          padding: 60px 0;
+          color: white;
+          text-transform: uppercase; }
+          body header .banner .banner-wrap .banner-descriptions .banner-info .banner-title {
+            font-size: 30px; }
+          body header .banner .banner-wrap .banner-descriptions .banner-info .banner-text {
+            font-size: 38px;
+            font-weight: bold; }
+          body header .banner .banner-wrap .banner-descriptions .banner-info .banner-details {
+            color: white;
+            font-size: 16px; }
+            body header .banner .banner-wrap .banner-descriptions .banner-info .banner-details:hover {
+              color: #05ac9d; }
+      body header .banner .banner-wrap .banner-position {
+        position: absolute;
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 5px;
+        z-index: 3;
+        bottom: 20px;
+        right: 0; }
+        body header .banner .banner-wrap .banner-position .banner-point {
+          width: 10px;
+          height: 10px;
+          background-color: #282828;
+          cursor: pointer;
+          transition: 0.2s; }
+          body header .banner .banner-wrap .banner-position .banner-point:hover {
+            background-color: #757575; }
+          body header .banner .banner-wrap .banner-position .banner-point_selected {
+            background-color: #05ac9d; }
+            body header .banner .banner-wrap .banner-position .banner-point_selected:hover {
+              background-color: #047a70; }
+    body header .banner .banner-background {
+      position: absolute;
+      height: 600px;
+      z-index: -1; }
+      body header .banner .banner-background .banner-blackout {
+        position: absolute;
+        width: 40%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); }
+      body header .banner .banner-background .banner-images {
+        width: 100%; }
+        body header .banner .banner-background .banner-images .banner-img {
+          width: 100%; }
   body header .seriesList .wrap {
     background-color: white; }
     body header .seriesList .wrap .wrap-container {

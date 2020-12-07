@@ -1,5 +1,81 @@
-.banner
-  display: flex
+@import "../../sass/variables"
 
-  .banner-img
-    width: 100%
+.banner
+  position: relative
+  display: grid
+  height: 600px
+  overflow: hidden
+
+  .banner-wrap
+    position: relative
+    width: $wrap
+    margin: 0 auto
+
+    .banner-descriptions
+      position: absolute
+      z-index: 2
+
+      .banner-info
+        display: grid
+        grid-gap: $gap
+        align-content: start
+        justify-content: center
+        justify-items: start
+        width: $wrap / 3
+        padding: $padding_large_mid 0
+        color: $color2_light_high
+        text-transform: uppercase
+
+        .banner-title
+          font-size: $font_size_large_high
+
+        .banner-text
+          font-size: $font_size_large_high + 8
+          font-weight: bold
+
+        .banner-details
+          color: $color2_light_high
+          font-size: $font_size_large
+          &:hover
+            color: $color
+
+    .banner-position
+      position: absolute
+      display: grid
+      grid-auto-flow: column
+      grid-gap: $gap_small_max
+      z-index: 3
+      bottom: $padding
+      right: 0
+
+      .banner-point
+        width: 10px
+        height: 10px
+        background-color: $color2
+        cursor: pointer
+        transition: $animation_transition
+        &:hover
+          background-color: $color2_light
+        &_selected
+          background-color: $color
+          &:hover
+            background-color: $color_dark
+
+
+  .banner-background
+    position: absolute
+    height: 600px
+    z-index: -1
+
+    .banner-blackout
+      position: absolute
+      width: 40%
+      height: 100%
+      background-color: rgba(0, 0, 0, 0.5)
+
+    .banner-images
+      width: 100%
+
+      .banner-img
+        width: 100%
+

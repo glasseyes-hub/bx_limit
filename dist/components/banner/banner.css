@@ -1,4 +1,65 @@
 .banner {
-  display: flex; }
-  .banner .banner-img {
-    width: 100%; }
+  position: relative;
+  display: grid;
+  height: 600px;
+  overflow: hidden; }
+  .banner .banner-wrap {
+    position: relative;
+    width: 1326px;
+    margin: 0 auto; }
+    .banner .banner-wrap .banner-descriptions {
+      position: absolute;
+      z-index: 2; }
+      .banner .banner-wrap .banner-descriptions .banner-info {
+        display: grid;
+        grid-gap: 40px;
+        align-content: start;
+        justify-content: center;
+        justify-items: start;
+        width: 442px;
+        padding: 60px 0;
+        color: white;
+        text-transform: uppercase; }
+        .banner .banner-wrap .banner-descriptions .banner-info .banner-title {
+          font-size: 30px; }
+        .banner .banner-wrap .banner-descriptions .banner-info .banner-text {
+          font-size: 38px;
+          font-weight: bold; }
+        .banner .banner-wrap .banner-descriptions .banner-info .banner-details {
+          color: white;
+          font-size: 16px; }
+          .banner .banner-wrap .banner-descriptions .banner-info .banner-details:hover {
+            color: #05ac9d; }
+    .banner .banner-wrap .banner-position {
+      position: absolute;
+      display: grid;
+      grid-auto-flow: column;
+      grid-gap: 5px;
+      z-index: 3;
+      bottom: 20px;
+      right: 0; }
+      .banner .banner-wrap .banner-position .banner-point {
+        width: 10px;
+        height: 10px;
+        background-color: #282828;
+        cursor: pointer;
+        transition: 0.2s; }
+        .banner .banner-wrap .banner-position .banner-point:hover {
+          background-color: #757575; }
+        .banner .banner-wrap .banner-position .banner-point_selected {
+          background-color: #05ac9d; }
+          .banner .banner-wrap .banner-position .banner-point_selected:hover {
+            background-color: #047a70; }
+  .banner .banner-background {
+    position: absolute;
+    height: 600px;
+    z-index: -1; }
+    .banner .banner-background .banner-blackout {
+      position: absolute;
+      width: 40%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5); }
+    .banner .banner-background .banner-images {
+      width: 100%; }
+      .banner .banner-background .banner-images .banner-img {
+        width: 100%; }
