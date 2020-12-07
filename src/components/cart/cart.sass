@@ -5,6 +5,16 @@
   display: grid
   grid-gap: $gap_small_mid
   color: $color2_light_mid
+  text-decoration: none
+  cursor: pointer
+  &:hover
+    .cart-header
+      background-color: $color2_dark_low
+      .cart-price
+        color: $color
+    .cart-detail
+      height: auto
+      opacity: 1
 
   .cart-header
     position: relative
@@ -16,16 +26,13 @@
     padding: $padding_small
     background-color: $color2_dark
     transition: $animation_transition
-    cursor: pointer
-    &:hover
+    text-decoration: none
 
-      .cart-price
-        color: $color
 
     .cart-itemsAmount
       position: absolute
-      top: -14px
-      right: -14px
+      top: -11px
+      right: -11px
       display: grid
       align-content: center
       justify-content: center
@@ -33,7 +40,7 @@
       color: $color2
       width: $icon_size_small - 6px
       height: $icon_size_small - 6px
-      border: 4px solid $color2
+      border: 2px solid $color2
       text-transform: uppercase
       font-weight: bold
 
@@ -45,9 +52,57 @@
       font-size: $font_size_large
       justify-self: end
       transition: $animation_transition
+      color: $color2_light_mid
 
-  .cart-full
-    color: $color2_light
-    justify-self: end
+  .cart-detail
+    position: absolute
+    top: 45px
+    right: 0
+    height: 0
+    opacity: 0
+    overflow: hidden
+    z-index: 100
+    transition: $animation_transition + 0.3
+    box-shadow: $shadow
+    background-color: $color2_dark_low
+    display: grid
+    grid-gap: $gap_small
+    padding-top: $padding
+
+    .cart-list
+      @import 'cartItem/cartItem'
+
+    .cart-title
+    .cart-value
+      font-weight: bold
+      color: $color
+
+    .cart-checkout
+      padding: $padding_small
+      background-color: $color
+      color: $color2_light_high
+      text-transform: uppercase
+      text-align: center
+      transition: $animation_transition
+      text-decoration: none
+      &:hover
+        background-color: $color_dark
+
+    .cart-summury
+      display: grid
+      grid-auto-flow: column
+      justify-content: space-between
+      padding: $padding
+      background-color: $color2_dark_mid
+
+      .cart-totalAmaunt,
+      .cart-titalPrice
+        display: grid
+        grid-auto-flow: column
+        grid-gap: $gap_small_max
+        justify-content: start
+        align-items: center
+
+
 
 

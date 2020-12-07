@@ -1,0 +1,31 @@
+@import "../../../sass/variables"
+
+.cartItem
+    display: grid
+    grid-auto-flow: column
+    grid-gap: $gap_small_mid
+    padding: $padding_small_mid $padding_small
+    transition: $animation_transition
+    &:hover
+        background-color: $color2_dark_mid
+
+    .cartItem-image
+        width: $icon_size
+        height: $icon_size
+        object-fit: cover
+
+    .cartItem-title
+        width: 200px
+
+    .cartItem-payment
+        display: grid
+        align-content: space-between
+        width: 70px
+        justify-items: end
+        .cartItem-price
+        .cartItem-amount
+
+    .cartItem-delete
+        padding: $padding_small_max
+        width: $icon_size_small_max
+        height: $icon_size_small_max

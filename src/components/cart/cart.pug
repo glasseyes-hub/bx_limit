@@ -1,6 +1,20 @@
 .cart
-    .cart-header
-        span.cart-itemsAmount 1
+    a.cart-header(href="info.html")
+        span.cart-itemsAmount 5
         span.cart-price 32 782 ₽
         img.cart-logo(src="icons/002-shopping-cart-empty-side-view.svg")
-    .cart-list
+    .cart-detail
+        .cart-list
+            include cartItem/cartItem
+            include cartItem/cartItem
+            include cartItem/cartItem
+            include cartItem/cartItem
+            include cartItem/cartItem
+        .cart-summury
+            .cart-totalAmaunt
+                .cart-title Товаров:
+                .cart-value 5
+            .cart-titalPrice
+                .cart-title На сумму:
+                .cart-value 32 782 ₽
+        a.cart-checkout(href="info.html") Оформить заказ
