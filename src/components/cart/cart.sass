@@ -13,6 +13,7 @@
       .cart-price
         color: $color
     .cart-detail
+      padding-top: $padding
       height: auto
       opacity: 1
 
@@ -63,11 +64,9 @@
     overflow: hidden
     z-index: 100
     transition: $animation_transition + 0.3
-    box-shadow: $shadow
     background-color: $color2_dark_low
     display: grid
     grid-gap: $gap_small
-    padding-top: $padding
 
     .cart-list
       @import 'cartItem/cartItem'

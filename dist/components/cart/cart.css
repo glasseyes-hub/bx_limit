@@ -10,6 +10,7 @@
     .cart:hover .cart-header .cart-price {
       color: #05ac9d; }
   .cart:hover .cart-detail {
+    padding-top: 20px;
     height: auto;
     opacity: 1; }
   .cart .cart-header {
@@ -54,11 +55,9 @@
     overflow: hidden;
     z-index: 100;
     transition: 0.5s;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
     background-color: #161616;
     display: grid;
-    grid-gap: 20px;
-    padding-top: 20px; }
+    grid-gap: 20px; }
     .cart .cart-detail .cart-list .cartItem {
       display: grid;
       grid-auto-flow: column;

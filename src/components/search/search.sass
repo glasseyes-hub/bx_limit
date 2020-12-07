@@ -3,7 +3,20 @@
 .search
   display: flex
   align-items: center
+  align-self: center
+  background-color: $color2_dark_mid
+  padding: 0 $padding_small
+
+  .search-input
+    background-color: $color2_dark_mid
+    border: none
+    padding: $padding_small_mid 0
+    color: $color2_light_low
+    &:focus
+      outline: none
+    &::placeholder
+      color: $color2_light
 
   .search-icon
-    width: $icon_size_small
-    height: $icon_size_small
+    width: $icon_size_small_mid
+    height: $icon_size_small_mid
