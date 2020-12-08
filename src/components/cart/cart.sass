@@ -5,7 +5,6 @@
   display: grid
   color: $color2_light_mid
   text-decoration: none
-  cursor: pointer
 
   .cart-wrap
     position: absolute
@@ -24,6 +23,10 @@
       padding: $padding_small
       transition: $animation_transition + 0.3
       text-decoration: none
+      cursor: pointer
+      &:hover
+        .cart-price
+          text-decoration: underline
 
       .cart-itemsAmount
         position: absolute
@@ -52,6 +55,7 @@
         transition: $animation_transition
         color: $color2_light_mid
 
+
     .cart-details
       display: grid
       grid-gap: $gap_small
@@ -72,6 +76,7 @@
         text-align: center
         transition: $animation_transition
         text-decoration: none
+        cursor: pointer
         &:hover
           background-color: $color_dark
 

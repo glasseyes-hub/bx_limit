@@ -4,8 +4,9 @@
     display: grid
     grid-auto-flow: column
     grid-gap: $gap_small_mid
-    padding: $padding_small_mid $padding_small
+    padding: $padding_small
     transition: $animation_transition
+    border-bottom: 1px solid $color2
     &:hover
         background-color: $color2_dark_mid
 
@@ -26,6 +27,11 @@
         .cartItem-amount
 
     .cartItem-delete
-        padding: $padding_small_max
         width: $icon_size_small_max
         height: $icon_size_small_max
+        padding: $padding_small_max - 2
+        border: 1px solid $color2
+        transition: $animation_transition
+        cursor: pointer
+        &:hover
+            border-color: $color2_light
