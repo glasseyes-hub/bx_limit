@@ -63,7 +63,8 @@ section.header .header-main .wrap {
       section.header .header-main .wrap .wrap-container .grid .logo {
         display: grid;
         grid-gap: 10px;
-        text-decoration: none; }
+        text-decoration: none;
+        align-content: start; }
         section.header .header-main .wrap .wrap-container .grid .logo .logo-img {
           width: 150px; }
         section.header .header-main .wrap .wrap-container .grid .logo .logo-text {
@@ -107,18 +108,10 @@ section.header .header-main .wrap {
       section.header .header-main .wrap .wrap-container .grid .cart {
         position: relative;
         display: grid;
-        grid-gap: 10px;
         color: #f4f4f4;
+        background-color: #1b1b1b;
         text-decoration: none;
         cursor: pointer; }
-        section.header .header-main .wrap .wrap-container .grid .cart:hover .cart-header {
-          background-color: #161616; }
-          section.header .header-main .wrap .wrap-container .grid .cart:hover .cart-header .cart-price {
-            color: #05ac9d; }
-        section.header .header-main .wrap .wrap-container .grid .cart:hover .cart-detail {
-          padding-top: 20px;
-          height: auto;
-          opacity: 1; }
         section.header .header-main .wrap .wrap-container .grid .cart .cart-header {
           position: relative;
           display: grid;
@@ -127,7 +120,6 @@ section.header .header-main .wrap {
           align-items: center;
           justify-content: end;
           padding: 10px;
-          background-color: #1b1b1b;
           transition: 0.5s;
           text-decoration: none; }
           section.header .header-main .wrap .wrap-container .grid .cart .cart-header .cart-itemsAmount {
@@ -153,15 +145,6 @@ section.header .header-main .wrap {
             transition: 0.2s;
             color: #f4f4f4; }
         section.header .header-main .wrap .wrap-container .grid .cart .cart-detail {
-          position: absolute;
-          top: 45px;
-          right: 0;
-          height: 0;
-          opacity: 0;
-          overflow: hidden;
-          z-index: 100;
-          transition: 0.5s;
-          background-color: #161616;
           display: grid;
           grid-gap: 20px; }
           section.header .header-main .wrap .wrap-container .grid .cart .cart-detail .cart-list .cartItem {
