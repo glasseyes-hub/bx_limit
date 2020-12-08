@@ -11,7 +11,7 @@
       position: absolute;
       z-index: 2; }
       .banner .banner-wrap .banner-descriptions .banner-info {
-        display: grid;
+        display: none;
         grid-gap: 40px;
         align-content: start;
         justify-content: center;
@@ -20,6 +20,8 @@
         padding: 60px 0;
         color: white;
         text-transform: uppercase; }
+        .banner .banner-wrap .banner-descriptions .banner-info_selected {
+          display: grid; }
         .banner .banner-wrap .banner-descriptions .banner-info .banner-title {
           font-size: 30px; }
         .banner .banner-wrap .banner-descriptions .banner-info .banner-text {
@@ -52,14 +54,14 @@
             background-color: #047a70; }
   .banner .banner-background {
     position: absolute;
-    height: 600px;
+    background-color: #282828;
+    width: 100%;
     z-index: -1; }
     .banner .banner-background .banner-blackout {
       position: absolute;
       width: 40%;
       height: 100%;
-      background-color: rgba(0, 0, 0, 0.5); }
-    .banner .banner-background .banner-images {
+      background-color: rgba(0, 0, 0, 0.6);
+      z-index: 1; }
+    .banner .banner-background .banner-images .banner-img {
       width: 100%; }
-      .banner .banner-background .banner-images .banner-img {
-        width: 100%; }

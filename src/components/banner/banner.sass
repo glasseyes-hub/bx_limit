@@ -16,7 +16,7 @@
       z-index: 2
 
       .banner-info
-        display: grid
+        display: none
         grid-gap: $gap
         align-content: start
         justify-content: center
@@ -25,6 +25,8 @@
         padding: $padding_large_mid 0
         color: $color2_light_high
         text-transform: uppercase
+        &_selected
+          display: grid
 
         .banner-title
           font-size: $font_size_large_high
@@ -64,18 +66,18 @@
 
   .banner-background
     position: absolute
-    height: 600px
+    background-color: $color2
+    width: 100%
     z-index: -1
 
     .banner-blackout
       position: absolute
       width: 40%
       height: 100%
-      background-color: rgba(0, 0, 0, 0.5)
+      background-color: rgba(0, 0, 0, 0.6)
+      z-index: 1
 
     .banner-images
-      width: 100%
-
       .banner-img
         width: 100%
 

@@ -318,7 +318,7 @@ body {
         position: absolute;
         z-index: 2; }
         body header .banner .banner-wrap .banner-descriptions .banner-info {
-          display: grid;
+          display: none;
           grid-gap: 40px;
           align-content: start;
           justify-content: center;
@@ -327,6 +327,8 @@ body {
           padding: 60px 0;
           color: white;
           text-transform: uppercase; }
+          body header .banner .banner-wrap .banner-descriptions .banner-info_selected {
+            display: grid; }
           body header .banner .banner-wrap .banner-descriptions .banner-info .banner-title {
             font-size: 30px; }
           body header .banner .banner-wrap .banner-descriptions .banner-info .banner-text {
@@ -359,17 +361,17 @@ body {
               background-color: #047a70; }
     body header .banner .banner-background {
       position: absolute;
-      height: 600px;
+      background-color: #282828;
+      width: 100%;
       z-index: -1; }
       body header .banner .banner-background .banner-blackout {
         position: absolute;
         width: 40%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.5); }
-      body header .banner .banner-background .banner-images {
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: 1; }
+      body header .banner .banner-background .banner-images .banner-img {
         width: 100%; }
-        body header .banner .banner-background .banner-images .banner-img {
-          width: 100%; }
   body header .seriesList .wrap {
     background-color: white; }
     body header .seriesList .wrap .wrap-container {
