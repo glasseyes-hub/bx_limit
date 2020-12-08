@@ -16,7 +16,7 @@
       z-index: 2
 
       .banner-info
-        display: none
+        display: grid
         grid-gap: $gap
         align-content: start
         justify-content: center
@@ -25,8 +25,6 @@
         padding: $padding_large_mid 0
         color: $color2_light_high
         text-transform: uppercase
-        &_selected
-          display: grid
 
         .banner-title
           font-size: $font_size_large_high
@@ -41,7 +39,7 @@
           &:hover
             color: $color
 
-    .banner-position
+    .banner-points
       position: absolute
       display: grid
       grid-auto-flow: column
@@ -56,6 +54,7 @@
         background-color: $color2
         cursor: pointer
         transition: $animation_transition
+        box-shadow: $shadow
         &:hover
           background-color: $color2_light
         &_selected

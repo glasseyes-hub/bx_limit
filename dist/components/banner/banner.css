@@ -11,7 +11,7 @@
       position: absolute;
       z-index: 2; }
       .banner .banner-wrap .banner-descriptions .banner-info {
-        display: none;
+        display: grid;
         grid-gap: 40px;
         align-content: start;
         justify-content: center;
@@ -20,8 +20,6 @@
         padding: 60px 0;
         color: white;
         text-transform: uppercase; }
-        .banner .banner-wrap .banner-descriptions .banner-info_selected {
-          display: grid; }
         .banner .banner-wrap .banner-descriptions .banner-info .banner-title {
           font-size: 30px; }
         .banner .banner-wrap .banner-descriptions .banner-info .banner-text {
@@ -32,7 +30,7 @@
           font-size: 16px; }
           .banner .banner-wrap .banner-descriptions .banner-info .banner-details:hover {
             color: #05ac9d; }
-    .banner .banner-wrap .banner-position {
+    .banner .banner-wrap .banner-points {
       position: absolute;
       display: grid;
       grid-auto-flow: column;
@@ -40,17 +38,18 @@
       z-index: 3;
       bottom: 20px;
       right: 0; }
-      .banner .banner-wrap .banner-position .banner-point {
+      .banner .banner-wrap .banner-points .banner-point {
         width: 10px;
         height: 10px;
         background-color: #282828;
         cursor: pointer;
-        transition: 0.2s; }
-        .banner .banner-wrap .banner-position .banner-point:hover {
+        transition: 0.2s;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); }
+        .banner .banner-wrap .banner-points .banner-point:hover {
           background-color: #757575; }
-        .banner .banner-wrap .banner-position .banner-point_selected {
+        .banner .banner-wrap .banner-points .banner-point_selected {
           background-color: #05ac9d; }
-          .banner .banner-wrap .banner-position .banner-point_selected:hover {
+          .banner .banner-wrap .banner-points .banner-point_selected:hover {
             background-color: #047a70; }
   .banner .banner-background {
     position: absolute;

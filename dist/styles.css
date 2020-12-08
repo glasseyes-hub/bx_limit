@@ -318,7 +318,7 @@ body {
         position: absolute;
         z-index: 2; }
         body header .banner .banner-wrap .banner-descriptions .banner-info {
-          display: none;
+          display: grid;
           grid-gap: 40px;
           align-content: start;
           justify-content: center;
@@ -327,8 +327,6 @@ body {
           padding: 60px 0;
           color: white;
           text-transform: uppercase; }
-          body header .banner .banner-wrap .banner-descriptions .banner-info_selected {
-            display: grid; }
           body header .banner .banner-wrap .banner-descriptions .banner-info .banner-title {
             font-size: 30px; }
           body header .banner .banner-wrap .banner-descriptions .banner-info .banner-text {
@@ -339,7 +337,7 @@ body {
             font-size: 16px; }
             body header .banner .banner-wrap .banner-descriptions .banner-info .banner-details:hover {
               color: #05ac9d; }
-      body header .banner .banner-wrap .banner-position {
+      body header .banner .banner-wrap .banner-points {
         position: absolute;
         display: grid;
         grid-auto-flow: column;
@@ -347,17 +345,18 @@ body {
         z-index: 3;
         bottom: 20px;
         right: 0; }
-        body header .banner .banner-wrap .banner-position .banner-point {
+        body header .banner .banner-wrap .banner-points .banner-point {
           width: 10px;
           height: 10px;
           background-color: #282828;
           cursor: pointer;
-          transition: 0.2s; }
-          body header .banner .banner-wrap .banner-position .banner-point:hover {
+          transition: 0.2s;
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); }
+          body header .banner .banner-wrap .banner-points .banner-point:hover {
             background-color: #757575; }
-          body header .banner .banner-wrap .banner-position .banner-point_selected {
+          body header .banner .banner-wrap .banner-points .banner-point_selected {
             background-color: #05ac9d; }
-            body header .banner .banner-wrap .banner-position .banner-point_selected:hover {
+            body header .banner .banner-wrap .banner-points .banner-point_selected:hover {
               background-color: #047a70; }
     body header .banner .banner-background {
       position: absolute;
