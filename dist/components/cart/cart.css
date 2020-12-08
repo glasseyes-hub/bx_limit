@@ -8,7 +8,6 @@
     position: absolute;
     top: 0;
     right: 0;
-    background-color: #1b1b1b;
     z-index: 100;
     opacity: 0.99; }
     .cart .cart-wrap .cart-header {
@@ -47,7 +46,8 @@
         color: #f4f4f4; }
     .cart .cart-wrap .cart-details {
       display: grid;
-      grid-gap: 20px; }
+      grid-gap: 20px;
+      background-color: #1b1b1b; }
       .cart .cart-wrap .cart-details .cart-list .cartItem {
         display: grid;
         grid-auto-flow: column;
