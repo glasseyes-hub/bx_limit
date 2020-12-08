@@ -10,9 +10,6 @@
 
 body
     font-family: Roboto
-    display: grid
-    grid-auto-flow: row
-    grid-gap: $gap_large
     color: $color2
     font-size: $font_size
     background-color: $color2_light_mid
@@ -37,8 +34,7 @@ body
         @import "blocks/seriesList/seriesList"
     main
         display: grid
-        grid-auto-flow: row
-        grid-gap: $gap_large
+        @import "blocks/path/path"
         @import "blocks/novelties/novelties"
         @import "blocks/advantages/advantages"
         @import "blocks/works/works"

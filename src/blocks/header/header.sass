@@ -11,13 +11,12 @@ section.header
     .header-main
         +wrap($color2, $padding: $padding 0)
             +grid($col: 4)
-                & > *:last-child
-                    justify-self: end
-                    align-self: center
                 @import "../../components/logo/logo"
                 @import "../../components/phone/phone"
                 @import "../../components/worktime/worktime"
                 @import "../../components/cart/cart"
+                & > *:last-child
+                    justify-self: end
     .header-menu
         +wrap($color2_dark)
             +grid($justify: space-between)

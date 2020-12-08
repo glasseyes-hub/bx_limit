@@ -1,0 +1,24 @@
+@import "../../sass/variables"
+
+.position
+    display: grid
+    grid-auto-flow: column
+    grid-gap: $gap_small_mid
+    justify-content: start
+
+    .position-link
+        color: $color2
+        text-decoration: none
+        transition: $animation_transition
+        display: grid
+        grid-auto-flow: column
+        grid-gap: $gap_small_mid
+        &:hover
+            text-decoration: underline
+            color: $color2_light
+
+        &_current
+            color: $color
+            font-weight: bold
+            &:hover
+                color: $color_dark

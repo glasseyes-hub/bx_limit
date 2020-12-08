@@ -3,7 +3,6 @@
   display: grid;
   color: #f4f4f4;
   text-decoration: none;
-  align-self: start;
   cursor: pointer; }
   .cart .cart-wrap {
     position: absolute;

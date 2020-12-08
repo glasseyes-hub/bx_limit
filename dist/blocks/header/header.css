@@ -57,9 +57,6 @@ section.header .header-main .wrap {
       grid-template-columns: repeat(4, 1fr);
       justify-content: stretch;
       align-items: stretch; }
-      section.header .header-main .wrap .wrap-container .grid > *:last-child {
-        justify-self: end;
-        align-self: center; }
       section.header .header-main .wrap .wrap-container .grid .logo {
         display: grid;
         grid-gap: 10px;
@@ -110,7 +107,6 @@ section.header .header-main .wrap {
         display: grid;
         color: #f4f4f4;
         text-decoration: none;
-        align-self: start;
         cursor: pointer; }
         section.header .header-main .wrap .wrap-container .grid .cart .cart-wrap {
           position: absolute;
@@ -208,6 +204,8 @@ section.header .header-main .wrap {
                 align-items: center; }
         section.header .header-main .wrap .wrap-container .grid .cart_open .cart-wrap .cart-header .cart-price {
           color: #05ac9d; }
+      section.header .header-main .wrap .wrap-container .grid > *:last-child {
+        justify-self: end; }
 
 section.header .header-menu .wrap {
   background-color: #1b1b1b; }
