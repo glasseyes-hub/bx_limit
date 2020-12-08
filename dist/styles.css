@@ -403,7 +403,7 @@ body {
       background-color: white; }
       body main .path .wrap .wrap-container {
         width: 1326px;
-        padding: 40px 0;
+        padding: 20px 0;
         margin: 0 auto;
         display: grid;
         grid-gap: 40px; }
