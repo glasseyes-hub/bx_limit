@@ -1,7 +1,10 @@
 .advantage {
   display: grid;
   grid-auto-flow: column;
-  grid-gap: 40px; }
+  grid-gap: 40px;
+  background-color: white;
+  padding: 20px;
+  justify-content: space-between; }
   .advantage .advantage-info {
     display: grid;
     align-content: start;

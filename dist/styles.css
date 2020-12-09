@@ -555,7 +555,10 @@ body {
           body main .advantages .wrap .wrap-container .grid .advantage {
             display: grid;
             grid-auto-flow: column;
-            grid-gap: 40px; }
+            grid-gap: 40px;
+            background-color: white;
+            padding: 20px;
+            justify-content: space-between; }
             body main .advantages .wrap .wrap-container .grid .advantage .advantage-info {
               display: grid;
               align-content: start;
