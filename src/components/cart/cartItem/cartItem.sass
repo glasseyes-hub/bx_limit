@@ -15,8 +15,13 @@
         height: $icon_size
         object-fit: cover
 
-    .cartItem-title
+    .cartItem-link
+        align-self: start
         width: 200px
+        color: $color2_light_mid
+        text-decoration: none
+        &:hover
+            text-decoration: underline
 
     .cartItem-payment
         display: grid
@@ -33,5 +38,11 @@
         border: 1px solid $color2
         transition: $animation_transition
         cursor: pointer
+        path
+            transition: $animation_transition
+            fill: $color2_light
         &:hover
-            border-color: $color2_light
+            border-color: $main_color_warning
+
+            path
+                fill: $main_color_warning
