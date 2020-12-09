@@ -115,9 +115,9 @@ class Cart {
   constructor(container) {
     this.container = container;
     this.header = this.container.find($(".cart-info"));
-    this.details = this.container.find($(".cart-details"));
+    this.detail = this.container.find($(".cart-detail"));
 
-    // this.details.hide();
+    this.detail.hide();
     this.setHandler();
   }
 
@@ -133,16 +133,22 @@ class Cart {
 
   open() {
     this.container.addClass("cart_open");
-    this.header.fadeOut(this.animationSpeed);
-    this.details.fadeIn(this.animationSpeed);
+    this.header
+      .fadeOut(this.animationSpeed)
+      .find($(".cart-itemsAmount"))
+      .fadeOut(this.animationSpeed);
+    this.detail.fadeIn(this.animationSpeed);
     this.isOpen = true;
   }
 
   close() {
     this.closeTimeout = setTimeout(() => {
       this.container.removeClass("cart_open");
-      this.header.fadeIn(this.animationSpeed);
-      this.details.fadeOut(this.animationSpeed);
+      this.header
+        .fadeIn(this.animationSpeed)
+        .find($(".cart-itemsAmount"))
+        .fadeIn(this.animationSpeed);
+      this.detail.fadeOut(this.animationSpeed);
       this.isOpen = false;
     }, this.autoCloseSpeed);
   }

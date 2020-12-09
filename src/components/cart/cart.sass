@@ -4,7 +4,6 @@
   position: relative
   display: grid
   color: $color2_light_mid
-  text-decoration: none
 
   .cart-logo
     width: $icon_size_small
@@ -17,12 +16,6 @@
     grid-gap: $gap_small_mid
     align-items: center
     justify-content: end
-    transition: $animation_transition + 0.3
-    text-decoration: none
-    cursor: pointer
-    &:hover
-      .cart-price
-        text-decoration: underline
 
     .cart-itemsAmount
       position: absolute
@@ -39,8 +32,6 @@
       text-transform: uppercase
       font-weight: bold
 
-
-
     .cart-price
       white-space: nowrap
       text-align: right
@@ -49,8 +40,7 @@
       transition: $animation_transition
       color: $color2_light_mid
 
-
-  .cart-details
+  .cart-detail
     display: grid
     grid-gap: $gap_small_mid
     background-color: $color2_dark
@@ -58,7 +48,7 @@
     top: 0
     right: 0
     z-index: 100
-    opacity: 0.95
+    opacity: 0.98
 
     .cart-header
       position: relative

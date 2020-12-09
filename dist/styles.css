@@ -130,8 +130,7 @@ body {
         body header section.header .header-main .wrap .wrap-container .grid .cart {
           position: relative;
           display: grid;
-          color: #f4f4f4;
-          text-decoration: none; }
+          color: #f4f4f4; }
           body header section.header .header-main .wrap .wrap-container .grid .cart .cart-logo {
             width: 25px;
             height: 25px; }
@@ -141,12 +140,7 @@ body {
             grid-auto-flow: column;
             grid-gap: 10px;
             align-items: center;
-            justify-content: end;
-            transition: 0.5s;
-            text-decoration: none;
-            cursor: pointer; }
-            body header section.header .header-main .wrap .wrap-container .grid .cart .cart-info:hover .cart-price {
-              text-decoration: underline; }
+            justify-content: end; }
             body header section.header .header-main .wrap .wrap-container .grid .cart .cart-info .cart-itemsAmount {
               position: absolute;
               top: -12px;
@@ -168,7 +162,7 @@ body {
               justify-self: end;
               transition: 0.2s;
               color: #f4f4f4; }
-          body header section.header .header-main .wrap .wrap-container .grid .cart .cart-details {
+          body header section.header .header-main .wrap .wrap-container .grid .cart .cart-detail {
             display: grid;
             grid-gap: 10px;
             background-color: #1b1b1b;
@@ -176,8 +170,8 @@ body {
             top: 0;
             right: 0;
             z-index: 100;
-            opacity: 0.95; }
-            body header section.header .header-main .wrap .wrap-container .grid .cart .cart-details .cart-header {
+            opacity: 0.98; }
+            body header section.header .header-main .wrap .wrap-container .grid .cart .cart-detail .cart-header {
               position: relative;
               display: grid;
               grid-auto-flow: column;
@@ -185,65 +179,65 @@ body {
               justify-content: start;
               align-items: center;
               padding: 10px 10px 0; }
-              body header section.header .header-main .wrap .wrap-container .grid .cart .cart-details .cart-header .cart-text {
+              body header section.header .header-main .wrap .wrap-container .grid .cart .cart-detail .cart-header .cart-text {
                 font-size: 16px;
                 text-transform: uppercase; }
-              body header section.header .header-main .wrap .wrap-container .grid .cart .cart-details .cart-header .cart-open {
+              body header section.header .header-main .wrap .wrap-container .grid .cart .cart-detail .cart-header .cart-open {
                 position: absolute;
                 right: 10px;
                 bottom: 0;
                 width: 25px;
                 height: 25px;
                 cursor: pointer; }
-                body header section.header .header-main .wrap .wrap-container .grid .cart .cart-details .cart-header .cart-open path {
+                body header section.header .header-main .wrap .wrap-container .grid .cart .cart-detail .cart-header .cart-open path {
                   fill: #05ac9d;
                   transition: 0.2s; }
-                body header section.header .header-main .wrap .wrap-container .grid .cart .cart-details .cart-header .cart-open:hover path {
+                body header section.header .header-main .wrap .wrap-container .grid .cart .cart-detail .cart-header .cart-open:hover path {
                   fill: #047a70; }
-            body header section.header .header-main .wrap .wrap-container .grid .cart .cart-details .cart-list .cartItem {
+            body header section.header .header-main .wrap .wrap-container .grid .cart .cart-detail .cart-list .cartItem {
               display: grid;
               grid-auto-flow: column;
               grid-gap: 10px;
               padding: 10px;
               transition: 0.2s;
               border-bottom: 1px solid #282828; }
-              body header section.header .header-main .wrap .wrap-container .grid .cart .cart-details .cart-list .cartItem:hover {
+              body header section.header .header-main .wrap .wrap-container .grid .cart .cart-detail .cart-list .cartItem:hover {
                 background-color: #0f0f0f; }
-              body header section.header .header-main .wrap .wrap-container .grid .cart .cart-details .cart-list .cartItem .cartItem-image {
+              body header section.header .header-main .wrap .wrap-container .grid .cart .cart-detail .cart-list .cartItem .cartItem-image {
                 width: 50px;
                 height: 50px;
                 -o-object-fit: cover;
                    object-fit: cover; }
-              body header section.header .header-main .wrap .wrap-container .grid .cart .cart-details .cart-list .cartItem .cartItem-link {
+              body header section.header .header-main .wrap .wrap-container .grid .cart .cart-detail .cart-list .cartItem .cartItem-link {
                 align-self: start;
                 width: 200px;
                 color: #f4f4f4;
                 text-decoration: none; }
-                body header section.header .header-main .wrap .wrap-container .grid .cart .cart-details .cart-list .cartItem .cartItem-link:hover {
+                body header section.header .header-main .wrap .wrap-container .grid .cart .cart-detail .cart-list .cartItem .cartItem-link:hover {
                   text-decoration: underline; }
-              body header section.header .header-main .wrap .wrap-container .grid .cart .cart-details .cart-list .cartItem .cartItem-payment {
+              body header section.header .header-main .wrap .wrap-container .grid .cart .cart-detail .cart-list .cartItem .cartItem-payment {
                 display: grid;
                 align-content: space-between;
                 width: 70px;
                 justify-items: end; }
-              body header section.header .header-main .wrap .wrap-container .grid .cart .cart-details .cart-list .cartItem .cartItem-delete {
+              body header section.header .header-main .wrap .wrap-container .grid .cart .cart-detail .cart-list .cartItem .cartItem-delete {
                 width: 10px;
                 height: 10px;
                 padding: 3px;
                 border: 1px solid #282828;
                 transition: 0.2s;
                 cursor: pointer; }
-                body header section.header .header-main .wrap .wrap-container .grid .cart .cart-details .cart-list .cartItem .cartItem-delete path {
+                body header section.header .header-main .wrap .wrap-container .grid .cart .cart-detail .cart-list .cartItem .cartItem-delete path {
                   transition: 0.2s;
                   fill: #757575; }
-                body header section.header .header-main .wrap .wrap-container .grid .cart .cart-details .cart-list .cartItem .cartItem-delete:hover {
+                body header section.header .header-main .wrap .wrap-container .grid .cart .cart-detail .cart-list .cartItem .cartItem-delete:hover {
                   border-color: #ac1205; }
-                  body header section.header .header-main .wrap .wrap-container .grid .cart .cart-details .cart-list .cartItem .cartItem-delete:hover path {
+                  body header section.header .header-main .wrap .wrap-container .grid .cart .cart-detail .cart-list .cartItem .cartItem-delete:hover path {
                     fill: #ac1205; }
-            body header section.header .header-main .wrap .wrap-container .grid .cart .cart-details .cart-value {
+            body header section.header .header-main .wrap .wrap-container .grid .cart .cart-detail .cart-value {
               font-weight: bold;
               color: #05ac9d; }
-            body header section.header .header-main .wrap .wrap-container .grid .cart .cart-details .cart-checkout {
+            body header section.header .header-main .wrap .wrap-container .grid .cart .cart-detail .cart-checkout {
               padding: 10px;
               background-color: #05ac9d;
               color: white;
@@ -252,16 +246,16 @@ body {
               transition: 0.2s;
               text-decoration: none;
               cursor: pointer; }
-              body header section.header .header-main .wrap .wrap-container .grid .cart .cart-details .cart-checkout:hover {
+              body header section.header .header-main .wrap .wrap-container .grid .cart .cart-detail .cart-checkout:hover {
                 background-color: #047a70; }
-            body header section.header .header-main .wrap .wrap-container .grid .cart .cart-details .cart-summary {
+            body header section.header .header-main .wrap .wrap-container .grid .cart .cart-detail .cart-summary {
               display: grid;
               grid-auto-flow: column;
               justify-content: space-between;
               padding: 20px;
               background-color: #0f0f0f; }
-              body header section.header .header-main .wrap .wrap-container .grid .cart .cart-details .cart-summary .cart-totalAmount,
-              body header section.header .header-main .wrap .wrap-container .grid .cart .cart-details .cart-summary .cart-totalPrice {
+              body header section.header .header-main .wrap .wrap-container .grid .cart .cart-detail .cart-summary .cart-totalAmount,
+              body header section.header .header-main .wrap .wrap-container .grid .cart .cart-detail .cart-summary .cart-totalPrice {
                 display: grid;
                 grid-auto-flow: column;
                 grid-gap: 5px;

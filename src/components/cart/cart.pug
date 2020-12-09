@@ -1,13 +1,14 @@
 .cart
-    a.cart-info(href="info.html")
+    .cart-info(href="info.html")
         span.cart-itemsAmount 5
         span.cart-price 32 782 ₽
         img.cart-logo(src="icons/002-shopping-cart-empty-side-view.svg")
-    .cart-details
+    .cart-detail
         .cart-header
             img.cart-logo(src="icons/002-shopping-cart-empty-side-view.svg")
             span.cart-text Корзина
-            img.svg.cart-open(src="icons/025-right-arrow.svg")
+            a.cart-link(href="info.html")
+                img.svg.cart-open(src="icons/025-right-arrow.svg")
         .cart-list
             include cartItem/cartItem
             include cartItem/cartItem
