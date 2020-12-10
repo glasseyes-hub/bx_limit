@@ -1,7 +1,7 @@
 class Banner {
   start = 0;
-  intervalTimeout = 3000;
-  animationSpeed = 1500;
+  intervalTimeout = 7000;
+  animationSpeed = 2000;
 
   constructor(element) {
     this.container = $(element);
