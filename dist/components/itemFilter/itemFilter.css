@@ -7,6 +7,11 @@
   cursor: pointer; }
   .itemFilter:hover .itemFilter-text {
     color: #757575; }
+  .itemFilter_selected .itemFilter-text {
+    color: #05ac9d;
+    font-weight: bold; }
+  .itemFilter_selected:hover {
+    color: #047a70; }
   .itemFilter .itemFilter-icon {
     width: 25px;
     height: 25px; }

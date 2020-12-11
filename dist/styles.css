@@ -752,6 +752,11 @@ body {
                   cursor: pointer; }
                   body main .catalog .wrap .wrap-container .grid .filter .dropdown .showAll .itemFilter:hover .itemFilter-text {
                     color: #757575; }
+                  body main .catalog .wrap .wrap-container .grid .filter .dropdown .showAll .itemFilter_selected .itemFilter-text {
+                    color: #05ac9d;
+                    font-weight: bold; }
+                  body main .catalog .wrap .wrap-container .grid .filter .dropdown .showAll .itemFilter_selected:hover {
+                    color: #047a70; }
                   body main .catalog .wrap .wrap-container .grid .filter .dropdown .showAll .itemFilter .itemFilter-icon {
                     width: 25px;
                     height: 25px; }

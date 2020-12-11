@@ -99,6 +99,11 @@
         cursor: pointer; }
         .filter .dropdown .showAll .itemFilter:hover .itemFilter-text {
           color: #757575; }
+        .filter .dropdown .showAll .itemFilter_selected .itemFilter-text {
+          color: #05ac9d;
+          font-weight: bold; }
+        .filter .dropdown .showAll .itemFilter_selected:hover {
+          color: #047a70; }
         .filter .dropdown .showAll .itemFilter .itemFilter-icon {
           width: 25px;
           height: 25px; }
