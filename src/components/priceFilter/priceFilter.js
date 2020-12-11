@@ -7,9 +7,9 @@ const priceFilter = $(".priceFilter-slider")
   .ionRangeSlider({
     type: "double",
     min: 0,
-    max: 1000,
+    max: 20000,
     from: 0,
-    to: 1000,
+    to: 20000,
     grid: true,
     skin: "round",
     hide_min_max: true,

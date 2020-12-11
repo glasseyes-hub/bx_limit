@@ -1,0 +1,7 @@
+mixin dropdown(title, noScrollClass)
+    .dropdown(class = noScrollClass ? 'dropdown_' + noScrollClass: '')
+        .dropdown-header
+            h4.dropdown-title #{title}
+            img.svg.dropdown-icon(src='icons/026-down-arrow.svg')
+        .dropdown-body
+            block

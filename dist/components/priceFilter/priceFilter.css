@@ -1,6 +1,7 @@
 .priceFilter {
   display: grid;
-  grid-gap: 20px; }
+  grid-gap: 20px;
+  margin-right: 20px; }
   .priceFilter .priceFilter-inputs {
     display: grid;
     grid-auto-flow: column;

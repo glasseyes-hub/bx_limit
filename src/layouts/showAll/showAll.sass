@@ -1,0 +1,15 @@
+@mixin showAll
+    .showAll
+        display: grid
+        grid-gap: $gap_small_mid
+
+        .showAll-body
+            display: grid
+            grid-gap: $gap_small_mid
+            height: 150px
+            overflow: hidden
+
+        .showAll-button
+            cursor: pointer
+
+        @content

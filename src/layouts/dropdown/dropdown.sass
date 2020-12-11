@@ -1,0 +1,33 @@
+@import "../../sass/variables"
+
+@mixin dropdown
+    .dropdown
+        display: grid
+        grid-gap: $gap_small
+        transition: $animation_transition
+        &_open
+            .dropdown-icon
+                transform: rotate(180deg)
+
+        .dropdown-header
+            display: grid
+            grid-auto-flow: column
+            justify-content: space-between
+            cursor: pointer
+            &:hover
+                .dropdown-title
+                    transition: $animation_transition
+                    color: $color
+                .dropdown-icon path
+                    transition: $animation_transition
+                    fill: $color
+
+            .dropdown-icon
+                width: $icon_size_small_mid
+                height: $icon_size_small_mid
+                transition: $animation_transition
+
+        .dropdown-body
+
+
+        @content

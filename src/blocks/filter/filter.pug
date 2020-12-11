@@ -1,29 +1,32 @@
-include ../../layouts/filterItem/filterItem
+include ../../layouts/dropdown/dropdown
+include ../../layouts/showAll/showAll
 
 .filter
-    +filterItem('Цена')
+    +dropdown('Цена', 'noScroll')
         include ../../components/priceFilter/priceFilter
 
-    +filterItem('Цвет')
-        include ../../components/itemFilter/itemFilter
-        include ../../components/itemFilter/itemFilter
-        include ../../components/itemFilter/itemFilter
-        include ../../components/itemFilter/itemFilter
-        include ../../components/itemFilter/itemFilter
-        include ../../components/itemFilter/itemFilter
-        include ../../components/itemFilter/itemFilter
-        include ../../components/itemFilter/itemFilter
-        include ../../components/itemFilter/itemFilter
-        include ../../components/itemFilter/itemFilter
+    +dropdown('Цвет')
+        +showAll
+            include ../../components/itemFilter/itemFilter
+            include ../../components/itemFilter/itemFilter
+            include ../../components/itemFilter/itemFilter
+            include ../../components/itemFilter/itemFilter
+            include ../../components/itemFilter/itemFilter
+            include ../../components/itemFilter/itemFilter
+            include ../../components/itemFilter/itemFilter
+            include ../../components/itemFilter/itemFilter
+            include ../../components/itemFilter/itemFilter
+            include ../../components/itemFilter/itemFilter
 
-    +filterItem('Стиль')
-        include ../../components/checkboxFilter/checkboxFilter
-        include ../../components/checkboxFilter/checkboxFilter
-        include ../../components/checkboxFilter/checkboxFilter
-        include ../../components/checkboxFilter/checkboxFilter
-        include ../../components/checkboxFilter/checkboxFilter
-        include ../../components/checkboxFilter/checkboxFilter
-        include ../../components/checkboxFilter/checkboxFilter
-        include ../../components/checkboxFilter/checkboxFilter
-        include ../../components/checkboxFilter/checkboxFilter
-        include ../../components/checkboxFilter/checkboxFilter
+    +dropdown('Стиль')
+        +showAll
+            include ../../components/checkboxFilter/checkboxFilter
+            include ../../components/checkboxFilter/checkboxFilter
+            include ../../components/checkboxFilter/checkboxFilter
+            include ../../components/checkboxFilter/checkboxFilter
+            include ../../components/checkboxFilter/checkboxFilter
+            include ../../components/checkboxFilter/checkboxFilter
+            include ../../components/checkboxFilter/checkboxFilter
+            include ../../components/checkboxFilter/checkboxFilter
+            include ../../components/checkboxFilter/checkboxFilter
+            include ../../components/checkboxFilter/checkboxFilter

@@ -1,5 +1,6 @@
 @import "../../sass/variables"
-@import "../../layouts/filterItem/filterItem"
+@import "../../layouts/dropdown/dropdown"
+@import "../../layouts/showAll/showAll"
 
 .filter
   display: grid
@@ -8,7 +9,9 @@
   grid-column-start: 1
   grid-column-end: 2
 
-  +filterItem
+  +dropdown
     @import "../../components/priceFilter/priceFilter"
-    @import "../../components/itemFilter/itemFilter"
-    @import "../../components/checkboxFilter/checkboxFilter"
+
+    +showAll
+      @import "../../components/itemFilter/itemFilter"
+      @import "../../components/checkboxFilter/checkboxFilter"

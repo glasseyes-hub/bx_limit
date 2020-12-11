@@ -187,9 +187,9 @@ const priceFilter = $(".priceFilter-slider")
   .ionRangeSlider({
     type: "double",
     min: 0,
-    max: 1000,
+    max: 20000,
     from: 0,
-    to: 1000,
+    to: 20000,
     grid: true,
     skin: "round",
     hide_min_max: true,
@@ -211,6 +211,29 @@ inputs.on("input", (event) => {
       to: event.target.value,
     });
   }
+});
+
+class Dropdown {
+  constructor(container) {
+    this.container = container;
+    this.header = this.container.find($(".dropdown-header"));
+    this.body = this.container.find($(".dropdown-body"));
+
+    this.addHandlers();
+  }
+
+  addHandlers() {
+    this.header.on("click", (event) => {
+      this.body.slideToggle();
+      this.container.toggleClass("dropdown_open");
+    });
+  }
+}
+
+$(function () {
+  $(".dropdown").each((index, dropdown) => {
+    new Dropdown($(dropdown));
+  });
 });
 
 class FilterItem {
@@ -273,5 +296,39 @@ class FilterItem {
 
 $(".filterItem").each((index, element) => {
   const filter = new FilterItem(element);
+});
+
+class ShowAll {
+  isShowed = false;
+  constructor(container) {
+    this.container = container;
+    this.body = this.container.find($(".showAll-body"));
+    this.button = this.container.find($(".showAll-button"));
+
+    this.addHandlers();
+  }
+
+  addHandlers() {
+    this.button.on("click", () => {
+      if (this.isShowed) this.hide();
+      else this.show();
+    });
+  }
+
+  hide() {
+    this.body.animate({ height: "150px" });
+    this.isShowed = false;
+  }
+
+  show() {
+    this.body.animate({ height: "auto" });
+    this.isShowed = true;
+  }
+}
+
+$(function () {
+  $(".showAll").each((index, showAll) => {
+    new ShowAll($(showAll));
+  });
 });
 
