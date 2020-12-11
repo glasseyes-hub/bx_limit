@@ -94,10 +94,16 @@
             .catalog .wrap .wrap-container .grid .filter .dropdown .showAll .showAll-body {
               display: grid;
               grid-gap: 10px;
-              height: 150px;
               overflow: hidden; }
             .catalog .wrap .wrap-container .grid .filter .dropdown .showAll .showAll-button {
-              cursor: pointer; }
+              color: #757575;
+              text-decoration: underline;
+              -webkit-text-decoration-style: dashed;
+                      text-decoration-style: dashed;
+              cursor: pointer;
+              transition: 0.2s; }
+              .catalog .wrap .wrap-container .grid .filter .dropdown .showAll .showAll-button:hover {
+                color: #05ac9d; }
             .catalog .wrap .wrap-container .grid .filter .dropdown .showAll .itemFilter {
               display: grid;
               grid-auto-flow: column;

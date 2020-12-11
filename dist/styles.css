@@ -733,10 +733,16 @@ body {
                 body main .catalog .wrap .wrap-container .grid .filter .dropdown .showAll .showAll-body {
                   display: grid;
                   grid-gap: 10px;
-                  height: 150px;
                   overflow: hidden; }
                 body main .catalog .wrap .wrap-container .grid .filter .dropdown .showAll .showAll-button {
-                  cursor: pointer; }
+                  color: #757575;
+                  text-decoration: underline;
+                  -webkit-text-decoration-style: dashed;
+                          text-decoration-style: dashed;
+                  cursor: pointer;
+                  transition: 0.2s; }
+                  body main .catalog .wrap .wrap-container .grid .filter .dropdown .showAll .showAll-button:hover {
+                    color: #05ac9d; }
                 body main .catalog .wrap .wrap-container .grid .filter .dropdown .showAll .itemFilter {
                   display: grid;
                   grid-auto-flow: column;

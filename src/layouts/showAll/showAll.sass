@@ -1,3 +1,5 @@
+@import "../../sass/variables"
+
 @mixin showAll
     .showAll
         display: grid
@@ -6,10 +8,15 @@
         .showAll-body
             display: grid
             grid-gap: $gap_small_mid
-            height: 150px
             overflow: hidden
 
         .showAll-button
+            color: $color2_light
+            text-decoration: underline
+            text-decoration-style: dashed
             cursor: pointer
+            transition: $animation_transition
+            &:hover
+                color: $color
 
         @content
