@@ -1,7 +1,5 @@
 include ../../layouts/wrap/wrap
 include ../../layouts/grid/grid
-include ../../layouts/grid/grid
-include ../../layouts/headerInfo/headerInfo
 
 section.header
     .header-top
@@ -12,11 +10,9 @@ section.header
     .header-main
         +wrap
             +grid
-
                 include ../../components/logo/logo
-                +headerInfo('phone', "icons/001-phone-call.svg",'+7 (812) 209-04-25', 'Единый контактный центр')
-                +headerInfo('workTime', "icons/004-clock.svg",'Пн - Вс: 10:00 - 20:00', 'Без обеда')
-                +headerInfo('address', "icons/007-placeholder.svg",'ул.Набережная д.4/2')
+                include ../../components/phone/phone
+                include ../../components/worktime/worktime
                 include ../../components/cart/cart
     .header-menu
         +wrap
