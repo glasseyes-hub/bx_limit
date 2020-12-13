@@ -1,6 +1,7 @@
 @import "../../sass/variables"
 @import "../../layouts/wrap/wrap"
 @import "../../layouts/grid/grid"
+@import '../../layouts/headerInfo/headerInfo'
 
 section.header
     .header-top
@@ -10,7 +11,12 @@ section.header
                 @import "../../components/additionalMenu/additionalMenu"
     .header-main
         +wrap($color2, $padding: $padding 0)
-            +grid($col: 4)
+            +grid($col: 5)
+                +headerInfo
+                    .headerInfo-logo path
+                        fill: $color
+
+                @import '../../layouts/headerInfo/headerInfo'
                 @import "../../components/logo/logo"
                 @import "../../components/phone/phone"
                 @import "../../components/worktime/worktime"

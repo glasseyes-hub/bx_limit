@@ -79,9 +79,29 @@ body {
       body header section.header .header-main .wrap .wrap-container .grid {
         display: grid;
         grid-gap: 40px;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(5, 1fr);
         justify-content: stretch;
         align-items: stretch; }
+        body header section.header .header-main .wrap .wrap-container .grid .headerInfo {
+          display: grid;
+          align-content: start;
+          align-items: center;
+          justify-content: start;
+          grid-gap: 10px;
+          grid-template-areas: 'logo title' 'text text'; }
+          body header section.header .header-main .wrap .wrap-container .grid .headerInfo .headerInfo-logo {
+            grid-area: logo;
+            width: 25px;
+            height: 25px; }
+          body header section.header .header-main .wrap .wrap-container .grid .headerInfo .headerInfo-title {
+            grid-area: title;
+            color: white;
+            font-size: 16px; }
+          body header section.header .header-main .wrap .wrap-container .grid .headerInfo .headerInfo-text {
+            grid-area: text;
+            color: #757575; }
+          body header section.header .header-main .wrap .wrap-container .grid .headerInfo .headerInfo-logo path {
+            fill: #05ac9d; }
         body header section.header .header-main .wrap .wrap-container .grid .logo {
           display: grid;
           grid-gap: 10px;
@@ -160,8 +180,7 @@ body {
               text-align: right;
               font-size: 16px;
               justify-self: end;
-              transition: 0.2s;
-              color: #05ac9d; }
+              transition: 0.2s; }
           body header section.header .header-main .wrap .wrap-container .grid .cart .cart-detail {
             display: grid;
             grid-gap: 10px;
@@ -180,8 +199,7 @@ body {
               align-items: center;
               padding: 10px 10px 0; }
               body header section.header .header-main .wrap .wrap-container .grid .cart .cart-detail .cart-header .cart-text {
-                font-size: 16px;
-                text-transform: uppercase; }
+                font-size: 16px; }
               body header section.header .header-main .wrap .wrap-container .grid .cart .cart-detail .cart-header .cart-open {
                 position: absolute;
                 right: 10px;

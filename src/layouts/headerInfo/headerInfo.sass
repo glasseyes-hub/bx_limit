@@ -1,0 +1,26 @@
+@import "../../sass/variables"
+
+@mixin headerInfo
+  .headerInfo
+    display: grid
+    align-content: start
+    align-items: center
+    justify-content: start
+    grid-gap: $gap_small_mid
+    grid-template-areas: 'logo title' 'text text'
+
+    .headerInfo-logo
+      grid-area: logo
+      width: $icon_size_small
+      height: $icon_size_small
+
+    .headerInfo-title
+      grid-area: title
+      color: $color2_light_high
+      font-size: $font_size_large
+
+    .headerInfo-text
+      grid-area: text
+      color: $color2_light
+
+    @content

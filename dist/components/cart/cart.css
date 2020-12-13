@@ -31,8 +31,7 @@
       text-align: right;
       font-size: 16px;
       justify-self: end;
-      transition: 0.2s;
-      color: #05ac9d; }
+      transition: 0.2s; }
   .cart .cart-detail {
     display: grid;
     grid-gap: 10px;
@@ -51,8 +50,7 @@
       align-items: center;
       padding: 10px 10px 0; }
       .cart .cart-detail .cart-header .cart-text {
-        font-size: 16px;
-        text-transform: uppercase; }
+        font-size: 16px; }
       .cart .cart-detail .cart-header .cart-open {
         position: absolute;
         right: 10px;
