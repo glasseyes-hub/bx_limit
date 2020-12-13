@@ -1,0 +1,6 @@
+mixin headerInfo(className, iconSrc, title, text)
+    .headerInfo(class=className ? 'headerInfo_' + className: '')
+        img.svg.headerInfo-logo(src=iconSrc)
+        span.headerInfo-title #{title}
+        if text
+            span.headerInfo-text #{text}
