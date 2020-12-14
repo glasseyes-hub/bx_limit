@@ -86,42 +86,6 @@ section.header .header-main .wrap {
           width: 150px; }
         section.header .header-main .wrap .wrap-container .grid .logo .logo-text {
           color: #757575; }
-      section.header .header-main .wrap .wrap-container .grid .phone {
-        display: grid;
-        align-content: start;
-        align-items: center;
-        justify-content: start;
-        grid-gap: 10px;
-        grid-template-areas: 'logo title' 'text text'; }
-        section.header .header-main .wrap .wrap-container .grid .phone .phone-logo {
-          grid-area: logo;
-          width: 25px;
-          height: 25px; }
-        section.header .header-main .wrap .wrap-container .grid .phone .phone-title {
-          grid-area: title;
-          color: white;
-          font-size: 16px; }
-        section.header .header-main .wrap .wrap-container .grid .phone .phone-text {
-          grid-area: text;
-          color: #757575; }
-      section.header .header-main .wrap .wrap-container .grid .worktime {
-        display: grid;
-        align-content: start;
-        align-items: center;
-        justify-content: start;
-        grid-gap: 10px;
-        grid-template-areas: 'logo title' 'text text'; }
-        section.header .header-main .wrap .wrap-container .grid .worktime .worktime-logo {
-          grid-area: logo;
-          width: 25px;
-          height: 25px; }
-        section.header .header-main .wrap .wrap-container .grid .worktime .worktime-title {
-          grid-area: title;
-          color: white;
-          font-size: 16px; }
-        section.header .header-main .wrap .wrap-container .grid .worktime .worktime-text {
-          grid-area: text;
-          color: #757575; }
       section.header .header-main .wrap .wrap-container .grid .cart {
         position: relative;
         display: grid;
