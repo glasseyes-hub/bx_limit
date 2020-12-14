@@ -1,0 +1,84 @@
+@import "../../sass/variables"
+@import "../../layouts/title/title"
+
+.door
+    display: grid
+    grid-auto-flow: column
+    grid-template-columns: 1fr 1fr
+    grid-gap: $gap
+
+    .door-images
+        background-color: $color2
+        height: 500px
+
+    .door-info
+        display: grid
+        grid-gap: $gap
+        +title
+
+        .door-info-title
+            font-weight: normal
+
+        .door-main
+            display: grid
+            grid-auto-flow: column
+            justify-content: space-between
+            align-items: center
+
+            .door-price
+                font-size: $font_size_large_high
+
+            .door-stock
+                color: $color
+                font-weight: bold
+
+        .door-colors,
+        .door-glasses
+            display: grid
+            grid-gap: $gap_small_mid
+
+        .door-colors
+            .door-colors-list
+                display: grid
+                grid-auto-flow: column
+                grid-gap: $gap_small_mid
+                justify-content: start
+
+        .door-glasses
+            .door-glasses-list
+                display: grid
+                grid-auto-flow: column
+                grid-gap: $gap_small_mid
+                justify-content: start
+
+        .door-freeMeasurement
+            background-color: $color
+            color: $color2_light_high
+            padding: $padding
+            text-transform: uppercase
+            justify-self: start
+
+        .door-sizes
+            display: grid
+            grid-gap: $gap_small
+
+            .door-sizes-door
+                display: grid
+                grid-gap: $gap_small
+
+            .door-sizes-exists
+                display: grid
+                justify-content: space-between
+                grid-template-columns: repeat(3, 1fr)
+                grid-gap: $gap_small_max
+                .door-size
+                    padding: $padding_small_max
+                    border: 1px solid $color2_light_low
+                    text-align: center
+
+
+            .door-sizes-block
+                display: grid
+                grid-gap: $gap
+                grid-template-columns: 1fr 1fr
+

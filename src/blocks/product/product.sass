@@ -3,8 +3,10 @@
 @import "../../layouts/grid/grid"
 @import "../../layouts/title/title"
 
-.path
+.product
     +wrap($color2_light_high, $padding: $padding 0)
-        +grid()
-            +title
-            @import "../../components/position/position"
+        @import "../../components/position/position"
+        +grid($col: 1)
+            @import "../../components/door/door"
+            @import "../../blocks/novelties/novelties"
+
