@@ -971,57 +971,67 @@ body {
                   body main .product .wrap .wrap-container .grid .door .door-info .title a:hover {
                     color: #b4b4b4;
                     text-decoration: underline; }
-              body main .product .wrap .wrap-container .grid .door .door-info .door-info-title {
-                font-weight: normal; }
-              body main .product .wrap .wrap-container .grid .door .door-info .door-main {
+              body main .product .wrap .wrap-container .grid .door .door-info .door-block {
                 display: grid;
-                grid-auto-flow: column;
-                justify-content: space-between;
-                align-items: center; }
-                body main .product .wrap .wrap-container .grid .door .door-info .door-main .door-price {
-                  font-size: 30px; }
-                body main .product .wrap .wrap-container .grid .door .door-info .door-main .door-stock {
-                  color: #05ac9d;
-                  font-weight: bold; }
-              body main .product .wrap .wrap-container .grid .door .door-info .door-colors,
-              body main .product .wrap .wrap-container .grid .door .door-info .door-glasses {
-                display: grid;
-                grid-gap: 10px; }
-              body main .product .wrap .wrap-container .grid .door .door-info .door-colors .door-colors-list {
-                display: grid;
-                grid-auto-flow: column;
-                grid-gap: 10px;
-                justify-content: start; }
-              body main .product .wrap .wrap-container .grid .door .door-info .door-glasses .door-glasses-list {
-                display: grid;
-                grid-auto-flow: column;
-                grid-gap: 10px;
-                justify-content: start; }
+                grid-gap: 20px; }
+                body main .product .wrap .wrap-container .grid .door .door-info .door-block .door-block-title {
+                  text-transform: uppercase; }
+                body main .product .wrap .wrap-container .grid .door .door-info .door-block .door-block-body {
+                  display: grid;
+                  grid-auto-flow: column; }
+                body main .product .wrap .wrap-container .grid .door .door-info .door-block_price .door-block-body {
+                  justify-content: space-between;
+                  align-items: center; }
+                  body main .product .wrap .wrap-container .grid .door .door-info .door-block_price .door-block-body .door-price {
+                    font-size: 30px; }
+                  body main .product .wrap .wrap-container .grid .door .door-info .door-block_price .door-block-body .door-stock {
+                    color: #05ac9d;
+                    font-weight: bold; }
+                body main .product .wrap .wrap-container .grid .door .door-info .door-block_design .door-block-body .doorColor {
+                  display: grid;
+                  grid-gap: 10px; }
+                  body main .product .wrap .wrap-container .grid .door .door-info .door-block_design .door-block-body .doorColor .doorColor-title {
+                    font-weight: normal; }
+                  body main .product .wrap .wrap-container .grid .door .door-info .door-block_design .door-block-body .doorColor .doorColor-list {
+                    display: grid;
+                    grid-auto-flow: column;
+                    grid-gap: 10px;
+                    justify-content: start; }
+                body main .product .wrap .wrap-container .grid .door .door-info .door-block_design .door-block-body .doorGlass {
+                  display: grid;
+                  grid-gap: 10px; }
+                  body main .product .wrap .wrap-container .grid .door .door-info .door-block_design .door-block-body .doorGlass .doorGlass-title {
+                    font-weight: normal; }
+                  body main .product .wrap .wrap-container .grid .door .door-info .door-block_design .door-block-body .doorGlass .doorGlass-list {
+                    display: grid;
+                    grid-auto-flow: column;
+                    grid-gap: 10px;
+                    justify-content: start; }
+                body main .product .wrap .wrap-container .grid .door .door-info .door-block_size .doorSize {
+                  display: grid;
+                  grid-gap: 20px; }
+                  body main .product .wrap .wrap-container .grid .door .door-info .door-block_size .doorSize .doorSize-door {
+                    display: grid;
+                    grid-gap: 20px; }
+                  body main .product .wrap .wrap-container .grid .door .door-info .door-block_size .doorSize .doorSize-exist {
+                    display: grid;
+                    justify-content: space-between;
+                    grid-template-columns: repeat(3, 1fr);
+                    grid-gap: 5px; }
+                    body main .product .wrap .wrap-container .grid .door .door-info .door-block_size .doorSize .doorSize-exist .door-size {
+                      padding: 5px;
+                      border: 1px solid #b4b4b4;
+                      text-align: center; }
+                  body main .product .wrap .wrap-container .grid .door .door-info .door-block_size .doorSize .doorSize-block {
+                    display: grid;
+                    grid-gap: 40px;
+                    grid-template-columns: 1fr 1fr; }
               body main .product .wrap .wrap-container .grid .door .door-info .door-freeMeasurement {
                 background-color: #05ac9d;
                 color: white;
                 padding: 20px;
                 text-transform: uppercase;
                 justify-self: start; }
-              body main .product .wrap .wrap-container .grid .door .door-info .door-sizes {
-                display: grid;
-                grid-gap: 20px; }
-                body main .product .wrap .wrap-container .grid .door .door-info .door-sizes .door-sizes-door {
-                  display: grid;
-                  grid-gap: 20px; }
-                body main .product .wrap .wrap-container .grid .door .door-info .door-sizes .door-sizes-exists {
-                  display: grid;
-                  justify-content: space-between;
-                  grid-template-columns: repeat(3, 1fr);
-                  grid-gap: 5px; }
-                  body main .product .wrap .wrap-container .grid .door .door-info .door-sizes .door-sizes-exists .door-size {
-                    padding: 5px;
-                    border: 1px solid #b4b4b4;
-                    text-align: center; }
-                body main .product .wrap .wrap-container .grid .door .door-info .door-sizes .door-sizes-block {
-                  display: grid;
-                  grid-gap: 40px;
-                  grid-template-columns: 1fr 1fr; }
           body main .product .wrap .wrap-container .grid .novelties .wrap {
             background-color: white; }
             body main .product .wrap .wrap-container .grid .novelties .wrap .wrap-container {

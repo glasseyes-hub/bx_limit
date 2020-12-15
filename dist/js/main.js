@@ -175,27 +175,6 @@ $(".itemFilter").each((i, filter) => {
 });
 
 
-class Position {
-  constructor(container) {
-    this.container = container;
-    this.links = this.container.children();
-
-    this.setSeparators();
-  }
-
-  setSeparators() {
-    this.links.each((index, link) => {
-      if (index < this.links.length - 1) {
-        const separator = document.createElement("span");
-
-        $(separator).addClass("position-separator").text("/").insertAfter(link);
-      }
-    });
-  }
-}
-
-new Position($(".position"));
-
 const inputs = $(".priceFilter-input");
 const updateInputs = (data) => {
   $(".priceFilter-input_from").val(data.from);
@@ -230,6 +209,27 @@ inputs.on("input", (event) => {
     });
   }
 });
+
+class Position {
+  constructor(container) {
+    this.container = container;
+    this.links = this.container.children();
+
+    this.setSeparators();
+  }
+
+  setSeparators() {
+    this.links.each((index, link) => {
+      if (index < this.links.length - 1) {
+        const separator = document.createElement("span");
+
+        $(separator).addClass("position-separator").text("/").insertAfter(link);
+      }
+    });
+  }
+}
+
+new Position($(".position"));
 
 class Dropdown {
   constructor(container) {

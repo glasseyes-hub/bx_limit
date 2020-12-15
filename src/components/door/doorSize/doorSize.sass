@@ -1,0 +1,25 @@
+@import "../../../sass/variables"
+
+.doorSize
+    display: grid
+    grid-gap: $gap_small
+
+    .doorSize-door
+        display: grid
+        grid-gap: $gap_small
+
+    .doorSize-exist
+        display: grid
+        justify-content: space-between
+        grid-template-columns: repeat(3, 1fr)
+        grid-gap: $gap_small_max
+
+        .door-size
+            padding: $padding_small_max
+            border: 1px solid $color2_light_low
+            text-align: center
+
+    .doorSize-block
+        display: grid
+        grid-gap: $gap
+        grid-template-columns: 1fr 1fr

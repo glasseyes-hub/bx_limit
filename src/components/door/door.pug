@@ -4,38 +4,20 @@ include ../../layouts/title/title
     .door-images
     .door-info
         +title('h1', 'Входная дверь МеталЮр М9 Темный Орех')
-        .door-main
-            .door-price 32 782 ₽
-            .door-stock Есть в наличии
-        .door-colors
-            h4.door-info-title Цветовое решение:
-            .door-colors-list
-                img.door-color(src='img/itemFilter.jpg')
-                img.door-color(src='img/itemFilter.jpg')
-                img.door-color(src='img/itemFilter.jpg')
-        .door-glasses
-            h4.door-info-title Варианты остекления:
-            .door-glasses-list
-                img.door-glass(src='img/itemFilter.jpg')
-                img.door-glass(src='img/itemFilter.jpg')
-                img.door-glass(src='img/itemFilter.jpg')
+        .door-block.door-block_price
+            .door-block-body
+                .door-price 32 782 ₽
+                .door-stock Есть в наличии
+        .door-block.door-block_design
+            h3.doors-block-title Варианты исполнения
+            .door-block-body
+                include doorColor/doorColor
+                include doorGlass/doorGlass
+        .door-block.door-block_size
+            h3.doors-block-title Размеры
+            .door-block-body
+                include doorSize/doorSize
         .door-freeMeasurement Бесплатный замер
-        .door-sizes
-            h4.door-info-title Размеры:
-            .door-sizes-block
-                .door-sizes-door
-                    .door-sizes-exists
-                        .door-size 2000 x 600
-                        .door-size 2000 x 700
-                        .door-size 2000 x 800
-                        .door-size 2000 x 900
-                    .door-sizes-other
-                        input.door-width(type='text' placeholder="Ширина")
-                        input.door-height(type='text' placeholder="Высота")
-                .door-sizes-doorway
-                    input.door-width(type='text' placeholder="Ширина")
-                    input.door-height(type='text' placeholder="Высота")
-
         .door-fittings
             .door-platband
                 .door-fitting-size

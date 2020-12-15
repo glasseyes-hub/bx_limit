@@ -16,40 +16,35 @@
         grid-gap: $gap
         +title
 
-        .door-info-title
-            font-weight: normal
-
-        .door-main
+        .door-block
             display: grid
-            grid-auto-flow: column
-            justify-content: space-between
-            align-items: center
+            grid-gap: $gap_small
 
-            .door-price
-                font-size: $font_size_large_high
+            .door-block-title
+                text-transform: uppercase
 
-            .door-stock
-                color: $color
-                font-weight: bold
-
-        .door-colors,
-        .door-glasses
-            display: grid
-            grid-gap: $gap_small_mid
-
-        .door-colors
-            .door-colors-list
+            .door-block-body
                 display: grid
                 grid-auto-flow: column
-                grid-gap: $gap_small_mid
-                justify-content: start
 
-        .door-glasses
-            .door-glasses-list
-                display: grid
-                grid-auto-flow: column
-                grid-gap: $gap_small_mid
-                justify-content: start
+            &_price
+                .door-block-body
+                    justify-content: space-between
+                    align-items: center
+
+                    .door-price
+                        font-size: $font_size_large_high
+
+                    .door-stock
+                        color: $color
+                        font-weight: bold
+
+            &_design
+                .door-block-body
+                    @import 'doorColor/doorColor'
+                    @import 'doorGlass/doorGlass'
+            &_size
+                @import "doorSize/doorSize"
 
         .door-freeMeasurement
             background-color: $color
@@ -57,28 +52,3 @@
             padding: $padding
             text-transform: uppercase
             justify-self: start
-
-        .door-sizes
-            display: grid
-            grid-gap: $gap_small
-
-            .door-sizes-door
-                display: grid
-                grid-gap: $gap_small
-
-            .door-sizes-exists
-                display: grid
-                justify-content: space-between
-                grid-template-columns: repeat(3, 1fr)
-                grid-gap: $gap_small_max
-                .door-size
-                    padding: $padding_small_max
-                    border: 1px solid $color2_light_low
-                    text-align: center
-
-
-            .door-sizes-block
-                display: grid
-                grid-gap: $gap
-                grid-template-columns: 1fr 1fr
-
