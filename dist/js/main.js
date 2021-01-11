@@ -175,6 +175,27 @@ $(".itemFilter").each((i, filter) => {
 });
 
 
+class Position {
+  constructor(container) {
+    this.container = container;
+    this.links = this.container.children();
+
+    this.setSeparators();
+  }
+
+  setSeparators() {
+    this.links.each((index, link) => {
+      if (index < this.links.length - 1) {
+        const separator = document.createElement("span");
+
+        $(separator).addClass("position-separator").text("/").insertAfter(link);
+      }
+    });
+  }
+}
+
+new Position($(".position"));
+
 const inputs = $(".priceFilter-input");
 const updateInputs = (data) => {
   $(".priceFilter-input_from").val(data.from);
@@ -210,49 +231,87 @@ inputs.on("input", (event) => {
   }
 });
 
-class Position {
+$(function () {
+  const doorSize = new DoorSize($(".doorSize"));
+
+  doorSize.select(0);
+});
+
+class DoorSize {
+  radioBlocks = [];
+
   constructor(container) {
     this.container = container;
-    this.links = this.container.children();
 
-    this.setSeparators();
-  }
+    container.find(".doorSize-radio").each((index, el) => {
+      const radioBlock = new RadioBlock($(el));
+      radioBlock.onSelect(this.unselectAll);
 
-  setSeparators() {
-    this.links.each((index, link) => {
-      if (index < this.links.length - 1) {
-        const separator = document.createElement("span");
-
-        $(separator).addClass("position-separator").text("/").insertAfter(link);
-      }
+      this.radioBlocks.push(radioBlock);
     });
   }
+
+  select(index) {
+    this.radioBlocks[index].select();
+  }
+
+  unselectAll = (currentRadioBlock) => {
+    this.radioBlocks.forEach((radioBlock) => {
+      if (radioBlock.isSelected() && currentRadioBlock != radioBlock)
+        radioBlock.unselect();
+    });
+  };
 }
 
-new Position($(".position"));
+class RadioBlock {
+  SELECTED_TEXT = "Выбрано";
+  UNSELECTED_TEXT = "Выбрать";
+  listeners = [];
+  selected = false;
 
-class Dropdown {
   constructor(container) {
     this.container = container;
-    this.header = this.container.find($(".dropdown-header"));
-    this.body = this.container.find($(".dropdown-body"));
+    this.icon = this.container.find(".doorSize-radio-icon");
+    this.content = this.container.find(".doorSize-radio-content");
+    this.button = this.container.find(".doorSize-radio-button");
 
     this.addHandlers();
   }
 
   addHandlers() {
-    this.header.on("click", (event) => {
-      this.body.slideToggle();
-      this.container.toggleClass("dropdown_open");
+    $(this.button).on("click", (event) => {
+      if (!this.selected) this.select();
+    });
+
+    $(this.content).on("click", (event) => {
+      if (!this.selected) this.select();
     });
   }
-}
 
-$(function () {
-  $(".dropdown").each((index, dropdown) => {
-    new Dropdown($(dropdown));
-  });
-});
+  isSelected() {
+    return this.selected;
+  }
+
+  select() {
+    this.container.addClass("doorSize-radio_selected");
+    this.button.text(this.SELECTED_TEXT);
+
+    this.selected = true;
+
+    this.listeners.forEach((callback) => callback(this));
+  }
+
+  unselect() {
+    this.container.removeClass("doorSize-radio_selected");
+    this.button.text(this.UNSELECTED_TEXT);
+
+    this.selected = false;
+  }
+
+  onSelect(callback) {
+    this.listeners.push(callback);
+  }
+}
 
 class FilterItem {
   maxShowElements = 5;
@@ -315,6 +374,71 @@ class FilterItem {
 $(".filterItem").each((index, element) => {
   const filter = new FilterItem(element);
 });
+
+class Dropdown {
+  constructor(container) {
+    this.container = container;
+    this.header = this.container.find($(".dropdown-header"));
+    this.body = this.container.find($(".dropdown-body"));
+
+    this.addHandlers();
+  }
+
+  addHandlers() {
+    this.header.on("click", (event) => {
+      this.body.slideToggle();
+      this.container.toggleClass("dropdown_open");
+    });
+  }
+}
+
+$(function () {
+  $(".dropdown").each((index, dropdown) => {
+    new Dropdown($(dropdown));
+  });
+});
+
+$(function () {
+  const selectList = new SelectList($(".selectList"));
+
+  selectList.select(0);
+});
+
+class SelectList {
+  multiSelect = false;
+
+  constructor(container) {
+    this.container = container;
+    this.items = this.container.find(".selectList-item");
+
+    this.addHandlers();
+  }
+
+  addHandlers() {
+    this.items.each((index, item) => {
+      $(item).on("click", (event) => {
+        if ($(item).hasClass("selectList-item_selected")) this.unselect(index);
+        else this.select(index);
+      });
+    });
+  }
+
+  select(index) {
+    if (!this.multiSelect) this.unselectAll();
+
+    $(this.items[index]).addClass("selectList-item_selected");
+  }
+
+  unselect(index) {
+    $(this.items[index]).removeClass("selectList-item_selected");
+  }
+
+  unselectAll() {
+    this.items.each((index, item) => {
+      this.unselect(index);
+    });
+  }
+}
 
 class ShowAll {
   isShowed = false;

@@ -1010,22 +1010,87 @@ body {
                 body main .product .wrap .wrap-container .grid .door .door-info .door-block_size .doorSize {
                   display: grid;
                   grid-gap: 20px; }
-                  body main .product .wrap .wrap-container .grid .door .door-info .door-block_size .doorSize .doorSize-door {
-                    display: grid;
-                    grid-gap: 20px; }
-                  body main .product .wrap .wrap-container .grid .door .door-info .door-block_size .doorSize .doorSize-exist {
-                    display: grid;
-                    justify-content: space-between;
-                    grid-template-columns: repeat(3, 1fr);
-                    grid-gap: 5px; }
-                    body main .product .wrap .wrap-container .grid .door .door-info .door-block_size .doorSize .doorSize-exist .door-size {
-                      padding: 5px;
-                      border: 1px solid #b4b4b4;
-                      text-align: center; }
-                  body main .product .wrap .wrap-container .grid .door .door-info .door-block_size .doorSize .doorSize-block {
+                  body main .product .wrap .wrap-container .grid .door .door-info .door-block_size .doorSize .doorSize-freeSample {
+                    background-color: #05ac9d;
+                    color: white;
+                    justify-self: start;
+                    padding: 10px;
+                    cursor: pointer;
+                    transition: 0.2s; }
+                    body main .product .wrap .wrap-container .grid .door .door-info .door-block_size .doorSize .doorSize-freeSample:hover {
+                      background-color: #047a70; }
+                  body main .product .wrap .wrap-container .grid .door .door-info .door-block_size .doorSize .doorSize-body {
                     display: grid;
                     grid-gap: 40px;
                     grid-template-columns: 1fr 1fr; }
+                    body main .product .wrap .wrap-container .grid .door .door-info .door-block_size .doorSize .doorSize-body .doorSize-type {
+                      display: grid;
+                      grid-gap: 20px;
+                      align-content: start; }
+                      body main .product .wrap .wrap-container .grid .door .door-info .door-block_size .doorSize .doorSize-body .doorSize-type .doorSize-type-body {
+                        display: grid;
+                        grid-gap: 20px; }
+                        body main .product .wrap .wrap-container .grid .door .door-info .door-block_size .doorSize .doorSize-body .doorSize-type .doorSize-type-body .doorSize-radio {
+                          display: grid;
+                          grid-template-areas: 'icon content' 'button button';
+                          grid-template-columns: 10px 1fr;
+                          grid-gap: 20px;
+                          transition: 0.2s; }
+                          body main .product .wrap .wrap-container .grid .door .door-info .door-block_size .doorSize .doorSize-body .doorSize-type .doorSize-type-body .doorSize-radio .doorSize-radio-icon {
+                            grid-area: icon;
+                            background-color: #b4b4b4;
+                            width: 10px;
+                            height: 10px;
+                            margin-top: 2px; }
+                          body main .product .wrap .wrap-container .grid .door .door-info .door-block_size .doorSize .doorSize-body .doorSize-type .doorSize-type-body .doorSize-radio .doorSize-radio-button {
+                            grid-area: button;
+                            justify-self: end;
+                            background-color: #757575;
+                            padding: 5px;
+                            color: white;
+                            cursor: pointer;
+                            transition: 0.2s; }
+                            body main .product .wrap .wrap-container .grid .door .door-info .door-block_size .doorSize .doorSize-body .doorSize-type .doorSize-type-body .doorSize-radio .doorSize-radio-button:hover {
+                              background-color: #757575; }
+                          body main .product .wrap .wrap-container .grid .door .door-info .door-block_size .doorSize .doorSize-body .doorSize-type .doorSize-type-body .doorSize-radio .doorSize-radio-content {
+                            grid-area: content;
+                            opacity: .5; }
+                          body main .product .wrap .wrap-container .grid .door .door-info .door-block_size .doorSize .doorSize-body .doorSize-type .doorSize-type-body .doorSize-radio_selected .doorSize-radio-icon {
+                            background-color: #05ac9d; }
+                          body main .product .wrap .wrap-container .grid .door .door-info .door-block_size .doorSize .doorSize-body .doorSize-type .doorSize-type-body .doorSize-radio_selected .doorSize-radio-content {
+                            opacity: 1; }
+                          body main .product .wrap .wrap-container .grid .door .door-info .door-block_size .doorSize .doorSize-body .doorSize-type .doorSize-type-body .doorSize-radio_selected .doorSize-radio-button {
+                            background-color: #05ac9d;
+                            cursor: auto; }
+                            body main .product .wrap .wrap-container .grid .door .door-info .door-block_size .doorSize .doorSize-body .doorSize-type .doorSize-type-body .doorSize-radio_selected .doorSize-radio-button:hover {
+                              background-color: #05ac9d; }
+                          body main .product .wrap .wrap-container .grid .door .door-info .door-block_size .doorSize .doorSize-body .doorSize-type .doorSize-type-body .doorSize-radio .doorSize-block {
+                            display: grid;
+                            grid-gap: 20px; }
+                            body main .product .wrap .wrap-container .grid .door .door-info .door-block_size .doorSize .doorSize-body .doorSize-type .doorSize-type-body .doorSize-radio .doorSize-block .doorSize-block-body {
+                              display: grid;
+                              grid-gap: 5px; }
+                              body main .product .wrap .wrap-container .grid .door .door-info .door-block_size .doorSize .doorSize-body .doorSize-type .doorSize-type-body .doorSize-radio .doorSize-block .doorSize-block-body .doorSize-input {
+                                display: grid;
+                                grid-template-columns: 90px 1fr;
+                                grid-gap: 20px;
+                                align-items: center; }
+                              body main .product .wrap .wrap-container .grid .door .door-info .door-block_size .doorSize .doorSize-body .doorSize-type .doorSize-type-body .doorSize-radio .doorSize-block .doorSize-block-body .selectList {
+                                display: grid;
+                                grid-gap: 5px; }
+                                body main .product .wrap .wrap-container .grid .door .door-info .door-block_size .doorSize .doorSize-body .doorSize-type .doorSize-type-body .doorSize-radio .doorSize-block .doorSize-block-body .selectList .selectList-item {
+                                  padding: 5px;
+                                  border: 1px solid #b4b4b4;
+                                  text-align: center;
+                                  cursor: pointer;
+                                  transition: 0.2s; }
+                                  body main .product .wrap .wrap-container .grid .door .door-info .door-block_size .doorSize .doorSize-body .doorSize-type .doorSize-type-body .doorSize-radio .doorSize-block .doorSize-block-body .selectList .selectList-item:hover {
+                                    border-color: #757575; }
+                                  body main .product .wrap .wrap-container .grid .door .door-info .door-block_size .doorSize .doorSize-body .doorSize-type .doorSize-type-body .doorSize-radio .doorSize-block .doorSize-block-body .selectList .selectList-item_selected {
+                                    border-color: #05ac9d;
+                                    outline: 1px solid #05ac9d; }
+                                    body main .product .wrap .wrap-container .grid .door .door-info .door-block_size .doorSize .doorSize-body .doorSize-type .doorSize-type-body .doorSize-radio .doorSize-block .doorSize-block-body .selectList .selectList-item_selected:hover {
+                                      outline-color: #757575; }
               body main .product .wrap .wrap-container .grid .door .door-info .door-freeMeasurement {
                 background-color: #05ac9d;
                 color: white;
