@@ -1,18 +1,49 @@
+include ../../../layouts/selectList/selectList 
+
 .doorSize
-    .doorSize-block
-        h4.doorSize-block-title Выберите размер двери
-        .doorSize-block-body
-            .doorSize-size 2000 x 600
-            .doorSize-size 2000 x 700
-            .doorSize-size 2000 x 800
-            .doorSize-size 2000 x 900
-    .doorSize-block
-        h4.doorSize-block-title Укажите размер двери
-        .doorSize-block-body
-            input.door-width(type='text' placeholder="Ширина")
-            input.door-height(type='text' placeholder="Высота")
-    .doorSize-block
-        h4.doorSize-block-title Укажите размер проема
-        .doorSize-block-body
-            input.door-width(type='text' placeholder="Ширина")
-            input.door-height(type='text' placeholder="Высота")
+    h3.doorSize-title Размеры
+    p.doorSize-description Если Вы не знаете нужных размеров, воспользуйтесь услугой <b>"Бесплатный замер"</b>.
+    .doorSize-freeSample Заказать бесплатный замер
+    br
+    p.doorSize-description Если Вы знаете нужные размеры, выберите или укажите размер двери, или размер дверного проема.
+    .doorSize-body
+        .doorSize-type
+            h4.doorSize-type-title По размеру двери
+            .doorSize-type-body
+                .doorSize-radio
+                    .doorSize-radio-icon
+                    .doorSize-radio-content
+                        .doorSize-block
+                            h5.doorSize-block-title Выберите размер двери в мм (В х Ш):
+                            .doorSize-block-body
+                                +selectList(['2000 x 600', '2000 x 700', '2000 x 800', '2000 x 900'])
+                    .doorSize-radio-button Выбрать
+                .doorSize-radio
+                    .doorSize-radio-icon
+                    .doorSize-radio-content
+                        .doorSize-block
+                            h5.doorSize-block-title Укажите размер двери:
+                            .doorSize-block-body
+                                label.doorSize-input
+                                    span.doorSize-input-title Высота (мм)
+                                    input.door-input-value(type='text' placeholder="Высота двери")
+                                label.doorSize-input
+                                    span.doorSize-input-title Ширина (мм)
+                                    input.door-input-value(type='text' placeholder="Ширина двери")
+                    .doorSize-radio-button Выбрать
+        .doorSize-type
+            h4.doorSize-type-title По размеру проема
+            .doorSize-type-body
+                .doorSize-radio
+                    .doorSize-radio-icon
+                    .doorSize-radio-content
+                        .doorSize-block
+                            h5.doorSize-block-title Укажите размер проема:
+                            .doorSize-block-body
+                                label.doorSize-input
+                                    span.doorSize-input-title Высота (мм)
+                                    input.door-input-value(type='text' placeholder="Высота проема")
+                                label.doorSize-input
+                                    span.doorSize-input-title Ширина (мм)
+                                    input.door-input-value(type='text' placeholder="Ширина проема")
+                    .doorSize-radio-button Выбрать

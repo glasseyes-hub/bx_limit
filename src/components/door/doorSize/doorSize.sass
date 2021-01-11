@@ -1,25 +1,94 @@
 @import "../../../sass/variables"
+@import "../../../layouts/selectList/selectList"
 
 .doorSize
     display: grid
     grid-gap: $gap_small
 
-    .doorSize-door
-        display: grid
-        grid-gap: $gap_small
+    .doorSize-freeSample
+        background-color: $color
+        color: $color2_light_high
+        justify-self: start
+        padding: $padding_small
+        cursor: pointer
+        transition: $animation_transition
 
-    .doorSize-exist
-        display: grid
-        justify-content: space-between
-        grid-template-columns: repeat(3, 1fr)
-        grid-gap: $gap_small_max
+        &:hover
+            background-color: $color_dark
 
-        .door-size
-            padding: $padding_small_max
-            border: 1px solid $color2_light_low
-            text-align: center
 
-    .doorSize-block
+    .doorSize-body        
         display: grid
         grid-gap: $gap
         grid-template-columns: 1fr 1fr
+
+        .doorSize-type
+            display: grid
+            grid-gap: $gap_small
+            align-content: start
+
+            .doorSize-type-title
+            
+            .doorSize-type-body
+                display: grid
+                grid-gap: $gap_small
+
+                .doorSize-radio
+                    display: grid
+                    grid-template-areas: 'icon content' 'button button'
+                    grid-template-columns: $icon_size_small_max 1fr
+                    grid-gap: $gap_small
+                    transition: $animation_transition
+
+                    .doorSize-radio-icon
+                        grid-area: icon
+                        background-color: $color2_light_low
+                        width: $icon_size_small_max
+                        height: $icon_size_small_max
+                        margin-top: 2px
+
+                    .doorSize-radio-button
+                        grid-area: button
+                        justify-self: end
+                        background-color: $color2_light
+                        padding: $padding_small_max
+                        color: $color2_light_high
+                        cursor: pointer
+                        transition: $animation_transition
+                        &:hover
+                            background-color: $color2_light    
+
+                    .doorSize-radio-content
+                        grid-area: content
+                        opacity: .5
+
+                    &_selected
+                        .doorSize-radio-icon
+                            background-color: $color
+
+                        .doorSize-radio-content
+                            opacity: 1
+                        .doorSize-radio-button
+                            background-color: $color
+                            cursor: auto
+                            &:hover
+                                background-color: $color                    
+
+                    .doorSize-block
+                        display: grid
+                        grid-gap: $gap_small
+
+                        .doorSize-block-body
+                            display: grid
+                            grid-gap: $gap_small_max
+
+                            .doorSize-input
+                                display: grid
+                                grid-template-columns: 90px 1fr
+                                grid-gap: $gap_small
+                                align-items: center
+                                .doorSize-input-title
+                                .doorSize-input-value
+
+                            +selectList
+
