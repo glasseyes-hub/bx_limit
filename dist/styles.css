@@ -987,26 +987,22 @@ body {
                   body main .product .wrap .wrap-container .grid .door .door-info .door-block_price .door-block-body .door-stock {
                     color: #05ac9d;
                     font-weight: bold; }
-                body main .product .wrap .wrap-container .grid .door .door-info .door-block_design .door-block-body .doorColor {
+                body main .product .wrap .wrap-container .grid .door .door-info .door-block_design .doorOptions {
                   display: grid;
-                  grid-gap: 10px; }
-                  body main .product .wrap .wrap-container .grid .door .door-info .door-block_design .door-block-body .doorColor .doorColor-title {
-                    font-weight: normal; }
-                  body main .product .wrap .wrap-container .grid .door .door-info .door-block_design .door-block-body .doorColor .doorColor-list {
+                  grid-gap: 20px; }
+                  body main .product .wrap .wrap-container .grid .door .door-info .door-block_design .doorOptions .doorOptions-body {
                     display: grid;
-                    grid-auto-flow: column;
-                    grid-gap: 10px;
-                    justify-content: start; }
-                body main .product .wrap .wrap-container .grid .door .door-info .door-block_design .door-block-body .doorGlass {
-                  display: grid;
-                  grid-gap: 10px; }
-                  body main .product .wrap .wrap-container .grid .door .door-info .door-block_design .door-block-body .doorGlass .doorGlass-title {
-                    font-weight: normal; }
-                  body main .product .wrap .wrap-container .grid .door .door-info .door-block_design .door-block-body .doorGlass .doorGlass-list {
-                    display: grid;
-                    grid-auto-flow: column;
-                    grid-gap: 10px;
-                    justify-content: start; }
+                    grid-gap: 40px;
+                    grid-template-columns: 1fr 1fr; }
+                    body main .product .wrap .wrap-container .grid .door .door-info .door-block_design .doorOptions .doorOptions-body .doorOptions-option {
+                      display: grid;
+                      grid-gap: 13.33333px;
+                      align-content: start; }
+                      body main .product .wrap .wrap-container .grid .door .door-info .door-block_design .doorOptions .doorOptions-body .doorOptions-option .doorOptions-list {
+                        display: grid;
+                        grid-auto-flow: column;
+                        grid-gap: 10px;
+                        justify-content: start; }
                 body main .product .wrap .wrap-container .grid .door .door-info .door-block_size .doorSize {
                   display: grid;
                   grid-gap: 20px; }

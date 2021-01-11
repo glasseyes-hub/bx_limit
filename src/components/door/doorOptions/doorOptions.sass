@@ -1,0 +1,21 @@
+@import "../../../sass/variables"
+
+.doorOptions
+    display: grid
+    grid-gap: $gap_small
+
+    .doorOptions-body
+        display: grid
+        grid-gap: $gap
+        grid-template-columns: 1fr 1fr
+
+        .doorOptions-option
+            display: grid
+            grid-gap: $gap_small_low
+            align-content: start
+
+            .doorOptions-list
+                display: grid
+                grid-auto-flow: column
+                grid-gap: $gap_small_mid
+                justify-content: start
