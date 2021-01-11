@@ -1,0 +1,21 @@
+@import "../../sass/variables"
+
+@mixin selectList()
+    .selectList
+        display: grid
+        grid-gap: $gap_small_max
+
+        .selectList-item
+            padding: $padding_small_max
+            border: 1px solid $color2_light_low
+            text-align: center
+            cursor: pointer
+            transition: $animation_transition
+            &:hover
+                border-color: $color2_light
+
+            &_selected
+                border-color: $color
+                outline: 1px solid $color
+                &:hover
+                    outline-color: $color2_light
